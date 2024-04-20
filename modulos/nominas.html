@@ -372,14 +372,12 @@
       <div class="modal-content ps-3">
         <div class="modal-body">
           <div class="container">
-            <div class="row justify-content-end">
-              <div class="col-2 col-lg-1">
-                <button type="button" class="btn-close w-100" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-            </div>
             <div class="modal-edit-data row">
-              <div class="col-12">
+              <div class="col-11">
                 <h4 class="text-start">Editar ficha</h4>
+              </div>
+              <div class="col-1 d-flex align-items-start">
+                <button type="button" class="btn-close w-100" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <form action="" class="d-lg-none">
                 <div class="form-floating w-100">
@@ -545,16 +543,16 @@
                       <div class="row mb-5">
                         <div class="col-12 col-md-6">
                           <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder" value=""
+                            <input type="text" class="form-control mb-3 mb-lg-0" id="float1" placeholder="Placeholder" value=""
                               autocomplete="off">
                             <label for="float1">RUT</label>
                             <span class="instruccion">Ingresa RUT válido</span>
                           </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 align-items-center d-flex justify-content-center">
+                        <div class="col-6 col-lg-3 align-items-center d-flex justify-content-center">
                           <button type="button" class="btn btn-sm btn-primary w-100 m-0">Buscar</button>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 align-items-center d-flex justify-content-center">
+                        <div class="col-6 col-lg-3 align-items-center d-flex justify-content-center">
                           <button type="button"
                             class="btn btn-sm btn-primary outline w-100 color-primary m-0">Limpiar</button>
                         </div>
@@ -682,11 +680,11 @@
                 <div class="py-5 px-lg-5 tab-pane fade" id="socialData" role="tabpanel"
                   aria-labelledby="socialData-tab">
                   <h5 class="text-start m-0">Datos Familiares</h5>
-                  <div class="row">
+                  <div class="row mb-5">
                     <form action="" class="col-12 ingreso">
-                      <h6 class="mb-5">Grupo familiar</h6>
-                      <div class="row mb-4">
-                        <div class="col-12 col-md-8 mx-4 my-3">
+                      <h6 class="mb-3">Grupo familiar</h6>
+                      <div class="row">
+                        <div class="col-12 col-md-8 mx-4">
                           <p class="mb-4 text-start"><strong>Vive con:</strong></p>
                           <div class="row">
                             <div class="col-4">
@@ -754,10 +752,10 @@
                               </div>
                             </div>
                           </div>
-                          <span class="instruccion">Selecciona una o más opciónes</span>
                         </div>
                       </div>
-                      <div class="row mb-5">
+                      <hr>
+                      <div class="row my-5">
                         <div class="col-6">
                           <div class="form-floating">
                             <input type="text" class="form-control bg-white" id="float1" placeholder="Placeholder"
@@ -780,7 +778,9 @@
                           <div class="form-floating w-100">
                             <select class="form-select" id="floatingSelectGrid"
                               aria-label="Floating label select example">
-                              <option selected>Máma</option>
+                              <option value="" selected disabled hidden>Jefe de hogar</option>
+                              <option>Máma</option>
+                              <option>Papá</option>
                             </select>
                             <label for="floatingSelectGrid">Jefe de hogar</label>
                             <span class="instruccion">Ingresa jefe de hogar</span>
@@ -790,7 +790,9 @@
                           <div class="form-floating w-100">
                             <select class="form-select" id="floatingSelectGrid"
                               aria-label="Floating label select example">
+                              <option value="" selected disabled hidden>Situación laboral</option>
                               <option selected>Trabajador dependiente</option>
+                              <option selected>Trabajador independiente</option>
                             </select>
                             <label for="floatingSelectGrid">Situación laboral</label>
                             <span class="instruccion">Ingresa situación laboral</span>
@@ -802,7 +804,14 @@
                           <div class="form-floating w-100">
                             <select class="form-select" id="floatingSelectGrid"
                               aria-label="Floating label select example">
-                              <option selected>4</option>
+                              <option value="" selected disabled hidden>Nº de hermanos</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
                             </select>
                             <label for="floatingSelectGrid">Nº de hermanos</label>
                             <span class="instruccion">Ingresa número de hermanos</span>
@@ -812,7 +821,14 @@
                           <div class="form-floating w-100">
                             <select class="form-select" id="floatingSelectGrid"
                               aria-label="Floating label select example">
-                              <option selected>2</option>
+                              <option value="" selected disabled hidden>Hermano/a en curso</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
                             </select>
                             <label for="floatingSelectGrid">Hermano/a en curso</label>
                             <span class="instruccion">Ingresa curso de hermano/a</span>
@@ -824,7 +840,10 @@
                           <div class="form-floating w-100">
                             <select class="form-select" id="floatingSelectGrid"
                               aria-label="Floating label select example">
-                              <option selected>C2</option>
+                              <option value="" selected disabled hidden>Situación económica</option>
+                              <option>C1</option>
+                              <option>C2</option>
+                              <option>C3</option>
                             </select>
                             <label for="floatingSelectGrid">Situación económica</label>
                             <span class="instruccion">Ingresa situación enconómica</span>
@@ -851,7 +870,7 @@
                           </div>
                         </div>
                       </div>
-                      <h5 class="mb-4">Vivienda</h5>
+                      <h6 class="mb-4">Vivienda</h6>
                       <div class="row mb-5">
                         <div class="col-12">
                           <div class="form-floating w-100">
@@ -871,10 +890,8 @@
                               aria-label="Floating label select example">
                               <option selected>Arrendada</option>
                             </select>
-                            <label for="floatingSelectGrid">Pertenencia de la
-                              vivienda</label>
-                            <span class="instruccion">Ingresa pertenencia de la
-                              vivienda</span>
+                            <label for="floatingSelectGrid">Pertenencia de la vivienda</label>
+                            <span class="instruccion">Ingresa pertenencia de la vivienda</span>
                           </div>
                         </div>
                       </div>
@@ -885,10 +902,8 @@
                               aria-label="Floating label select example">
                               <option selected>Potable</option>
                             </select>
-                            <label for="floatingSelectGrid">Tipo de suministro de
-                              agua</label>
-                            <span class="instruccion">Ingresa tipo de suministro de
-                              agua</span>
+                            <label for="floatingSelectGrid">Tipo de suministro de agua</label>
+                            <span class="instruccion">Ingresa tipo de suministro de agua</span>
                           </div>
                         </div>
                       </div>
@@ -935,7 +950,7 @@
                           </div>
                         </div>
                       </div>
-                      <h5 class="mb-4">Alumno/s</h5>
+                      <h6 class="mb-4">Alumno/a</h6>
                       <div class="row mb-5">
                         <div class="col-12">
                           <div class="form-floating">
@@ -988,12 +1003,10 @@
                           </div>
                         </div>
                       </div>
-                      <hr>
-                      <div class="row">
+                      <div class="row mb-5">
                         <div class="col-12">
                           <h3 class="fs-16 m-1">
-                            <b>¿Cuenta con el apoyo adulto(s) en su aprendizaje y la
-                              realización de labores escolares?</b>
+                            <b>¿Cuenta con el apoyo adulto(s) en su aprendizaje y la realización de labores escolares?</b>
                           </h3>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3">
@@ -1012,11 +1025,9 @@
                                 </label>
                               </div>
                             </div>
-                            <span class="instruccion">Ingresa una opción</span>
                           </div>
                         </div>
                       </div>
-                      <hr>
                       <div class="row">
                         <div class="col-12">
                           <h6>Observaciones:</h6>
@@ -1089,7 +1100,8 @@
                       </div>
                     </form>
                   </div>
-                  <div class="row justify-content-center my-3">
+                  <hr>
+                  <div class="row justify-content-center mt-4 mb-3">
                     <div class="col-6 col-md-4 mt-2">
                       <button type="button" class="btn btn-primary outline sistema w-100 color-primary"
                         data-bs-dismiss="modal" aria-label="Close">Volver</button>

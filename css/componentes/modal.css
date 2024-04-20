@@ -115,3 +115,7 @@
 .modal-content .form-floating > .form-select {
     padding: 0 24px!important;
 }
+
+.modal-content .btn-close{
+    background: url(../../img/icon-close-modal.svg) no-repeat center;
+}
