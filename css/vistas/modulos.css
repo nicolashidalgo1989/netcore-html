@@ -1,0 +1,111 @@
+.modulos {
+    background-image: url(fondo-seccion-interior.svg);
+    background-position: center 135px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-attachment: fixed;
+    min-height: 90vh;
+    padding-top: 40px;
+    color: var(--color-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+    .modulos .card-shadow {
+        background: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        box-shadow: 0px 0px 16px 4px rgba(28, 0, 47, 0.1);
+        padding: 48px 76px;
+    }
+
+    .button-modulo-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 314px);
+        justify-content: space-between;
+    }
+
+    .modulos .titulo-modulo {
+        color: var(--color-black);
+        font-size: 2rem !important;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .modulos dl{
+        margin: 0;
+    }
+    .modulos .modulo-dl {
+        display: flex;
+    }
+
+    .modulos .modulo-dl dt{
+        margin-right: 8px;
+    }
+
+    .modulos .global-actions{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .modulos .global-actions a{
+        text-decoration: none;
+        color: #6500E4;
+        margin: 0 8px;
+    }
+
+    .modulos .table td{
+        text-align: left;
+    }
+
+    .modulos .table .text-center{
+        text-align: center;
+    }
+
+    .modulos .table .text-right{
+        text-align: right;
+    }
+
+    .modulos .table thead{
+        background: #FFF0E2;
+    }
+
+    .modulos .table th{
+        font-weight: 800;
+    }
+
+    .modulos .table td a{
+        text-decoration:  none;
+    }
+
+    .modulos .table .row-actions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modulos .table .row-actions a{
+        text-align: center;
+        width: 24px;
+        height: 24px;
+        margin: 0;
+    }
+
+    .modulos .table .row-actions a img{
+        width: 100%;
+    }
+
+@media( max-width: 768px){
+    .modulos {
+        background: none;
+    }
+
+    .modulos .card-shadow {
+        padding: 32px;
+    }
+}
