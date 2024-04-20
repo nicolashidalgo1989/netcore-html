@@ -171,9 +171,10 @@
                       <h2 class="mb-3 titulo-modulo">Nóminas</h2>
                       <p class="d-none"></p>
                     </div>
-                    <div class="global-actions"><a href="">
+                    <div class="global-actions">
+                      <a href="">
                         <img src="../img/icon-view.svg" alt="Ver nóminas">
-                        Ver nóminas
+                        Ver nómina
                       </a>
                       <a href="">
                         <img src="../img/icon-download.svg" alt="Descargar Nómina">
@@ -182,7 +183,6 @@
                     </div>
                     <div>
                       <div class="d-lg-none" id="mobileContainer">
-
                         <div class="card-shadow mb-4">
                           <div class="row mb-4">
                             <div class="col-12">
@@ -285,8 +285,31 @@
                         <tbody id="studentTableDesktop">
 
                           <tr>
+                            <td scope="col">346</td>
+                            <td class="text-center">3</td>
+                            <td scope="col">12.124.845-8</td>
+                            <td scope="col">Guzman</td>
+                            <td scope="col">Soto</td>
+                            <td scope="col">Pedro Juan</td>
+                            <td scope="col" class="row-actions">
+                              <a href="">
+                                <img src="../img/icon-delete.svg" alt="Eliminar">
+                              </a>
+                              <a href="">
+                                <img src="../img/icon-detail.svg" alt="Detalle">
+                              </a>
+                              <a href="">
+                                <img src="../img/icon-download.svg" alt="Descargar">
+                              </a>
+                              <a href="#" class="edit-button"  onclick="openModal()">
+                                <img src="../img/icon-edit.svg" alt="Editar">
+                              </a>
+                            </td>
+                          </tr>
+
+                          <tr>
                             <td scope="col">452</td>
-                            <td class="text-center">1</td>
+                            <td class="text-center">2</td>
                             <td scope="col">7044545K</td>
                             <td scope="col">Martinez</td>
                             <td scope="col">Maturana</td>
@@ -360,7 +383,7 @@
               </div>
               <form action="" class="d-lg-none">
                 <div class="form-floating w-100">
-                  <select class="form-select" id="selectEditDataMobile" aria-label="Selección de información a editar">
+                  <select class="form-select" id="selectEditDataMobile" onchange="changeData(event)" aria-label="Selección de información a editar">
                     <option data-bs-toggle="tab" data-bs-target="#generalData" value="generalData">
                       Datos generales
                     </option>
@@ -515,10 +538,10 @@
                 <!-- Datos de Padre-->
                 <div class="py-5 px-lg-5 tab-pane fade show active" id="fatherData" role="tabpanel"
                   aria-labelledby="fatherData-tab">
-                  <h4 class="text-start m-0">Datos de Padre</h4>
+                  <h5 class="text-start m-0">Datos de Padre</h5>
                   <div class="row">
                     <form action="" class="col-12 ingreso">
-                      <h5 class="mb-4">Información personal</h5>
+                      <h6 class="mb-4">Información personal</h6>
                       <div class="row mb-5">
                         <div class="col-12 col-md-6">
                           <div class="form-floating">
@@ -592,7 +615,7 @@
                           </div>
                         </div>
                       </div>
-                      <h5 class="mb-4">Dirección</h5>
+                      <h6 class="mb-4">Dirección</h6>
                       <div class="row mb-5">
                         <div class="col-12">
                           <div class="form-floating">
@@ -631,7 +654,7 @@
                           </div>
                         </div>
                       </div>
-                      <h5 class="mb-4">Contacto</h5>
+                      <h6 class="mb-4">Contacto</h6>
                       <div class="row mb-5">
                         <div class="col-12">
                           <div class="form-floating">
@@ -645,11 +668,11 @@
                     </form>
                   </div>
                   <div class="row justify-content-center my-3">
-                    <div class="col-6 col-md-3 mt-2">
+                    <div class="col-6 col-md-4 mt-2">
                       <button type="button" class="btn btn-primary outline sistema w-100 color-primary"
                         data-bs-dismiss="modal" aria-label="Close">Volver</button>
                     </div>
-                    <div class="col-6 col-md-3 mt-2">
+                    <div class="col-6 col-md-4 mt-2">
                       <button type="button" class="btn btn-primary sistema w-100">Guardar
                         ficha</button>
                     </div>
@@ -658,13 +681,13 @@
                 <!-- Datos sociales-->
                 <div class="py-5 px-lg-5 tab-pane fade" id="socialData" role="tabpanel"
                   aria-labelledby="socialData-tab">
-                  <h4 class="text-start m-0">Datos Familiares</h4>
+                  <h5 class="text-start m-0">Datos Familiares</h5>
                   <div class="row">
                     <form action="" class="col-12 ingreso">
-                      <h5 class="mb-5">Grupo familiar</h5>
+                      <h6 class="mb-5">Grupo familiar</h6>
                       <div class="row mb-4">
                         <div class="col-12 col-md-8 mx-4 my-3">
-                          <h6 class="mb-4">Vive con:</h6>
+                          <p class="mb-4 text-start"><strong>Vive con:</strong></p>
                           <div class="row">
                             <div class="col-4">
                               <div class="form-check">
@@ -1067,11 +1090,11 @@
                     </form>
                   </div>
                   <div class="row justify-content-center my-3">
-                    <div class="col-6 col-md-3 mt-2">
+                    <div class="col-6 col-md-4 mt-2">
                       <button type="button" class="btn btn-primary outline sistema w-100 color-primary"
                         data-bs-dismiss="modal" aria-label="Close">Volver</button>
                     </div>
-                    <div class="col-6 col-md-3 mt-2">
+                    <div class="col-6 col-md-4 mt-2">
                       <button type="button" class="btn btn-primary sistema w-100">Guardar
                         ficha</button>
                     </div>
@@ -1100,14 +1123,12 @@
     };
 
 
-    const changeData = () => {
+    const changeData = (e) => {
       // muestra opcion a editar en mobile
-      document.querySelector('#selectEditDataMobile').addEventListener('change', e => {
-        document.querySelectorAll('.tab-pane').forEach(item => item.classList.remove('show', 'active'));
-        if (document.getElementById(e.target.value)) {
-          document.getElementById(e.target.value).classList.add('show', 'active');
-        }
-      })
+      document.querySelectorAll('.tab-pane').forEach(item => item.classList.remove('show', 'active'));
+      if (document.getElementById(e.target.value)) {
+        document.getElementById(e.target.value).classList.add('show', 'active');
+      }
     }
 
   </script>

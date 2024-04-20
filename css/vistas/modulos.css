@@ -1,5 +1,5 @@
 .modulos {
-    background-image: url(fondo-seccion-interior.svg);
+    background-image: url(../../img/fondo-seccion-interior.svg);
     background-position: center 135px;
     background-repeat: no-repeat;
     background-size: 90%;
@@ -61,6 +61,7 @@
 
     .modulos .table td{
         text-align: left;
+        font-size: 14px;
     }
 
     .modulos .table .text-center{
