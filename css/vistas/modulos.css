@@ -20,6 +20,11 @@
         padding: 48px 76px;
     }
 
+    .modulos .card-shadow.card-nominas{ 
+        border-radius: 20px;
+        box-shadow: 0px 0px 16px 4px rgba(28, 0, 47, 0.1); 
+    }
+
     .button-modulo-container{
         display: grid;
         grid-template-columns: repeat(auto-fill, 314px);
@@ -77,7 +82,8 @@
     }
 
     .modulos .table th{
-        font-weight: 800;
+        font-weight: 800;    
+        font-size: .9rem;
     }
 
     .modulos .table td a{
@@ -102,6 +108,7 @@
     }
 
 @media( max-width: 768px){
+
     .modulos {
         background: none;
     }
@@ -109,4 +116,19 @@
     .modulos .card-shadow {
         padding: 32px;
     }
+ 
+    .modulos .card-shadow.card-nominas{   
+        border-radius: 0;
+        box-shadow: none;
+        padding: 24px;
+    }
+
+    .card-shadow-footer-mobile{
+        background: #FFF0E2;
+        padding: .5rem!important
+    }
+    .card-shadow-footer-mobile a{
+        color: var(--color-black);
+    }
+
 }
