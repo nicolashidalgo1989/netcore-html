@@ -13,6 +13,10 @@
     line-height: normal;
 }
 
+    .modulos.asitencia {
+        background-image: none;
+    }
+
     .modulos .card-shadow {
         background: hsl(0, 0%, 100%);
         border-radius: 20px;
