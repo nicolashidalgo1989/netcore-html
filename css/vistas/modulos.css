@@ -134,7 +134,7 @@
         border-radius:4px;
     }
 
-    .modulos .badge{
+    .badge-square{
         background: #EDEBEE;
         color: white;
         font-size: 16px;
@@ -146,19 +146,19 @@
         line-height: 22px;
     }
 
-    .modulos .badge.success{
+    .badge-square.success{
         background: #03BB85;
     }
-    .modulos .badge.danger{
+    .badge-square.danger{
         background: #CB014A;
     }
-    .modulos .badge.warning{
+    .badge-square.warning{
         background: var(--color-auxiliar-comp);
     }
-    .modulos .badge.primary{
+    .badge-square.primary{
         background: var(--color-secondary);
     }
-    .modulos .badge.default{
+    .badge-square.default{
         background: #F2F2F2;
         color: #323232;
     }
@@ -178,12 +178,16 @@
         color: var(--color-black);
     }
 
-    td, th{
+    .modulos.asistencia .btn{
+        padding: 6px 24px;
+        font-size: 14px;
+    }
+
+    .modulos.asistencia .table td, th{
         vertical-align: middle;
     }
 
-    input[type="checkbox"]{
-        border: 1px solid var(--color-primary);
+    .modulos.asistencia .table th input[type="checkbox"]{
         width: 16px;
         height: 16px;
     }

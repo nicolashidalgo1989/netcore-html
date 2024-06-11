@@ -118,6 +118,7 @@
 
 .modal-content .modal-edit-data .btn-close{
     background: url(../../img/icon-close-modal.svg) no-repeat center;
+    background-size: contain;
     height: 30px;
     width: auto;
     box-sizing: content-box;
@@ -125,4 +126,58 @@
     border: 0;
     border-radius: 0;
     opacity: .5;
+}
+
+.modal-content  .form-control-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+}
+
+.wizard{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.wizard .wizard-item{
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: color .3s ease-in-out;
+}
+
+.wizard .wizard-item:before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin: 0 auto 12px;
+    background: var(--color-primary);
+    transition: background-color .3s ease-in-out;
+}
+
+.wizard .wizard-item.disabled{
+    color: #989898;
+}
+
+.wizard .wizard-item.disabled:before{
+    background-color: #989898;
+}
+
+.wizard .line{
+    display: inline-block;
+    width: 170px;
+    height: 4px;
+    margin: 0 24px;
+    background-color: var(--color-primary);
+    transition: background-color .3s ease-in-out;
+}
+
+.wizard .line.disabled{
+    background-color: #989898;
 }
