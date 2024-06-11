@@ -181,3 +181,10 @@
 .wizard .line.disabled{
     background-color: #989898;
 }
+
+@media (min-width: 768px) {
+    .modal-xxl {
+        width: 90%;
+        max-width:1400px;
+    }
+  }
