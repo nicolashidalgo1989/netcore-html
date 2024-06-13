@@ -222,12 +222,12 @@
                     <div class="col-12">
                       <ul class="nav nav-underline nav-tabs justify-content-end" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="assistance-day-tab" data-bs-toggle="tab" data-bs-target="#assistance-day-tab-pane" type="button" role="tab" aria-controls="assistance-day-tab-pane" aria-selected="true">
+                          <button class="nav-link pe-0" id="assistance-day-tab" data-bs-toggle="tab" data-bs-target="#assistance-day-tab-pane" type="button" role="tab" aria-controls="assistance-day-tab-pane" aria-selected="true">
                             Asistencia diaria
                           </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="assistance-class-tab" data-bs-toggle="tab" data-bs-target="#assistance-class-tab-pane" type="button" role="tab" aria-controls="assistance-class-tab-pane" aria-selected="true">
+                          <button class="nav-link active pe-0" id="assistance-class-tab" data-bs-toggle="tab" data-bs-target="#assistance-class-tab-pane" type="button" role="tab" aria-controls="assistance-class-tab-pane" aria-selected="true">
                             Asistencia por clase
                           </button>
                         </li>
@@ -236,28 +236,36 @@
                     <div class="tab-content" id="myTabContent">
                       <!-- Asistencia diaria -->
                       <div class="tab-pane fade" id="assistance-day-tab-pane" role="tabpanel" aria-labelledby="assistance-day" tabindex="0">
-                        <div class="d-flex flex-direction-row justify-content-between mb-3">
-                          <h2 class="titulo-modulo">Asistencia diaria</h2>
-                          <ul class="list-group d-flex flex-row border-none justify-content-space-around">
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square success">P</span>
-                              Presente
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square danger">A</span>
-                              Ausente
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square default">P</span>
-                              Default
-                            </li>
-                          </ul>
+                        <div class="container mb-4 px-2">
+                          <div class="row">
+                            <div class="col-xxl-4 px-0">
+                              <h2 class="titulo-modulo mb-0">Asistencia diaria</h2>
+                            </div>
+                            <div class="col-xxl-8 d-flex align-items-center justify-content-end my-3 my-xxl-0">
+                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                <span class="badge badge-square success">P</span>
+                                <span class="fs-12"> Presente </span>
+                              </div>
+                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                <span class="badge badge-square danger">A</span>
+                                <span class="fs-12"> Ausente </span>
+                              </div>
+                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                <span class="badge badge-square default">P</span>
+                                <span class="fs-12"> Default </span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                          <p class="m-0">Selecciona el día para realizar el registro de asistencia</p>
-                          <div>
-                            <a onclick="openModal('modalEnviarDatosSIGE')" href="#" class="btn btn-primary outline color-primary mx-2">Enviar datos SIGE</a>
-                            <a onclick="openModal('modalRegistrarAsistencia')" href="#" class="btn btn-primary disabled text-light btn-reg">Registro de asistencia</a>
+                        <div class="container mb-4 px-0">
+                          <div class="row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                              <p class="m-0">Selecciona el día para realizar el registro de asistencia</p>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                              <a onclick="openModal('modalEnviarDatosSIGE')" href="#" class="btn btn-primary outline color-primary mx-2">Enviar datos SIGE</a>
+                              <a onclick="openModal('modalRegistrarAsistencia')" href="#" class="btn btn-primary disabled text-light btn-reg">Registro de asistencia</a>
+                            </div>
                           </div>
                         </div>
                         <div>
@@ -464,39 +472,50 @@
                       </div>
                       <!-- Asistencia por clase -->
                       <div class="tab-pane fade show active" id="assistance-class-tab-pane" role="tabpanel" aria-labelledby="assistance-class" tabindex="0">
-                        <div class="d-flex flex-direction-row justify-content-between mb-3">
-                          <h2 class="titulo-modulo">Asistencia por clase</h2>
-                          <p class="d-none"></p>
-                          <ul class="list-group d-flex flex-row border-none justify-content-space-around">
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square success">P</span>
-                              Presente
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square danger">A</span>
-                              Ausente
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square warning">AT</span>
-                              Atraso
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square primary">R</span>
-                              Retirado
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square default"> </span>
-                              No aplica
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                              <span class="badge badge-square default">P</span>
-                              Default
-                            </li>
-                          </ul>
+                        <div class="container mb-4 px-2">
+                          <div class="row">
+                            <div class="col-xxl-4 px-0">
+                              <h2 class="titulo-modulo mb-0">Asistencia por clase</h2>
+                            </div>
+                            <div class="col-xxl-8 d-flex align-items-center justify-content-end my-3 my-xxl-0 ps-0">
+                              <div class="row d-flex w-100 justify-xxl-content-end">
+                                <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                  <span class="badge badge-square success">P</span>
+                                  <span class="fs-12"> Presente </span>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                  <span class="badge badge-square danger">A</span>
+                                  <span class="fs-12"> Ausente </span>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                  <span class="badge badge-square warning">AT</span>
+                                  <span class="fs-12"> Atraso </span>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                  <span class="badge badge-square primary">R</span>
+                                  <span class="fs-12"> Retirado </span>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                  <span class="badge badge-square default"> </span>
+                                  <span class="fs-12"> No aplica </span>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                                  <span class="badge badge-square default">P</span>
+                                  <span class="fs-12"> Default </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                          <p class="m-0">Selecciona la o las clases para realizar el registro de asistencia</p>
-                          <a onclick="openModal('modalRegistrarAsistencia')" href="#" class="btn btn-primary disabled text-light btn-reg">Registro de asistencia</a>
+                        <div class="container mb-4 px-0">
+                          <div class="row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                              <p class="m-0">Selecciona la o las clases para realizar el registro de asistencia</p>
+                            </div>
+                            <div class="col-lg-6 d-flex justify-content-end">
+                              <a onclick="openModal('modalRegistrarAsistencia')" href="#" class="btn btn-primary disabled text-light btn-reg">Registro de asistencia</a>
+                            </div>
+                          </div>
                         </div>
                         <div>
                           <table class="table caption-top d-none d-lg-table">
@@ -1130,32 +1149,35 @@
                   <button type="button" class="btn btn-primary sistema w-100">Siguiente</button>
                 </div>
               </div>
-              <ul class="list-group d-flex flex-row border-none justify-content-end">
-                <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                  <span class="badge badge-square success">P</span>
-                  Presente
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                  <span class="badge badge-square">A</span>
-                  Ausente
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                  <span class="badge badge-square warning">AT</span>
-                  Atraso
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                  <span class="badge badge-square primary">R</span>
-                  Retirado
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                  <span class="badge badge-square default"> </span>
-                  No aplica
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center p-0 border-0 rounded-0">
-                  <span class="badge badge-square default">P</span>
-                  Default
-                </li>
-              </ul>
+              <div class="container my-3 my-xxl-0 ps-0">
+                <div class="row d-flex w-100 justify-content-end">
+                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                    <span class="badge badge-square success">P</span>
+                    <span class="fs-12"> Presente </span>
+                  </div>
+                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                    <span class="badge badge-square danger">A</span>
+                    <span class="fs-12"> Ausente </span>
+                  </div>
+                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                    <span class="badge badge-square warning">AT</span>
+                    <span class="fs-12"> Atraso </span>
+                  </div>
+                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                    <span class="badge badge-square primary">R</span>
+                    <span class="fs-12"> Retirado </span>
+                  </div>
+                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                    <span class="badge badge-square default"> </span>
+                    <span class="fs-12"> No aplica </span>
+                  </div>
+                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                    <span class="badge badge-square default">P</span>
+                    <span class="fs-12"> Default </span>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
