@@ -16,6 +16,8 @@
         border-color: #FFE476;
     }
 
+    alert-warning
+
     .alertas .alert.alert-info {
         border-color: #8AE4F6;
         background: var(--color-white);

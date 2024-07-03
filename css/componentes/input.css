@@ -467,4 +467,13 @@ input:-internal-autofill-selected {
             display: block;
         }
     }
+
+    .firma-input{
+        width: 24px;
+        height: 24px; 
+        padding: 16px; 
+        margin-right: 8px; 
+        border-radius: 4px;
+        border: 2px solid black;
+    }
     /**********End File Inputs**********/

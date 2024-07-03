@@ -185,6 +185,8 @@
     .modulos.asistencia .btn{
         padding: 6px 24px;
         font-size: 14px;
+        display: flex;
+        align-items: center;
     }
 
     .modulos.asistencia .table td, th{
@@ -195,6 +197,13 @@
         width: 16px;
         height: 16px;
     }
+
+    .modulos.asistencia .alert.alert-warning { 
+        border-radius: 20px;
+        border: 1px solid #FFF0B3;
+        background: #FFF9E1;
+    } 
+
 
 @media( max-width: 768px){
 

@@ -830,354 +830,458 @@
         <div class="modal-body">
           <div class="container">
             <div class="modal-edit-data">
-              <div class="d-flex align-items-start">
-                <ul class="wizard">
-                  <li class="wizard-item">Registro de clase</li>
-                  <span class="line disabled"></span>
-                  <li class="wizard-item disabled">Firmar asistencia diaria</li>
-                </ul>
-                <div class="col-1 d-flex align-items-center justify-content-end">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-              </div>
-              <h4 class="mb-4 text-start">Registro de asistencia por Clase</h4>
-              <h5 class="mb-4">
-                <span class="fw-bold">Clase:</span> 2° Básico A
-              </h5>
-              <h6 class="fw-bold mb-4">Clases seleccionadas</h6>
-              <div class="d-flex mb-3">
-                <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
-                  <input type="checkbox" checked disabled/>
-                  <label for="" class="d-flex flex-column input-group">
-                    <small class="fw-bold">Tecnología</small>
-                    <small >08:00 - 09:30</small>
-                  </label>
-                </div>
-                <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
-                  <input type="checkbox" checked disabled/>
-                  <label for="" class="d-flex flex-column input-group">
-                    <small class="fw-bold">Educación Física</small>
-                    <small >12:15 - 13:45</small>
-                  </label>
-                </div>
-                <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
-                  <input type="checkbox" checked disabled/>
-                  <label for="" class="d-flex flex-column input-group">
-                    <small class="fw-bold">Idioma extranjero</small>
-                    <small >14:00 - 15:45</small>
-                  </label>
-                </div>
-                <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
-                  <input type="checkbox" checked disabled/>
-                  <label for="" class="d-flex flex-column input-group">
-                    <small class="fw-bold">Idioma extranjero</small>
-                    <small >16:00 - 17:45</small>
-                  </label>
-                </div>
-                <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
-                  <input type="checkbox" checked disabled/>
-                  <label for="" class="d-flex flex-column input-group">
-                    <small class="fw-bold">Lenguaje y comunicación</small>
-                    <small >18:00 - 19:45</small>
-                  </label>
-                </div>
-              </div>
-              <div class="overflow-scroll table-responsive" style="max-height: 301px;">
-                <table class="table caption-top">
-                  <thead>
-                    <tr style="background-color: #FFF0E2;">
-                      <th scope="col"> Nº </th>
-                      <th scope="col"> Alumno </th>
-                      <th scope="col" class="text-center"> Presente </th>
-                      <th scope="col" class="text-center"> Ausente </th>
-                      <th scope="col" class="text-center"> Atrasado </th>
-                      <th scope="col" class="text-center"> Retirado </th>
-                      <th scope="col"> Observaciones </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="align-middle">
-                      <td scope="col">1</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Emanuel Pérez Astorga</span>
-                          <span>15.111.623-8</span>
+              <form action="" class="wizard" id="wizardAsistencia">
+                <aside class="wizard-content container">
+                  <div class="d-flex align-items-start">
+                    <ul class="wizard-list">
+                      <li class="wizard-item">Registro de clase</li>
+                      <span class="line disabled"></span>
+                      <li class="wizard-item disabled">Firmar asistencia diaria</li>
+                    </ul>
+                    <div class="col-1 d-flex align-items-center justify-content-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div> 
+                  <div class="wizard-step active" data-step="0"> 
+                    <h4 class="mb-4 text-start">Registro de asistencia por Clase</h4>
+                    <h5 class="mb-4">
+                      <span class="fw-bold">Clase:</span> 2° Básico A
+                    </h5>
+                    <h6 class="fw-bold mb-4">Clases seleccionadas</h6>
+                    <div class="d-flex mb-3">
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Tecnología</small>
+                          <small >08:00 - 09:30</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Educación Física</small>
+                          <small >12:15 - 13:45</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Idioma extranjero</small>
+                          <small >14:00 - 15:45</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Idioma extranjero</small>
+                          <small >16:00 - 17:45</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Lenguaje y comunicación</small>
+                          <small >18:00 - 19:45</small>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="overflow-scroll table-responsive" style="max-height: 301px;">
+                      <table class="table caption-top">
+                        <thead>
+                          <tr style="background-color: #FFF0E2;">
+                            <th scope="col"> Nº </th>
+                            <th scope="col"> Alumno </th>
+                            <th scope="col" class="text-center"> Presente </th>
+                            <th scope="col" class="text-center"> Ausente </th>
+                            <th scope="col" class="text-center"> Atrasado </th>
+                            <th scope="col" class="text-center"> Retirado </th>
+                            <th scope="col"> Observaciones </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <td scope="col">1</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Emanuel Pérez Astorga</span>
+                                <span>15.111.623-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square success">P</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">A</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">AT</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">R</span>
+                            </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">2</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Nicolas Hidalgo C.</span>
+                                <span>18.211.123-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">P</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square danger">A</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">AT</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">R</span>
+                            </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">3</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Francesca</span>
+                                <span>18.211.123-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">P</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">A</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square warning">AT</span>
+                            </td>
+                            <td scope="col" class="text-center">
+                              <span class="badge badge-square default">R</span>
+                            </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">4</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Valentina</span>
+                                <span>18.211.123-8</span>
+                              </div>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square primary">R</span>
+                              </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">4</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Valentina</span>
+                                <span>18.211.123-8</span>
+                              </div>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square primary">R</span>
+                              </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">4</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Valentina</span>
+                                <span>18.211.123-8</span>
+                              </div>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square primary">R</span>
+                              </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">4</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Valentina</span>
+                                <span>18.211.123-8</span>
+                              </div>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square primary">R</span>
+                              </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">4</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Valentina</span>
+                                <span>18.211.123-8</span>
+                              </div>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square primary">R</span>
+                              </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="row justify-content-end mt-4 mb-3">
+                      <div class="col-6 col-md-3 my-2">
+                        <button
+                          type="button"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                          class="btn btn-primary outline sistema w-100 color-primary"
+                          >
+                          Cancelar
+                        </button>
+                      </div>
+                      <div class="col-6 col-md-3 my-2">
+                        <button type="button" class="btn btn-primary sistema w-100" onclick="wizardStep(event)">Siguiente</button>
+                      </div>
+                    </div>
+                    <div class="container my-3 my-xxl-0 ps-0">
+                      <div class="row d-flex w-100 justify-content-end">
+                        <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                          <span class="badge badge-square success">P</span>
+                          <span class="fs-12"> Presente </span>
                         </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square success">P</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">A</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">AT</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">R</span>
-                      </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">2</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Nicolas Hidalgo C.</span>
-                          <span>18.211.123-8</span>
+                        <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                          <span class="badge badge-square danger">A</span>
+                          <span class="fs-12"> Ausente </span>
                         </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">P</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square danger">A</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">AT</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">R</span>
-                      </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">3</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Francesca</span>
-                          <span>18.211.123-8</span>
+                        <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                          <span class="badge badge-square warning">AT</span>
+                          <span class="fs-12"> Atraso </span>
                         </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">P</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">A</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square warning">AT</span>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <span class="badge badge-square default">R</span>
-                      </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">4</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Valentina</span>
-                          <span>18.211.123-8</span>
-                        </div>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">P</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">A</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">AT</span>
-                        </td>
-                        <td scope="col" class="text-center">
+                        <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
                           <span class="badge badge-square primary">R</span>
-                        </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">4</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Valentina</span>
-                          <span>18.211.123-8</span>
+                          <span class="fs-12"> Retirado </span>
                         </div>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">P</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">A</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">AT</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square primary">R</span>
-                        </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">4</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Valentina</span>
-                          <span>18.211.123-8</span>
+                        <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                          <span class="badge badge-square default"> </span>
+                          <span class="fs-12"> No aplica </span>
                         </div>
-                        <td scope="col" class="text-center">
+                        <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
                           <span class="badge badge-square default">P</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">A</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">AT</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square primary">R</span>
-                        </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">4</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Valentina</span>
-                          <span>18.211.123-8</span>
+                          <span class="fs-12"> Default </span>
                         </div>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">P</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">A</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">AT</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square primary">R</span>
-                        </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">4</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Valentina</span>
-                          <span>18.211.123-8</span>
-                        </div>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">P</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">A</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square default">AT</span>
-                        </td>
-                        <td scope="col" class="text-center">
-                          <span class="badge badge-square primary">R</span>
-                        </td>
-                      <td scope="col">
-                        <form action="" class="ingreso">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                            <label for="float1">Escribe tu observación aquí</label>
-                            <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                          </div>
-                        </form>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wizard-step" data-step="1"> 
+                    <h4 class="mb-4 text-start">Firmar asistencia por clase</h4>
+                    <h5 class="mb-4">Martes 9/03/2024</h5>
+                    <div class="d-flex mb-3 align-items-center">
+                      <h6 class="mb-4">Ausentes</h6>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Tecnología</small>
+                          <small >08:00 - 09:30</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Educación Física</small>
+                          <small >12:15 - 13:45</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Idioma extranjero</small>
+                          <small >14:00 - 15:45</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Idioma extranjero</small>
+                          <small >16:00 - 17:45</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column input-group">
+                          <small class="fw-bold">Lenguaje y comunicación</small>
+                          <small >18:00 - 19:45</small>
+                        </label>
+                      </div>
+                    </div>
+                    <p class="text-left">Ingresa el código para firmar. Revisa tu app de autentificador e ingresa el código</p> 
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                      <img src="../img/icon-warning.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
+                      <div>Al enviar datos a SIGE, se verificará su concordancia con los registros previos en el sistema.</div>
+                    </div>
+                    <div class="overflow-scroll table-responsive" style="max-height: 301px;">
+                      <table class="table caption-top">
+                        <thead>
+                          <tr style="background-color: #FFF0E2;">
+                            <th scope="col"> Nombre </th>
+                            <th scope="col"> Cargo </th>
+                            <th scope="col"> Estado </th>
+                            <th scope="col"> Firma </th>
+                            <th scope="col"> Observaciones </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <td scope="col">Felipe Sotomayor Leiva</td>
+                            <td scope="col">Profesor titular</td>
+                            <td scope="col">Pendiente</td>
+                            <td scope="col" class="d-flex flex-wrap">
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                            </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="row justify-content-end mt-4 mb-3">
+                      <div class="col-6 col-md-2 mt-2">
+                        <button
+                          type="button"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                          class="btn btn-primary outline sistema w-100 color-primary" 
+                          onclick="closeModal(event)"
+                          >
+                          Cancelar
+                        </button>
+                      </div>
+                      <div class="col-6 col-md-2 mt-2">
+                        <button type="button" class="btn btn-primary sistema w-100" onclick="wizardStep(event)">Validar código</button>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
               </div>
-              <div class="row justify-content-end mt-4 mb-3">
-                <div class="col-6 col-md-3 my-2">
-                  <button
-                    type="button"
-                    aria-label="Close"
-                    data-bs-dismiss="modal"
-                    class="btn btn-primary outline sistema w-100 color-primary"
-                    >
-                    Cancelar
-                  </button>
-                </div>
-                <div class="col-6 col-md-3 my-2">
-                  <button type="button" class="btn btn-primary sistema w-100">Siguiente</button>
-                </div>
-              </div>
-              <div class="container my-3 my-xxl-0 ps-0">
-                <div class="row d-flex w-100 justify-content-end">
-                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
-                    <span class="badge badge-square success">P</span>
-                    <span class="fs-12"> Presente </span>
-                  </div>
-                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
-                    <span class="badge badge-square danger">A</span>
-                    <span class="fs-12"> Ausente </span>
-                  </div>
-                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
-                    <span class="badge badge-square warning">AT</span>
-                    <span class="fs-12"> Atraso </span>
-                  </div>
-                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
-                    <span class="badge badge-square primary">R</span>
-                    <span class="fs-12"> Retirado </span>
-                  </div>
-                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
-                    <span class="badge badge-square default"> </span>
-                    <span class="fs-12"> No aplica </span>
-                  </div>
-                  <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
-                    <span class="badge badge-square default">P</span>
-                    <span class="fs-12"> Default </span>
-                  </div>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -1193,889 +1297,963 @@
         <div class="modal-body">
           <div class="container">
             <div class="modal-edit-data">
-              <div class="d-flex align-items-start">
-                <ul class="wizard">
-                  <li class="wizard-item">Registro de datos SIGE</li>
-                  <span class="line disabled"></span>
-                  <li class="wizard-item disabled">Enviar datos SIGE</li>
-                </ul>
-                <div class="col-1 d-flex align-items-center justify-content-end">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-              </div>
-              <h4 class="mb-4 text-start">Registro de datos</h4>
-              <h6>Marzo</h6>
-              <!-- Table sige -->
-              <div class="overflow-scroll table-responsive" style="max-height: 301px;">
-                <table class="table caption-top">
-                  <thead>
-                    <tr style="background-color: #FFF0E2;">
-                      <th scope="col">
-                        <div class="d-flex">
-                          Nº
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex">
-                          Alumno
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Lun</small>
-                            <small>1</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mar</small>
-                            <small>2</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mie</small>
-                            <small>3</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Jue</small>
-                            <small>4</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Vie</small>
-                            <small>5</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Lun</small>
-                            <small>8</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mar</small>
-                            <small>9</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mie</small>
-                            <small>10</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Jue</small>
-                            <small>11</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Vie</small>
-                            <small>12</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Lun</small>
-                            <small>15</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mar</small>
-                            <small>16</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mie</small>
-                            <small>17</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Jue</small>
-                            <small>18</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Vie</small>
-                            <small>19</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Lun</small>
-                            <small>22</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mar</small>
-                            <small>21</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mie</small>
-                            <small>22</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Jue</small>
-                            <small>23</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Vie</small>
-                            <small>24</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Lun</small>
-                            <small>27</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mar</small>
-                            <small>28</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Mie</small>
-                            <small>29</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Jue</small>
-                            <small>30</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                          <input type="checkbox" />
-                          <label for="" class="d-flex flex-column">
-                            <small class="fw-bold">Vie</small>
-                            <small>31</small>
-                          </label>
-                        </div>
-                      </th>
-                      <th scope="col"> prom </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="align-middle">
-                      <td scope="col">1</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Emanuel Pérez Astorga</span>
-                          <span>15.111.623-8</span>
-                        </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        16:00
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">1</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Emanuel Pérez Astorga</span>
-                          <span>15.111.623-8</span>
-                        </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        16:00
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">1</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Emanuel Pérez Astorga</span>
-                          <span>15.111.623-8</span>
-                        </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        16:00
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">1</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Emanuel Pérez Astorga</span>
-                          <span>15.111.623-8</span>
-                        </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        16:00
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">1</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Emanuel Pérez Astorga</span>
-                          <span>15.111.623-8</span>
-                        </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        16:00
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">1</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Emanuel Pérez Astorga</span>
-                          <span>15.111.623-8</span>
-                        </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        16:00
-                      </td>
-                    </tr>
-                    <tr class="align-middle">
-                      <td scope="col">6</td>
-                      <td scope="col">
-                        <div class="d-flex flex-column">
-                          <span>Nicolas Hidalgo</span>
-                          <span>11.131.614-K</span>
-                        </div>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" checked disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        <input type="checkbox" disabled>
-                      </td>
-                      <td scope="col" class="text-center">
-                        15:00
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row justify-content-end mt-4 mb-3">
-                <div class="col-6 col-md-2 mt-2">
-                  <button
-                    type="button"
-                    aria-label="Close"
-                    data-bs-dismiss="modal"
-                    class="btn btn-primary outline sistema w-100 color-primary"
-                    >
-                    Cancelar
-                  </button>
-                </div>
-                <div class="col-6 col-md-2 mt-2">
-                  <button type="button" class="btn btn-primary sistema w-100">Siguiente</button>
-                </div>
-              </div>
+              <form action="" class="wizard" id="wizardSIGE">
+                <aside class="wizard-content container">
+                  <div class="d-flex align-items-start">
+                    <ul class="wizard-list">
+                      <li class="wizard-item">Registro de datos SIGE</li>
+                      <span class="line disabled"></span>
+                      <li class="wizard-item disabled">Enviar datos SIGE</li>
+                    </ul>
+                    <div class="col-1 d-flex align-items-center justify-content-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div>
+                  <div class="wizard-step active" data-step="0"> 
+                    <h4 class="mb-4 text-start">Registro de datos</h4>
+                    <h6>Marzo</h6>
+                    <!-- Table sige -->
+                    <div class="overflow-scroll table-responsive" style="max-height: 301px;">
+                      <table class="table caption-top">
+                        <thead>
+                          <tr style="background-color: #FFF0E2;">
+                            <th scope="col">
+                              <div class="d-flex">
+                                Nº
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="d-flex">
+                                Alumno
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Lun</small>
+                                  <small>1</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mar</small>
+                                  <small>2</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mie</small>
+                                  <small>3</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Jue</small>
+                                  <small>4</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Vie</small>
+                                  <small>5</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Lun</small>
+                                  <small>8</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mar</small>
+                                  <small>9</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mie</small>
+                                  <small>10</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Jue</small>
+                                  <small>11</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Vie</small>
+                                  <small>12</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Lun</small>
+                                  <small>15</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mar</small>
+                                  <small>16</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mie</small>
+                                  <small>17</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Jue</small>
+                                  <small>18</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Vie</small>
+                                  <small>19</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Lun</small>
+                                  <small>22</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mar</small>
+                                  <small>21</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mie</small>
+                                  <small>22</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Jue</small>
+                                  <small>23</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Vie</small>
+                                  <small>24</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Lun</small>
+                                  <small>27</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mar</small>
+                                  <small>28</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Mie</small>
+                                  <small>29</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Jue</small>
+                                  <small>30</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col" class="ps-0 pe-1">
+                              <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <input type="checkbox" />
+                                <label for="" class="d-flex flex-column">
+                                  <small class="fw-bold">Vie</small>
+                                  <small>31</small>
+                                </label>
+                              </div>
+                            </th>
+                            <th scope="col"> prom </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <td scope="col">1</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Emanuel Pérez Astorga</span>
+                                <span>15.111.623-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              16:00
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">1</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Emanuel Pérez Astorga</span>
+                                <span>15.111.623-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              16:00
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">1</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Emanuel Pérez Astorga</span>
+                                <span>15.111.623-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              16:00
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">1</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Emanuel Pérez Astorga</span>
+                                <span>15.111.623-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              16:00
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">1</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Emanuel Pérez Astorga</span>
+                                <span>15.111.623-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              16:00
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">1</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Emanuel Pérez Astorga</span>
+                                <span>15.111.623-8</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              16:00
+                            </td>
+                          </tr>
+                          <tr class="align-middle">
+                            <td scope="col">6</td>
+                            <td scope="col">
+                              <div class="d-flex flex-column">
+                                <span>Nicolas Hidalgo</span>
+                                <span>11.131.614-K</span>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" checked disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              <input type="checkbox" disabled>
+                            </td>
+                            <td scope="col" class="text-center ps-0 pe-1">
+                              15:00
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div> 
+                    <div class="row justify-content-end mt-4 mb-3">
+                      <div class="col-6 col-md-2 mt-2">
+                        <button
+                          type="button"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                          class="btn btn-primary outline sistema w-100 color-primary" 
+                          onclick="closeModal(event)"
+                          >
+                          Cancelar
+                        </button>
+                      </div>
+                      <div class="col-6 col-md-2 mt-2">
+                        <button type="button" class="btn btn-primary sistema w-100" onclick="wizardStep(event)">Siguiente</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wizard-step" data-step="1">
+                    <h4 class="text-start">Enviar datos SIGE</h4>
+                    <h6 class="mb-4 fw-light">Marzo</h6>
+                    <h6 class="mb-4">Selección de días</h6>
+                    <div class="d-flex my-4">
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center mx-4">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column">
+                          <small class="fw-bold">Lunes</small>
+                          <small>2</small>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column justify-content-center align-items-center text-center mx-4">
+                        <input type="checkbox" checked disabled/>
+                        <label for="" class="d-flex flex-column">
+                          <small class="fw-bold">Martes</small>
+                          <small>3</small>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                      <img src="../img/icon-warning.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
+                      <div>Al enviar datos a SIGE, se verificará su concordancia con los registros previos en el sistema.</div>
+                    </div>
+                    <div class="overflow-scroll table-responsive" style="max-height: 301px;">
+                      <table class="table caption-top">
+                        <thead>
+                          <tr style="background-color: #FFF0E2;">
+                            <th scope="col"> Nombre </th>
+                            <th scope="col"> Cargo </th>
+                            <th scope="col"> Observaciones </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <td scope="col">Felipe Sotomayor Leiva</td>
+                            <td scope="col">Profesor titular</td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="row justify-content-end mt-4 mb-3">
+                      <div class="col-6 col-lg-2 col-md-3 col-sm-3 mt-2">
+                        <button
+                          type="button"
+                          aria-label="Close"
+                          data-bs-dismiss="modal"
+                          class="btn btn-primary outline sistema w-100 color-primary"
+                          onclick="wizardStep(event)"
+                          >
+                          Atrás
+                        </button>
+                      </div>
+                      <div class="col-6 col-lg-2 col-md-3 col-sm-3 mt-2">
+                        <button type="button" class="btn btn-primary sistema w-100" onclick="closeModal()">Enviar datos SIGE</button>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </form>
             </div>
           </div>
         </div>
@@ -2090,12 +2268,16 @@
     crossorigin="anonymous"></script>
 
   <script>
-
-    // Abre modal cuando carga página
-
+  
+    // Abre modal cuando carga página 
     const openModal = id => {
       var myModal = new bootstrap.Modal(document.getElementById(id), {});
       myModal.show();
+    }
+
+    const closeModal = id => {
+      var myModal = new bootstrap.Modal(document.getElementById(id), {});
+      myModal.hide();
     }
 
     let checkboxs = document.querySelectorAll(".input-group input");
@@ -2119,7 +2301,21 @@
       }
     }
 
+    let actualStep = 0;
+
+    const wizardStep = e => { 
+      if(actualStep < 0) return; 
+      const step = e.target.parentElement.parentElement.parentElement.getAttribute('data-step');
+      const wizardId = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('id');
+      const wizard = document.querySelectorAll(`#${wizardId} .wizard-step`);
+      wizard[step].classList.remove('active'); 
+      let intStep = parseInt(step);
+      let nextStep = (actualStep > intStep) ? (--intStep) : (++intStep);
+      wizard[ nextStep ].classList.add('active');   
+    }
+
   </script>
+
 </body>
 
 </html>
