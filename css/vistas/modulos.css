@@ -81,7 +81,8 @@
         text-align: right;
     }
 
-    .modulos .table thead{
+    .modulos .table thead,
+    .modulos .table tfoot{
         background: #FFF0E2;
     }
 
@@ -109,7 +110,7 @@
 
     .modulos .table .row-actions a img{
         width: 100%;
-    }
+    } 
 
     .modulos .nav-tabs.nav-underline .nav-link{
         color: var(--color-black);
