@@ -359,7 +359,7 @@
                                   </div>
                                 </th> 
                                 <th scope="col" class="text-center px-0 border-x">
-                                  <div class="head-column-note active">
+                                  <div class="head-column-note active cursor-pointer" onclick="openModal('modalGrupoClasificaciones')">
                                     <div class="d-flex flex-column">
                                       <span class="edit-note d-flex align-items-center justify-content-center">
                                         <span>N4</span>
@@ -767,7 +767,7 @@
               <div class="row mb-4">
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea class="form-control" id="float1" placeholder="Ingresa descripción"></textarea>
+                    <textarea class="form-control" id="float1" placeholder="Ingresa descripción" rows="4" style="height: auto"></textarea>
                     <label for="float1">Descripción del instrumento</label> 
                   </div>
                 </div>
@@ -829,6 +829,259 @@
                 </div>
               </div>
             </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- modal grupo de clasificaciones -->
+  <div class="modal fade" id="modalGrupoClasificaciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+      <div class="modal-content py-5 px-4">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row modal-edit-data-title mb-5">
+              <div class="col-11">
+                <h4 class="text-start">Grupo calificaciones: Controles</h4>
+                <p class="text-start"><small>Historia, Geografía y Ciencias Sociales -2 Básivo A / Primer Semestre</small></p>
+              </div>
+              <div class="col-1 d-flex align-items-center justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>  
+            <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions">     
+              <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
+                <a href="" class="mx-0 fs-7 px-2 d-flex align-items-center"> 
+                  <span class="material-icons fs-6">arrow_back</span>
+                  Regresar
+                </a> 
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
+                <a onclick="openModal('modalAgregarEvaluacion')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around"> 
+                  <img src="../img/icon-add.svg" alt="Agregar" style="width: 16px; height: 16px;">
+                  Agregar Evaluación
+                </a> 
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 col-lg-auto mb-3 mb-lg-0">
+                <a onclick="openModal('modalGuardar')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary text-light justify-content-around"> 
+                  <img src="../img/icon-save.svg" alt="Guardar" style="width: 16px; height: 16px;">
+                  Guardar
+                </a> 
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-12">
+                <div class="alert alert-success" role="alert"> 
+                  <div class="icon-check me-3">
+                    <span class="material-icons">
+                      done
+                    </span>
+                  </div>
+                  <div>La evaluación [NX] se ha guardado correctamente</div> 
+                  <button type="button" class="btn-close-alert ms-auto mb-auto" aria-label="Close" onclick="hideAlert(event)"></button> 
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <div class="d-flex">
+                        Nº
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="d-flex">
+                        Estudiantes
+                      </div>
+                    </th>
+                    <th scope="col" class="text-center px-0 border-x">
+                      <div class="head-column-note">
+                        <div class="d-flex flex-column">
+                          <span class="edit-note d-flex align-items-center justify-content-center">
+                            <span>N1</span>
+                            <span class="material-icons fs-5 ms-1"> edit</span>
+                          </span>
+                          10%
+                        </div>
+                      </div>
+                    </th> 
+                    <th scope="col" class="text-center px-0 border-x">
+                      <div class="head-column-note">
+                        <div class="d-flex flex-column">
+                          <span class="edit-note d-flex align-items-center justify-content-center">
+                            <span>N2</span>
+                            <span class="material-icons fs-5 ms-1"> edit</span>
+                          </span>
+                          30%
+                        </div>
+                      </div>
+                    </th> 
+                    <th scope="col" class="text-center px-0 border-x">
+                      <div class="head-column-note">
+                        <div class="d-flex flex-column">
+                          <span class="edit-note d-flex align-items-center justify-content-center">
+                            <span>N3</span>
+                            <span class="material-icons fs-5 ms-1"> edit</span>
+                          </span>
+                          30%
+                        </div>
+                      </div>
+                    </th> 
+                    <th scope="col" class="text-center px-0 border-x">
+                      <div class="head-column-note active cursor-pointer" onclick="openModal('modalGrupoClasificaciones')">
+                        <div class="d-flex flex-column">
+                          <span class="edit-note d-flex align-items-center justify-content-center">
+                            <span>N4</span>
+                            <span class="material-icons fs-5 ms-1"> edit</span>
+                          </span>
+                          <span class=" d-flex align-items-center justify-content-center">
+                            <span>(30%)</span>
+                            <span class="material-icons fs-6">arrow_forward</span>
+                          </span>
+                        </div>
+                      </div>
+                    </th> 
+                    <th scope="col" class="text-center px-0 head-column-prom">
+                      Prom
+                    </th>
+                  </tr>
+                </thead> 
+                <tbody>
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold text-danger">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center border-x note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                </tbody>   
+                <tfoot>
+                  <tr>
+                    <td scope="col" class="text-start fw-bold" colspan="2">Promedio</td>
+                    <td scope="col" class="text-center fw-bold border-x">4.9</td>
+                    <td scope="col" class="text-center fw-bold border-x">5.0</td>
+                    <td scope="col" class="text-center fw-bold border-x">5.9</td>
+                    <td scope="col" class="text-center fw-bold border-x">6.0</td>
+                    <td scope="col" class="text-center fw-bold">5.5</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
           </div>
         </div>
       </div>

@@ -54,7 +54,8 @@
         margin-right: 8px;
     }
 
-    .modulos .global-actions{
+    .modulos .global-actions,
+    .modal .global-actions{
         display: flex;
         justify-content: end;
         align-items: center;
@@ -62,53 +63,64 @@
         margin-bottom: 32px;
     }
 
-    .modulos .global-actions a{
+    .modulos .global-actions a,
+    .modal .global-actions a{
         text-decoration: none;
         color: #6500E4;
         margin: 0 8px;
     }
 
-    .modulos .table td{
+    .modulos .table td,
+    .modal .table td{
         text-align: left;
         font-size: 14px;
     }
 
-    .modulos .table .text-center{
+    .modulos .table .text-center,
+    .modal .table .text-center{
         text-align: center;
     }
 
-    .modulos .table .text-right{
+    .modulos .table .text-right,
+    .modal .table .text-right{
         text-align: right;
     }
 
     .modulos .table thead,
-    .modulos .table tfoot{
+    .modal .table thead,
+    .modulos .table tfoot,
+    .modal .table tfoot{
         background: #FFF0E2;
     }
 
-    .modulos .table th{
+    .modulos .table th,
+    .modal .table th{
         font-weight: 800;
         font-size: .9rem;
     }
 
-    .modulos .table td a{
+    .modulos .table td a,
+    .modal .table td a{
         text-decoration:  none;
     }
 
-    .modulos .table .row-actions{
+    .modulos .table .row-actions,
+    .modal .table .row-actions{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .modulos .table .row-actions a{
+    .modulos .table .row-actions a,
+    .modal .table .row-actions a{
         text-align: center;
         width: 24px;
         height: 24px;
         margin: 0;
     }
 
-    .modulos .table .row-actions a img{
+    .modulos .table .row-actions a img,
+    .modal .table .row-actions a img{
         width: 100%;
     } 
 
@@ -206,7 +218,8 @@
     } 
 
     /* calificaciones */
-    .modulos.calificaciones .head-column-note { 
+    .modulos.calificaciones .head-column-note, 
+    .modal .head-column-note { 
         font-size: 12px;
         width: 100%;
         font-weight: 900;
@@ -218,7 +231,8 @@
         padding: 4px;
     }
 
-    .modulos.calificaciones .head-column-note.active { 
+    .modulos.calificaciones .head-column-note.active,
+    .modal .head-column-note.active { 
         background: var(--color-primary);
         border-radius: 8px;
         color:white;
@@ -228,12 +242,14 @@
         filter: invert(1) brightness(1) contrast(1) grayscale(1);
     }   
 
-    .modulos.calificaciones .head-column-note .edit-note{
+    .modulos.calificaciones .head-column-note .edit-note,
+    .modal .head-column-note .edit-note{
         font-size: 16px;
         font-weight: 900; 
     }
 
-    .modulos.calificaciones .head-column-prom {
+    .modulos.calificaciones .head-column-prom,
+    .modal .head-column-prom {
         font-size: 16px;
         font-weight: 900;
         border-top: none;
@@ -249,22 +265,26 @@
         border-right-color: #CED4DA;
     }
 
-    .modulos.calificaciones tfoot td {
+    .modulos.calificaciones tfoot td,
+    .modal tfoot td {
         border-bottom: none;
     }
 
-    .modulos.calificaciones td.note-input{
+    .modulos.calificaciones td.note-input,
+    .modal td.note-input{
         text-align: center;
         padding: 0;
         width: auto;
         transition: all .3s ease-in-out;
     }
 
-    .modulos.calificaciones td.note-input.active{
+    .modulos.calificaciones td.note-input.active,
+    .modal td.note-input.active{
         background: #FFF9E1;
     }
 
-    .modulos.calificaciones td.note-input .form-control{
+    .modulos.calificaciones td.note-input .form-control,
+    .modal td.note-input .form-control{
         width: 100%;
         max-width: 40px;
         box-sizing: border-box;
@@ -283,7 +303,8 @@
         -webkit-user-select : none;  
     }
 
-    .modulos.calificaciones td.note-input.active .form-control{
+    .modulos.calificaciones td.note-input.active .form-control,
+    .modal td.note-input.active .form-control{
         color: black;
         background: white;
         pointer-events: all;
@@ -292,6 +313,7 @@
         -webkit-user-select : text;  
     }
 
+    .modal .alert.alert-success,
     .modulos .alert.alert-success{
         display: flex;
         align-items: center;
@@ -300,6 +322,7 @@
         border-color:#A2EEAE;
     }
 
+    .modal .alert.alert-success .icon-check,
     .modulos .alert.alert-success .icon-check{
         width: 29px; 
         height: 29px;
