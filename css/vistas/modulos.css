@@ -96,7 +96,7 @@
     .modulos .table th,
     .modal .table th{
         font-weight: 800;
-        font-size: .9rem;
+        font-size: .9rem; 
     }
 
     .modulos .table td a,
@@ -358,6 +358,27 @@
     small.helper{
         color: var(--color-primary); 
         margin: 16px;
+    }
+
+    input[type='file']:invalid { 
+        font-size: 0; 
+    }
+
+    ::file-selector-button { 
+        display: none;
+    }
+
+    input[type='file']:invalid:before{
+        content: "Subir archivo";
+        padding: 0;
+        border-radius: 50px;
+        color: black;
+        font-size: 16px;
+        line-height: 1.6rem !important;
+    } 
+
+    .form-control.file-upload:focus {
+        color: black;
     }
 
 @media( max-width: 768px){
