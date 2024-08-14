@@ -3,7 +3,7 @@
     border-radius: 31px;
 }
 
-.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label, .form-floating > .active-label {
     opacity: 1;
     top: -9px;
     left: 12px;
@@ -18,10 +18,10 @@
     display: inline-block;
     text-align: left;
     font-family: 'Nunito Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 .form-floating > .form-control ~ span {
     display: none;
@@ -47,8 +47,8 @@ input:-internal-autofill-selected {
     outline: 0;
     box-shadow: 0 0 0 0.05rem #6501e4 !important;
 }
-
-.form-floating > label {
+/*
+.form-floating > label, .active-label{
     position: absolute;
     top: 0;
     left: 0;
@@ -60,7 +60,7 @@ input:-internal-autofill-selected {
     transform-origin: 0 0;
     transition: opacity .1s ease-in-out, transform .1s ease-in-out;
 }
-
+*/
 .form-control {
     display: block;
     width: 100%;

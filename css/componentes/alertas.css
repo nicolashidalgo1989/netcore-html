@@ -22,6 +22,7 @@
     }
     .alertas .alert.alert-success {
         border-color: #A2EEAE;
+        background: #E1FFE6;
     }
     .destaca-punteado {
         border: 2px dashed #9747FF;
