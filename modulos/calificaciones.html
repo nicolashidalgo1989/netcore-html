@@ -223,13 +223,13 @@
                       <!-- Calificaciones --> 
                       <div class="container mb-4 px-2">
                         <div class="row">
-                          <div class="col-xxl-4 px-0">
+                          <div class="col-xxl-4 px-lg-0">
                             <h2 class="titulo-modulo mb-0">Calificaciones</h2>
                           </div> 
                         </div>
                       </div>
                       <form action="" class="ingreso row d-flex align-items-center justify-content-start"> 
-                        <div class="col-12 col-md-8 col-lg-6 mb-3">
+                        <div class="col-12 col-md-8 col-lg-6 mb-4 mb-lg-3">
                           <div class="form-floating w-100">
                             <select class="form-select px-4" id="asignatura" aria-label="Asignatura">
                               <option selected="">Historia, Geografía y Ciencias Sociales</option>
@@ -240,7 +240,7 @@
                             <label for="asignatura">Asignatura</label> 
                           </div>
                         </div>
-                        <div class="col-12 col-md-4 col-xl-4 mb-3">
+                        <div class="col-12 col-md-4 col-xl-4 mb-4 mb-lg-3">
                           <div class="form-floating w-100">
                             <select class="form-select px-4" id="periodos" aria-label="Periodos">
                               <option selected="">Primer semestre</option>
@@ -250,7 +250,7 @@
                           </div>
                         </div> 
                       </form>
-                      <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions">    
+                      <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions mb-3 mb-lg-4">    
                         <div class="col-12 col-sm-6 col-md-3 col-lg-auto mb-3 mb-lg-0">
                           <a onclick="openModal('importarPlantilla')" href="#" href="" class="mx-0 fs-7">
                             <img src="../img/icon-upload.svg" alt="Ver nóminas">
@@ -258,7 +258,7 @@
                           </a> 
                         </div>
                         <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
-                          <a href="" class="mx-0 fs-7 px-2">
+                          <a href="" class="mx-0 fs-7 px-lg-2">
                             <img src="../img/icon-download.svg" alt="Descargar Nómina">
                             Descargar resumen
                           </a> 
@@ -291,17 +291,17 @@
                           </div>
                         </div>
                       </div>
-                      <div class="container mb-4 px-0">
+                      <div class="container mb-2 mb-lg-4 px-0">
                         <div class="row">
                           <div class="col-12">
                             <ul class="nav nav-underline nav-tabs justify-content-start" id="myTab" role="tablist">
-                              <li class="nav-item pe-3" role="presentation">
-                                <button class="nav-link active p-0" id="sumativas" data-bs-toggle="tab" data-bs-target="#sumativas-tab-pane" type="button" role="tab" aria-controls="sumativas-tab-pane" aria-selected="true">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link ps-lg-0 active" id="sumativas" data-bs-toggle="tab" data-bs-target="#sumativas-tab-pane" type="button" role="tab" aria-controls="sumativas-tab-pane" aria-selected="true">
                                   Evaluaciones sumativas
                                 </button>
                               </li>
                               <li class="nav-item" role="presentation">
-                                <button class="nav-link p-0" id="formativas" data-bs-toggle="tab" data-bs-target="#formativas-tab-pane" type="button" role="tab" aria-controls="formativas-tab-pane" aria-selected="true">
+                                <button class="nav-link" id="formativas" data-bs-toggle="tab" data-bs-target="#formativas-tab-pane" type="button" role="tab" aria-controls="formativas-tab-pane" aria-selected="true">
                                   Evaluaciones formativas
                                 </button>
                               </li>
@@ -379,133 +379,133 @@
                             </thead> 
                             <tbody>
                               <tr>
-                                <td scope="col">1</td>
-                                <td scope="col"> Francisco Edén Pérez León </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N°">1</td>
+                                <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>
+                                <td scope="col" data-label="N1" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N2" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N3" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N4" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center fw-bold">2.0</td>
+                                <td scope="col"data-label="Prom" class="text-center fw-bold">2.0</td>
                               </tr> 
                               <tr>
-                                <td scope="col">1</td>
-                                <td scope="col"> Francisco Edén Pérez León </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N°">1</td>
+                                <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>
+                                <td scope="col" data-label="N1" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N2" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N3" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N4" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center fw-bold text-danger">2.0</td>
+                                <td scope="col" data-label="Prom" class="text-center fw-bold text-danger">2.0</td>
                               </tr> 
                               <tr>
-                                <td scope="col">1</td>
-                                <td scope="col"> Francisco Edén Pérez León </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N°">1</td>
+                                <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>
+                                <td scope="col" data-label="N1" class="text-center border-end note-input">
                                   <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N2" class="text-center border-end note-input">
                                   <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N3" class="text-center border-end note-input">
                                   <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N4" class="text-center border-end note-input">
                                   <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center fw-bold">2.0</td>
+                                <td scope="col" data-label="Prom" class="text-center fw-bold">2.0</td>
                               </tr> 
                               <tr>
-                                <td scope="col">1</td>
-                                <td scope="col"> Francisco Edén Pérez León </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N°">1</td>
+                                <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>
+                                <td scope="col" data-label="N1" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N2" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N3" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N4" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center fw-bold">2.0</td>
+                                <td scope="col" data-label="Prom" class="text-center fw-bold">2.0</td>
                               </tr> 
                               <tr>
-                                <td scope="col">1</td>
-                                <td scope="col"> Francisco Edén Pérez León </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N°">1</td>
+                                <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>
+                                <td scope="col" data-label="N1" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N2" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N3" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N4" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center fw-bold">2.0</td>
+                                <td scope="col" data-label="Prom" class="text-center fw-bold">2.0</td>
                               </tr> 
                               <tr>
-                                <td scope="col">1</td>
-                                <td scope="col"> Francisco Edén Pérez León </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N°">1</td>
+                                <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>
+                                <td scope="col" data-label="N1" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N2" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N3" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N4" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center fw-bold">2.0</td>
+                                <td scope="col" data-label="Prom" class="text-center fw-bold">2.0</td>
                               </tr> 
                               <tr>
-                                <td scope="col">1</td>
-                                <td scope="col"> Francisco Edén Pérez León </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N°">1</td>
+                                <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>
+                                <td scope="col" data-label="N1" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N2" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N3" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center border-end note-input">
+                                <td scope="col" data-label="N4" class="text-center border-end note-input">
                                   <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                 </td>
-                                <td scope="col" class="text-center fw-bold">2.0</td>
+                                <td scope="col" data-label="Prom" class="text-center fw-bold">2.0</td>
                               </tr> 
                             </tbody>   
                             <tfoot>
                               <tr>
-                                <td scope="col" class="text-start fw-bold" colspan="2">Promedio</td>
-                                <td scope="col" class="text-center fw-bold border-end">4.9</td>
-                                <td scope="col" class="text-center fw-bold border-end">5.0</td>
-                                <td scope="col" class="text-center fw-bold border-end">5.9</td>
-                                <td scope="col" class="text-center fw-bold border-end">6.0</td>
-                                <td scope="col" class="text-center fw-bold">5.5</td>
+                                <td scope="col" class="text-start fw-bold d-none d-lg-table-cell" colspan="2">Promedio</td>
+                                <td scope="col" data-label="N1" class="text-center fw-bold border-end">4.9</td>
+                                <td scope="col" data-label="N2" class="text-center fw-bold border-end">5.0</td>
+                                <td scope="col" data-label="N3" class="text-center fw-bold border-end">5.9</td>
+                                <td scope="col" data-label="N4" class="text-center fw-bold border-end">6.0</td>
+                                <td scope="col" data-label="Promedio" class="text-center fw-bold">5.5</td>
                               </tr>
                             </tfoot>
                           </table>
@@ -554,67 +554,67 @@
                               </thead> 
                               <tbody>
                                 <tr>
-                                  <td scope="col">1</td>
-                                  <td scope="col"> Francisco Edén Pérez León </td> 
-                                  <td scope="col" class="text-center border-end note-input">
+                                  <td scope="col" data-label="N°">1</td>
+                                  <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td> 
+                                  <td scope="col" data-label="N1" class="text-center border-end note-input">
                                     <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                   </td>
-                                  <td scope="col" class="text-center fw-bold">MB</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold">MB</td>
                                 </tr> 
                                 <tr>
-                                  <td scope="col">1</td>
-                                  <td scope="col"> Francisco Edén Pérez León </td> 
-                                  <td scope="col" class="text-center border-end note-input">
+                                  <td scope="col" data-label="N°">1</td>
+                                  <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td> 
+                                  <td scope="col" data-label="N1" class="text-center border-end note-input">
                                     <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                   </td>
-                                  <td scope="col" class="text-center fw-bold text-danger">I</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold text-danger">I</td>
                                 </tr> 
                                 <tr>
-                                  <td scope="col">1</td>
-                                  <td scope="col"> Francisco Edén Pérez León </td>  
-                                  <td scope="col" class="text-center border-end note-input">
+                                  <td scope="col" data-label="N°">1</td>
+                                  <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td>  
+                                  <td scope="col" data-label="N1" class="text-center border-end note-input">
                                     <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                   </td>
-                                  <td scope="col" class="text-center fw-bold">MB</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold">MB</td>
                                 </tr> 
                                 <tr>
-                                  <td scope="col">1</td>
-                                  <td scope="col"> Francisco Edén Pérez León </td> 
-                                  <td scope="col" class="text-center border-end note-input">
+                                  <td scope="col" data-label="N°">1</td>
+                                  <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td> 
+                                  <td scope="col" data-label="N1" class="text-center border-end note-input">
                                     <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                   </td>
-                                  <td scope="col" class="text-center fw-bold">MB</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold">MB</td>
                                 </tr> 
                                 <tr>
-                                  <td scope="col">1</td>
-                                  <td scope="col"> Francisco Edén Pérez León </td> 
-                                  <td scope="col" class="text-center border-end note-input">
+                                  <td scope="col" data-label="N°">1</td>
+                                  <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td> 
+                                  <td scope="col" data-label="N1" class="text-center border-end note-input">
                                     <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                   </td>
-                                  <td scope="col" class="text-center fw-bold ">MB</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold ">MB</td>
                                 </tr> 
                                 <tr>
-                                  <td scope="col">1</td>
-                                  <td scope="col"> Francisco Edén Pérez León </td> 
-                                  <td scope="col" class="text-center border-end note-input">
+                                  <td scope="col" data-label="N°">1</td>
+                                  <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td> 
+                                  <td scope="col" data-label="N1" class="text-center border-end note-input">
                                     <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                   </td>
-                                  <td scope="col" class="text-center fw-bold">MB</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold">MB</td>
                                 </tr> 
                                 <tr>
-                                  <td scope="col">1</td>
-                                  <td scope="col"> Francisco Edén Pérez León </td> 
-                                  <td scope="col" class="text-center border-end note-input">
+                                  <td scope="col" data-label="N°">1</td>
+                                  <td scope="col" data-label="Estudiante"> Francisco Edén Pérez León </td> 
+                                  <td scope="col" data-label="N1" class="text-center border-end note-input">
                                     <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
                                   </td>
-                                  <td scope="col" class="text-center fw-bold">MB</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold">MB</td>
                                 </tr> 
                               </tbody>   
                               <tfoot>
                                 <tr>
-                                  <td scope="col" class="text-start fw-bold" colspan="2">Promedio</td> 
-                                  <td scope="col" class="text-center fw-bold border-end">6.0</td>
-                                  <td scope="col" class="text-center fw-bold">MB</td>
+                                  <td scope="col" class="text-start fw-bold d-none d-lg-table-cell" colspan="2">Promedio</td> 
+                                  <td scope="col" data-label="N1" class="text-center fw-bold border-end">6.0</td>
+                                  <td scope="col" data-label="Prom" class="text-center fw-bold">MB</td>
                                 </tr>
                               </tfoot>
                             </table>

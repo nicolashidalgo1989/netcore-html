@@ -222,6 +222,11 @@
     .modulos.calificaciones {
         background: none;
     }
+    
+    .modulos.calificaciones .nav-tabs .nav-item {
+        width: 50%;
+    }
+
     .modulos.calificaciones .head-column-note, 
     .modal .head-column-note { 
         font-size: 12px;
@@ -274,8 +279,7 @@
 
     .modulos.calificaciones td.note-input,
     .modal td.note-input{
-        text-align: center;
-        padding: 0;
+        text-align: center; 
         width: auto;
         transition: all .3s ease-in-out;
     }
@@ -452,4 +456,69 @@
         color: var(--color-black);
     }
 
+    
+    .modal .alert.alert-success .icon-check,
+    .modulos .alert.alert-success .icon-check{
+        display: none;
+    }
+
 }
+
+@media (min-width: 769px){
+    
+    .modulos.calificaciones .nav-tabs .nav-item {
+        width: auto;
+    }
+    .modulos.calificaciones td.note-input, .modal td.note-input{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modulos.calificaciones .table {
+      border: 0;
+    }
+  
+    .modulos.calificaciones .table caption {
+      font-size: 1.3em;
+    }
+    
+    .modulos.calificaciones .table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .modulos.calificaciones .table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .modulos.calificaciones .table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 1rem;
+      text-align: right!important;
+    }
+    
+    .modulos.calificaciones .table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold; 
+    }
+
+    .modulos.calificaciones td.note-input .form-control, .modal td.note-input .form-control{
+        margin: 0 0 0 auto;
+    }
+     
+  }
