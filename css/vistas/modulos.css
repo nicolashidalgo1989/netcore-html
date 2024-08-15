@@ -392,6 +392,7 @@
     .btn-close{
         background-size: 2em;
         top: 0;
+        right: 0;
         position: absolute;
     }
 
