@@ -432,6 +432,10 @@
         /* display: none */
     }
 
+    .shadow-sm{
+        box-shadow: 0px 0px 16px 4px rgba(28, 0, 47, 0.10);
+    }
+
 @media( max-width: 768px){
 
     .modulos {
@@ -444,8 +448,6 @@
 
     .modulos .card-shadow.card-nominas,
     .modulos .card-shadow.card-modulo{
-        border-radius: 0;
-        box-shadow: none;
         padding: 24px;
     }
 
