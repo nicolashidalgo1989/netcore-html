@@ -826,21 +826,21 @@
 
   <!-- modal agregar evaluacion -->
   <div class="modal fade" id="modalAgregarEvaluacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg">
-      <div class="modal-content p-3 py-lg-5 px-lg-4">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-2 p-lg-4">
         <div class="modal-body">
           <div class="container px-0">
-            <div class="row modal-edit-data-title mb-5">
+            <div class="row modal-edit-data-title mb-lg-5 mb-4">
               <div class="col-11">
                 <h4 class="text-start">Agregar evaluación</h4>
               </div>
               <div class="col-1 d-flex align-items-center justify-content-end">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 20px; right: 12px;"></button>
               </div>
             </div> 
             <form action="" class="row needs-validation" novalidate> 
               <div class="row mb-lg-4">
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="col-lg-6 mb-4 ">
                   <div class="form-floating w-100">
                     <select class="form-select px-4" id="floatingSelectGrid" aria-label="Floating label select example">
                       <option value="" selected="" disabled="" hidden="">Evaluaciones sumativas</option>
@@ -849,15 +849,13 @@
                     <label for="floatingSelectGrid" class="active-label">Tipo de Evaluación *</label> 
                   </div>
                 </div>
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="col-lg-6 mb-4 ">
                   <div class="form-floating w-100">
                     <input id="startDate" class="form-control px-4" type="date" />
                     <label for="startDate" class="active-label">Fecha de aplicación</label>
                   </div>
-                </div>
-              </div>
-              <div class="row mb-4"> 
-                <div class="col-12">
+                </div> 
+                <div class="col-12 mb-2 mb-lg-0">
                   <div class="form-floating">
                     <input type="text" class="form-control px-4" id="float1" placeholder="Ingresa el nombre de la evaluación" value="" autocomplete="off">
                     <label for="float1" class="active-label">Nombre</label> 
@@ -890,13 +888,24 @@
                   </div>
                 </div>
               </div>
-              <div class="row mb-4">   
-                <div class="col-lg-6">
+              <div class="row mb-lg-4 mb-1">   
+                <div class="col-6">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" value="" name="support" id="support-yes">
                     <label class="form-check-label" for="support-yes"> Promedio </label>
                   </div>
-                  <p class="text-start mb-4">Será valorada con un peso igual al resto de evaluaciónes</p>
+                  <p class="text-start mb-0 d-none d-lg-block">Será valorada con un peso igual al resto de evaluaciónes</p>
+                  <small class="text-start d-lg-none">Será valorada con un peso igual al resto de evaluaciónes</small>
+                </div>
+                <div class="col-6 mb-lg-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" name="support" id="support-no">
+                    <label class="form-check-label" for="support-no"> Ponderación </label>
+                  </div>
+                  <p class="text-start mb-0 d-none d-lg-block">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</p>
+                  <small class="text-start d-lg-none">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</small>
+                </div>
+                <div class="col-12 col-lg-6 mb-4 mt-0">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
@@ -904,16 +913,13 @@
                     </label>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" value="" name="support" id="support-no">
-                    <label class="form-check-label" for="support-no"> Ponderación </label>
-                  </div>
-                  <p class="text-start mb-4">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</p>
-                  <div class="form-floating mb-4">
+                <div class="col-12 col-lg-6">
+                  <div class="form-floating mb-4 mb-lg-5">
                     <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
                     <label for="float1" class="active-label">Determinar el valor semestral %</label> 
                   </div>
+                </div>
+                <div class="col-12 col-lg-6 ms-lg-auto">
                   <div class="form-floating">
                     <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
                     <label for="float1" class="active-label">Determinar el valor  Anual %</label> 
