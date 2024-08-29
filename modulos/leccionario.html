@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netcore | Leccionario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e839a5f223.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header class="fixed-top menu-interno">
+    <div class="container nav-pr py-2">
+      <div class="row">
+        <div class="col-6 d-none d-sm-flex align-items-center d-flex">
+          <a class="" href="#">
+            <img src="../img/logo-educacion.svg" alt="netcore">
+          </a>
+        </div>
+        <div class="col-11 d-sm-none align-items-center d-flex">
+          <img src="../img/logo-educacion-mobile.svg" alt="netcore">
+        </div>
+        <div class="col-1 col-sm-6">
+          <ul class="navbar-nav text-end list-user">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle link-user" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../img/icon-user.svg" alt="">
+                <div class="d-none d-sm-block"> Hola, Natalia</div>
+                <span class="d-none d-sm-block color-secondary material-symbols-outlined"> expand_more </span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item logout-item" href="#">
+                    <b>Salir</b>
+                    <span class="material-symbols-outlined"> logout </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class=" menu-interno-productos navbar navbar-expand-lg navbar-light bg-auxiliar">
+      <div class="container container justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="nav nav-pills nav-fill flex-column flex-sm-row mt-4 d-lg-none" id="classBook" role="tablist">
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link" aria-current="page" id="nominas-tab" data-bs-toggle="tab"
+                          data-bs-target="#nominas" type="button" role="tab" aria-controls="nominas"
+                          aria-selected="true">
+                          <img src="../img/icon-nominas.svg" alt="Nóminas">
+                          Nóminas
+                      </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link" aria-current="page" id="assistance-tab" data-bs-toggle="tab"
+                          data-bs-target="#assistance" type="button" role="tab" aria-controls="assistance"
+                          aria-selected="true">
+                          <img src="../img/icon-assistance.svg" alt="Asistencia">
+                          Asistencia
+                      </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link" aria-current="page" id="ratings-tab" data-bs-toggle="tab"
+                          data-bs-target="#ratings" type="button" role="tab" aria-controls="ratings"
+                          aria-selected="true">
+                          <img src="../img/icon-ratings.svg" alt="Calificaciones">
+                          Calificaciones
+                      </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link" aria-current="page" id="cv-tab" data-bs-toggle="tab"
+                          data-bs-target="#cv" type="button" role="tab" aria-controls="cv"
+                          aria-selected="true">
+                          <img src="../img/icon-cv.svg" alt="Hoja de Vida">
+                          Hoja de Vida
+                      </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link active" aria-current="page" id="lectionary-tab" data-bs-toggle="tab"
+                          data-bs-target="#lectionary" type="button" role="tab" aria-controls="lectionary"
+                          aria-selected="true">
+                          <img src="../img/icon-lectionary.svg" alt="Leccionario">
+                          Leccionario
+                      </a>
+                  </li>
+              </ul>
+              <div class="col-12 d-block d-lg-none mt-4">
+                  <button type="button" class="btn btn-white outline color-white sistema w-100">Administración</button>
+              </div>
+          </div>
+          <button type="button" class="btn btn-white outline color-white sistema d-none d-lg-block">Administración</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="modulos leccionario">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8" id="breadcrumb">
+            <div>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Educación</a></li>
+                  <li class="breadcrumb-item"><a href="#">Selección de Módulo</a></li>
+                  <li class="breadcrumb-item"><a href="#">Libro de clases</a></li>
+                  <li class="breadcrumb-item"><a href="#">2º básico A</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Leccionario</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="col-12" id="select-course">
+            <div class="form-floating">
+              <div class="card-shadow shadow-sm p-sm-4 mb-4">
+                <div class="row d-flex align-items-center justify-content-between">
+                  <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                    <form action="" class="ingreso">
+                      <div class="form-floating w-100">
+                        <select class="form-select px-4" id="Curso" aria-label="Curso">
+                          <option>1° básico A</option>
+                          <option selected="">2° básico A</option>
+                          <option>3° básico A</option>
+                          <option>4° básico A</option>
+                        </select>
+                        <label for="Curso">Curso</label>
+                        <span class="instruccion"></span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="px-1">
+                      <dl>
+                        <div class="modulo-dl">
+                          <dt>Especialidad:</dt>
+                          <dd>Construcción</dd>
+                        </div>
+                        <div class="modulo-dl">
+                          <dt>Profesor de Módulo:</dt>
+                          <dd>Marcelo Carrasco</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="px-1">
+                      <dl>
+                        <div class="modulo-dl">
+                          <dt>Plan de Estudios:</dt>
+                          <dd>Decreto 726/</dd>
+                        </div>
+                        <div class="modulo-dl">
+                          <dt>Matrículas:</dt>
+                          <dd>45</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12"> 
+            <div class="row m-0 justify-content-between">
+              <div class="col-3 d-none d-lg-block pe-lg-5">
+                <ul class="nav nav-pills nav-fill" id="classBook" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" aria-current="page" id="nominas-tab" data-bs-toggle="tab"
+                      data-bs-target="#nominas" type="button" role="tab" aria-controls="nominas" aria-selected="true">
+                      <img src="../img/icon-nominas.svg" alt="Nóminas">
+                      Nóminas
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" aria-current="page" id="assistance-tab" data-bs-toggle="tab"
+                      data-bs-target="#assistance" type="button" role="tab" aria-controls="assistance"
+                      aria-selected="true">
+                      <img src="../img/icon-assistance.svg" alt="Asistencia">
+                      Asistencia
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" aria-current="page" id="ratings-tab" data-bs-toggle="tab"
+                      data-bs-target="#ratings" type="button" role="tab" aria-controls="ratings" aria-selected="true">
+                      <img src="../img/icon-ratings.svg" alt="Calificaciones">
+                      Calificaciones
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" aria-current="page" id="cv-tab" data-bs-toggle="tab" data-bs-target="#cv"
+                      type="button" role="tab" aria-controls="cv" aria-selected="true">
+                      <img src="../img/icon-cv.svg" alt="Hoja de vida">
+                      Hoja de vida
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" aria-current="page" id="lectionary-tab" data-bs-toggle="tab"
+                      data-bs-target="#lectionary" type="button" role="tab" aria-controls="lectionary"
+                      aria-selected="true">
+                      <img src="../img/icon-lectionary.svg" alt="Leccionario">
+                      Leccionario
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col card-shadow card-modulo p-sm-4">
+                <div class="cont-section-admin">
+                  <div class="row">
+                    <div class="tab-content" id="myTabContent">
+                      <!-- Leccionario --> 
+                      <div class="container mb-4 px-2">
+                        <div class="row">
+                          <div class="col-xxl-4 px-lg-0">
+                            <h2 class="titulo-modulo mb-3">Leccionario</h2>
+                            <p>Agrega y organiza tus Lecciones</p>
+                          </div> 
+                        </div>
+                      </div>
+                      <form action="" class="ingreso row d-flex align-items-center justify-content-start"> 
+                        <div class="col-12 col-md-8 col-lg-6 mb-4 mb-lg-3">
+                          <div class="form-floating w-100">
+                            <select class="form-select px-4" id="asignatura" aria-label="Asignatura">
+                              <option selected="">Historia, Geografía y Ciencias Sociales</option>
+                              <option>Lenguaje y Comunicación</option>
+                              <option>Matemáticas</option>
+                              <option>Artes Plásticas</option>
+                            </select>
+                            <label for="asignatura">Asignatura</label> 
+                          </div>
+                        </div> 
+                      </form>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12 col-lg-4 px-0"> 
+                            <dl>
+                              <div class="modulo-dl fs-18 mb-1">
+                                <dt>Tipo de curso:</dt>
+                                <dd>Simple</dd>
+                              </div>
+                              <div class="modulo-dl fs-18 mb-1">
+                                <dt>Capacidad:</dt>
+                                <dd>48</dd>
+                              </div>
+                            </dl> 
+                          </div>
+                          <div class="col-12 col-lg-4 px-0"> 
+                            <dl>
+                              <div class="modulo-dl fs-18 mb-1">
+                                <dt>Jornada:</dt>
+                                <dd>Mañana y tarde</dd>
+                              </div>
+                              <div class="modulo-dl fs-18 mb-1">
+                                <dt>Vacantes</dt>
+                                <dd>3</dd>
+                              </div>
+                            </dl> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions mb-3 mb-lg-4">     
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
+                          <a onclick="openModal('modalAgregarEvaluacion')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around"> 
+                            <img src="../img/icon-add.svg" alt="Agregar">
+                            Agregar leccionario
+                          </a> 
+                        </div> 
+                      </div>
+                      <div class="container-fluid px-0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="alert alert-success justify-content-start" role="alert"> 
+                              <div class="icon-check me-3">
+                                <span class="material-icons">
+                                  done
+                                </span>
+                              </div>
+                              <p class="text-dark mb-0">La lección fue agregada exitosamente</p>  
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col"> 
+                                Profesor jefe 
+                              </th>
+                              <th scope="col"> 
+                                Encargado de Acta 
+                              </th> 
+                              <th scope="col"> 
+                                Información de la lección 
+                              </th> 
+                              <th scope="col"> 
+                                Acciones 
+                              </th> 
+                            </tr>
+                          </thead> 
+                          <tbody>
+                            <tr>
+                              <td scope="col" data-label="N°">Soza Muñoz, Carlos Roberto</td>
+                              <td scope="col" data-label="Estudiante"> Panza Concha, Pedro Nicolás </td> 
+                              <td scope="col" data-label="Estudiante"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td> 
+                              <td>
+                                <span class="material-icons text-primary">
+                                  search
+                                </span>
+                                <span class="material-icons text-primary">
+                                  edit
+                                </span>
+                              </td>
+                            </tr> 
+                          </tbody> 
+                        </table>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- modal importar plantilla -->
+  <div class="modal fade" id="importarPlantilla" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content p-3 py-lg-5 px-lg-4">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row modal-edit-data-title mb-3">
+              <div class="col-11">
+                <h4 class="text-start">Subir plantilla de calificaciones</h4>
+              </div>
+              <div class="col-1 d-flex align-items-center justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-12">
+                <p class="text-start fs-8">
+                  <small>
+                    Descarga la plantilla en formato excel y sube las calificaciones en Historia, Geografía y Ciencias Sociales- 6° Básico A en periodio del <strong>Primer Semestre</strong>.
+                  </small>
+                </p>
+              </div>
+            </div> 
+            <form class="row needs-validation" novalidate>
+              <div class="col-md-9"> 
+                <div class="input-file">
+                  <input type="file" id="file" name="file" class="form-control" required> 
+                  <img src="../img/icon-file.svg" alt="File" class="input-file-icon">
+                </div>
+                <small class="helper">Tamaño máximo 20 MB</small>
+              </div>
+              <div class="col-md-3">
+                <input class="btn btn-primary w-100" type="submit" id="inputGroupFileAdd" value="Subir">
+              </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- modal grupo de clasificaciones -->
+  <div class="modal fade" id="modalGrupoClasificaciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+      <div class="modal-content p-3 py-lg-5 px-lg-4">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row modal-edit-data-title mb-5">
+              <div class="col-11">
+                <h4 class="text-start">Grupo calificaciones: Controles</h4>
+                <p class="text-start"><small>Historia, Geografía y Ciencias Sociales -2 Básivo A / Primer Semestre</small></p>
+              </div>
+              <div class="col-1 d-flex align-items-center justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>  
+            <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions">     
+              <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
+                <a href="" class="mx-0 fs-7 px-2 d-flex align-items-center"> 
+                  <span class="material-icons fs-6 mr-2">arrow_back</span>
+                  Regresar
+                </a> 
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
+                <a data-bs-target="#modalAgregarEvaluacionInterno" data-bs-toggle="modal" data-bs-dismiss="modal" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around"> 
+                  <img src="../img/icon-add.svg" alt="Agregar" class="icon-size-xs">
+                  Agregar Evaluación
+                </a> 
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 col-lg-auto mb-3 mb-lg-0">
+                <a onclick="openModal('modalGuardar')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary text-light justify-content-around"> 
+                  <img src="../img/icon-save.svg" alt="Guardar" class="icon-size-xs">
+                  Guardar
+                </a> 
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-12">
+                <div class="alert alert-success" role="alert"> 
+                  <div class="icon-check me-3">
+                    <span class="material-icons">
+                      done
+                    </span>
+                  </div>
+                  <p class="text-dark mb-0">La evaluación [NX] se ha guardado correctamente</p> 
+                  <button type="button" class="btn-close-alert ms-auto mb-auto" aria-label="Close" onclick="hideAlert(event)"></button> 
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="width-column-note-xs">
+                      <div class="d-flex">
+                        Nº
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="d-flex">
+                        Estudiantes
+                      </div>
+                    </th>
+                    <th scope="col" class="text-center px-0 border-end width-column-note">
+                      <div class="head-column-note">
+                        <div class="d-flex flex-column">
+                          <span class="edit-note d-flex align-items-center justify-content-center">
+                            <span>N1</span>
+                            <span class="material-icons fs-5 ms-1"> edit</span>
+                          </span>
+                          10%
+                        </div>
+                      </div>
+                    </th>  
+                    <th scope="col" class="text-center px-0 head-column-prom width-column-note-sm">
+                      Prom
+                    </th>
+                  </tr>
+                </thead> 
+                <tbody>
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td> 
+                    <td scope="col" class="text-center border-end note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td> 
+                    <td scope="col" class="text-center border-end note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold text-danger">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td> 
+                    <td scope="col" class="text-center border-end note-input">
+                      <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td> 
+                    <td scope="col" class="text-center border-end note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td> 
+                    <td scope="col" class="text-center border-end note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td> 
+                    <td scope="col" class="text-center border-end note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                  <tr>
+                    <td scope="col">1</td>
+                    <td scope="col"> Francisco Edén Pérez León </td> 
+                    <td scope="col" class="text-center border-end note-input">
+                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
+                    </td>
+                    <td scope="col" class="text-center fw-bold">2.0</td>
+                  </tr> 
+                </tbody>   
+                <tfoot>
+                  <tr>
+                    <td scope="col" class="text-start fw-bold" colspan="2">Promedio</td> 
+                    <td scope="col" class="text-center fw-bold border-end">6.0</td>
+                    <td scope="col" class="text-center fw-bold">5.5</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- modal agregar evaluacion -->
+  <div class="modal fade" id="modalAgregarEvaluacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content p-2 p-lg-4">
+        <div class="modal-body">
+          <div class="container px-0">
+            <div class="row modal-edit-data-title mb-lg-5 mb-4">
+              <div class="col-11">
+                <h4 class="text-start">Agregar evaluación</h4>
+              </div>
+              <div class="col-1 d-flex align-items-center justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 20px; right: 12px;"></button>
+              </div>
+            </div> 
+            <form action="" class="row needs-validation" novalidate> 
+              <div class="row mb-lg-4">
+                <div class="col-lg-6 mb-4 ">
+                  <div class="form-floating w-100">
+                    <select class="form-select px-4" id="floatingSelectGrid" aria-label="Floating label select example">
+                      <option value="" selected="" disabled="" hidden="">Evaluaciones sumativas</option>
+                      <option>Evaluaciones formativas</option> 
+                    </select>
+                    <label for="floatingSelectGrid" class="active-label">Tipo de Evaluación *</label> 
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4 ">
+                  <div class="form-floating w-100">
+                    <input id="startDate" class="form-control px-4" type="date" />
+                    <label for="startDate" class="active-label">Fecha de aplicación</label>
+                  </div>
+                </div> 
+                <div class="col-12 mb-2 mb-lg-0">
+                  <div class="form-floating">
+                    <input type="text" class="form-control px-4" id="float1" placeholder="Ingresa el nombre de la evaluación" value="" autocomplete="off">
+                    <label for="float1" class="active-label">Nombre</label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      ¿Esta nota es un grupo de calificaciones?
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control p-4" id="float1" placeholder="Ingresa descripción" rows="4" style="height: auto"></textarea>
+                    <label for="float1" class="active-label">Descripción del instrumento</label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="number" class="form-control px-4" id="float1" placeholder="1" value="" autocomplete="off">
+                    <label for="float1" class="active-label">Orden <span class="tooltip"></span></label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-lg-4 mb-1">   
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" name="support" id="support-yes">
+                    <label class="form-check-label" for="support-yes"> Promedio </label>
+                  </div>
+                  <p class="text-start mb-0 d-none d-lg-block">Será valorada con un peso igual al resto de evaluaciónes</p>
+                  <small class="text-start d-lg-none">Será valorada con un peso igual al resto de evaluaciónes</small>
+                </div>
+                <div class="col-6 mb-lg-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" name="support" id="support-no">
+                    <label class="form-check-label" for="support-no"> Ponderación </label>
+                  </div>
+                  <p class="text-start mb-0 d-none d-lg-block">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</p>
+                  <small class="text-start d-lg-none">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</small>
+                </div>
+                <div class="col-12 col-lg-6 mb-4 mt-0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Nota Coheficiente 2
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-floating mb-4 mb-lg-5">
+                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
+                    <label for="float1" class="active-label">Determinar el valor semestral %</label> 
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 ms-lg-auto">
+                  <div class="form-floating">
+                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
+                    <label for="float1" class="active-label">Determinar el valor  Anual %</label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-6 col-md-4 mt-2">
+                  <button type="button" class="btn btn-primary outline sistema w-100 color-primary"
+                    data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-dismiss="modal">Volver</button>
+                </div>
+                <div class="col-6 col-md-4 mt-2">
+                  <button type="button" class="btn btn-primary sistema w-100" data-bs-toggle="modal" data-bs-dismiss="modal">
+                    <img src="../img/icon-save.svg" alt="Guardar" style="width:20px; height:20px; margin-right: 10px;">
+                    Guardar
+                  </button>
+                </div>
+              </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- modal agregar evaluacion interno-->
+  <div class="modal fade" id="modalAgregarEvaluacionInterno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content p-3 py-lg-5 px-lg-4">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row modal-edit-data-title mb-5">
+              <div class="col-11">
+                <h4 class="text-start">Agregar evaluación</h4>
+              </div>
+              <div class="col-1 d-flex align-items-center justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div> 
+            <form action="" class="row needs-validation" novalidate> 
+              <div class="row mb-4">
+                <div class="col-6">
+                  <div class="form-floating w-100">
+                    <select class="form-select px-4" id="floatingSelectGrid" aria-label="Floating label select example">
+                      <option value="" selected="" disabled="" hidden="">Evaluaciones sumativas</option>
+                      <option>Evaluaciones formativas</option> 
+                    </select>
+                    <label for="floatingSelectGrid" class="active-label">Tipo de Evaluación *</label> 
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-floating w-100">
+                    <input id="startDate" class="form-control px-4" type="date" />
+                    <label for="startDate" class="active-label">Fecha de aplicación</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4"> 
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control px-4" id="float1" placeholder="Ingresa el nombre de la evaluación" value="" autocomplete="off">
+                    <label for="float1" class="active-label">Nombre</label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      ¿Esta nota es un grupo de calificaciones?
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control p-4" id="float1" placeholder="Ingresa descripción" rows="4" style="height: auto"></textarea>
+                    <label for="float1" class="active-label">Descripción del instrumento</label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="number" class="form-control px-4" id="float1" placeholder="1" value="" autocomplete="off">
+                    <label for="float1" class="active-label">Orden</label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">   
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" name="support" id="support-yes">
+                    <label class="form-check-label" for="support-yes"> Promedio </label>
+                  </div>
+                  <p class="text-start mb-4">Será valorada con un peso igual al resto de evaluaciónes</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Nota Coheficiente 2
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" value="" name="support" id="support-no">
+                    <label class="form-check-label" for="support-no"> Ponderación </label>
+                  </div>
+                  <p class="text-start mb-4">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</p>
+                  <div class="form-floating mb-4">
+                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
+                    <label for="float1" class="active-label">Determinar el valor semestral %</label> 
+                  </div>
+                  <div class="form-floating">
+                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
+                    <label for="float1" class="active-label">Determinar el valor  Anual %</label> 
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-6 col-md-4 mt-2">
+                  <button type="button" class="btn btn-primary outline sistema w-100 color-primary"
+                    data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modalGrupoClasificaciones" data-bs-toggle="modal" data-bs-dismiss="modal">Volver</button>
+                </div>
+                <div class="col-6 col-md-4 mt-2">
+                  <button type="button" class="btn btn-primary sistema w-100" data-bs-target="#modalGrupoClasificaciones" data-bs-toggle="modal" data-bs-dismiss="modal">
+                    <img src="../img/icon-save.svg" alt="Guardar" style="width:20px; height:20px; margin-right: 10px;">
+                    Guardar
+                  </button>
+                </div>
+              </div>
+            </form> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+      // Edita notas
+      const editNote = document.querySelectorAll('.head-column-note');
+      editNote.forEach( (edit, index) => edit.addEventListener('click', e => { 
+        console.log(e);
+        
+        const tbody = e.target.closest('table').querySelector('tbody');  
+        Array.from(tbody.children).forEach( tr => Array.from(tr.children).forEach( (td, pos) => {
+          if((index + 2) === pos) {
+            td.classList.add('active');
+            td.children[0].disabled = false;
+          }  else  { 
+            if(td.children[0]) td.children[0].disabled = true;  
+            td.classList.remove('active'); 
+          }
+        }))
+      }))
+
+  
+    // Abre modal cuando carga página 
+    const openModal = id => {
+      var myModal = new bootstrap.Modal(document.getElementById(id), {});
+      myModal.show();
+    }
+  
+    let checkboxs = document.querySelectorAll(".input-group input");
+
+    checkboxs.forEach( check => {
+      check.addEventListener('change', () => {
+        if(check.checked) {
+          btnReg.forEach( btn => btn.classList.remove('disabled') )
+        } else {
+          btnReg.forEach( btn => btn.classList.add('disabled') )
+        }
+      })
+    })
+
+    const changeData = e => {
+      // muestra opcion a editar en mobile
+      document.querySelectorAll('.tab-pane').forEach(item => item.classList.remove('show', 'active'));
+      if (document.getElementById(e.target.value)) {
+        document.getElementById(e.target.value).classList.add('show', 'active');
+      }
+    } 
+
+    const hideAlert = e => e.target.parentElement.classList.add('d-none'); 
+
+  </script>
+
+</body>
+
+</html>

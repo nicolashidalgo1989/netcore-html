@@ -13,7 +13,8 @@
     line-height: normal;
 }
 
-    .modulos.asistencia {
+    .modulos.asistencia,
+    .modulos.leccionario {
         background-image: none;
     }
 
