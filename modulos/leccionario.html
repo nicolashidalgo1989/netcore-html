@@ -272,9 +272,9 @@
                       </div>
                       <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions mb-3 mb-lg-4">     
                         <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
-                          <a onclick="openModal('modalAgregarEvaluacion')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around"> 
+                          <a onclick="openModal('modalAgregarLeccion')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around"> 
                             <img src="../img/icon-add.svg" alt="Agregar">
-                            Agregar leccionario
+                            Agregar lección
                           </a> 
                         </div> 
                       </div>
@@ -315,11 +315,11 @@
                               <td scope="col" data-label="N°">Soza Muñoz, Carlos Roberto</td>
                               <td scope="col" data-label="Estudiante"> Panza Concha, Pedro Nicolás </td> 
                               <td scope="col" data-label="Estudiante"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td> 
-                              <td>
-                                <span class="material-icons text-primary">
+                              <td scope="col" class="d-flex justify-content-between">
+                                <span class="material-icons text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Ver detalles">
                                   search
                                 </span>
-                                <span class="material-icons text-primary">
+                                <span class="material-icons text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Editar">
                                   edit
                                 </span>
                               </td>
@@ -336,435 +336,477 @@
         </div>
       </div>
     </section>
-  </main>
+  </main>  
 
-  <!-- modal importar plantilla -->
-  <div class="modal fade" id="importarPlantilla" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg">
-      <div class="modal-content p-3 py-lg-5 px-lg-4">
+  <!-- modal agregar leccion --> 
+  <div class="modal fade" id="modalAgregarLeccion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xxl">
+      <div class="modal-content p-4">
         <div class="modal-body">
           <div class="container">
-            <div class="row modal-edit-data-title mb-3">
-              <div class="col-11">
-                <h4 class="text-start">Subir plantilla de calificaciones</h4>
-              </div>
-              <div class="col-1 d-flex align-items-center justify-content-end">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-12">
-                <p class="text-start fs-8">
-                  <small>
-                    Descarga la plantilla en formato excel y sube las calificaciones en Historia, Geografía y Ciencias Sociales- 6° Básico A en periodio del <strong>Primer Semestre</strong>.
-                  </small>
-                </p>
-              </div>
-            </div> 
-            <form class="row needs-validation" novalidate>
-              <div class="col-md-9"> 
-                <div class="input-file">
-                  <input type="file" id="file" name="file" class="form-control" required> 
-                  <img src="../img/icon-file.svg" alt="File" class="input-file-icon">
-                </div>
-                <small class="helper">Tamaño máximo 20 MB</small>
-              </div>
-              <div class="col-md-3">
-                <input class="btn btn-primary w-100" type="submit" id="inputGroupFileAdd" value="Subir">
-              </div>
-            </form> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-
-  <!-- modal grupo de clasificaciones -->
-  <div class="modal fade" id="modalGrupoClasificaciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-xl">
-      <div class="modal-content p-3 py-lg-5 px-lg-4">
-        <div class="modal-body">
-          <div class="container">
-            <div class="row modal-edit-data-title mb-5">
-              <div class="col-11">
-                <h4 class="text-start">Grupo calificaciones: Controles</h4>
-                <p class="text-start"><small>Historia, Geografía y Ciencias Sociales -2 Básivo A / Primer Semestre</small></p>
-              </div>
-              <div class="col-1 d-flex align-items-center justify-content-end">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-            </div>  
-            <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions">     
-              <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
-                <a href="" class="mx-0 fs-7 px-2 d-flex align-items-center"> 
-                  <span class="material-icons fs-6 mr-2">arrow_back</span>
-                  Regresar
-                </a> 
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
-                <a data-bs-target="#modalAgregarEvaluacionInterno" data-bs-toggle="modal" data-bs-dismiss="modal" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around"> 
-                  <img src="../img/icon-add.svg" alt="Agregar" class="icon-size-xs">
-                  Agregar Evaluación
-                </a> 
-              </div>
-              <div class="col-12 col-sm-6 col-md-3 col-lg-auto mb-3 mb-lg-0">
-                <a onclick="openModal('modalGuardar')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary text-light justify-content-around"> 
-                  <img src="../img/icon-save.svg" alt="Guardar" class="icon-size-xs">
-                  Guardar
-                </a> 
-              </div>
-            </div> 
-            <div class="row">
-              <div class="col-12">
-                <div class="alert alert-success" role="alert"> 
-                  <div class="icon-check me-3">
-                    <span class="material-icons">
-                      done
-                    </span>
-                  </div>
-                  <p class="text-dark mb-0">La evaluación [NX] se ha guardado correctamente</p> 
-                  <button type="button" class="btn-close-alert ms-auto mb-auto" aria-label="Close" onclick="hideAlert(event)"></button> 
-                </div>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" class="width-column-note-xs">
-                      <div class="d-flex">
-                        Nº
-                      </div>
-                    </th>
-                    <th scope="col">
-                      <div class="d-flex">
-                        Estudiantes
-                      </div>
-                    </th>
-                    <th scope="col" class="text-center px-0 border-end width-column-note">
-                      <div class="head-column-note">
-                        <div class="d-flex flex-column">
-                          <span class="edit-note d-flex align-items-center justify-content-center">
-                            <span>N1</span>
-                            <span class="material-icons fs-5 ms-1"> edit</span>
-                          </span>
-                          10%
+            <div class="modal-edit-data">
+              <form action="" class="wizard" id="wizardAsistencia">
+                <aside class="wizard-content container">
+                  <div class="d-flex align-items-start">
+                    <ul class="wizard-list">
+                      <li class="wizard-item">Agregar lección/li>
+                      <span class="line disabled"></span>
+                      <li class="wizard-item disabled">Firmar lección</li>
+                    </ul>
+                    <div class="col-1 d-flex align-items-center justify-content-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                  </div> 
+                  <div class="wizard-step-container">
+                    <div class="wizard-step active" data-step="0"> 
+                      <h4 class="mb-4 text-start">Agregar lección</h4>
+                      <h5 class="mb-4">
+                        <span class="fw-bold">Clase:</span> 2° Básico A
+                      </h5>
+                      <h6 class="fw-bold mb-4">Clases seleccionadas</h6>
+                      <div class="d-flex mb-3">
+                        <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                          <input type="checkbox" checked disabled/>
+                          <label for="" class="d-flex flex-column input-group">
+                            <small class="fw-bold">Tecnología</small>
+                            <small >08:00 - 09:30</small>
+                          </label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                          <input type="checkbox" checked disabled/>
+                          <label for="" class="d-flex flex-column input-group">
+                            <small class="fw-bold">Educación Física</small>
+                            <small >12:15 - 13:45</small>
+                          </label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                          <input type="checkbox" checked disabled/>
+                          <label for="" class="d-flex flex-column input-group">
+                            <small class="fw-bold">Idioma extranjero</small>
+                            <small >14:00 - 15:45</small>
+                          </label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                          <input type="checkbox" checked disabled/>
+                          <label for="" class="d-flex flex-column input-group">
+                            <small class="fw-bold">Idioma extranjero</small>
+                            <small >16:00 - 17:45</small>
+                          </label>
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center justify-content-center mx-2">
+                          <input type="checkbox" checked disabled/>
+                          <label for="" class="d-flex flex-column input-group">
+                            <small class="fw-bold">Lenguaje y comunicación</small>
+                            <small >18:00 - 19:45</small>
+                          </label>
                         </div>
                       </div>
-                    </th>  
-                    <th scope="col" class="text-center px-0 head-column-prom width-column-note-sm">
-                      Prom
-                    </th>
-                  </tr>
-                </thead> 
-                <tbody>
-                  <tr>
-                    <td scope="col">1</td>
-                    <td scope="col"> Francisco Edén Pérez León </td> 
-                    <td scope="col" class="text-center border-end note-input">
-                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
-                    </td>
-                    <td scope="col" class="text-center fw-bold">2.0</td>
-                  </tr> 
-                  <tr>
-                    <td scope="col">1</td>
-                    <td scope="col"> Francisco Edén Pérez León </td> 
-                    <td scope="col" class="text-center border-end note-input">
-                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
-                    </td>
-                    <td scope="col" class="text-center fw-bold text-danger">2.0</td>
-                  </tr> 
-                  <tr>
-                    <td scope="col">1</td>
-                    <td scope="col"> Francisco Edén Pérez León </td> 
-                    <td scope="col" class="text-center border-end note-input">
-                      <input type="text"  value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
-                    </td>
-                    <td scope="col" class="text-center fw-bold">2.0</td>
-                  </tr> 
-                  <tr>
-                    <td scope="col">1</td>
-                    <td scope="col"> Francisco Edén Pérez León </td> 
-                    <td scope="col" class="text-center border-end note-input">
-                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
-                    </td>
-                    <td scope="col" class="text-center fw-bold">2.0</td>
-                  </tr> 
-                  <tr>
-                    <td scope="col">1</td>
-                    <td scope="col"> Francisco Edén Pérez León </td> 
-                    <td scope="col" class="text-center border-end note-input">
-                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
-                    </td>
-                    <td scope="col" class="text-center fw-bold">2.0</td>
-                  </tr> 
-                  <tr>
-                    <td scope="col">1</td>
-                    <td scope="col"> Francisco Edén Pérez León </td> 
-                    <td scope="col" class="text-center border-end note-input">
-                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
-                    </td>
-                    <td scope="col" class="text-center fw-bold">2.0</td>
-                  </tr> 
-                  <tr>
-                    <td scope="col">1</td>
-                    <td scope="col"> Francisco Edén Pérez León </td> 
-                    <td scope="col" class="text-center border-end note-input">
-                      <input type="text" value="2.0" class="form-control" maxlength="3" placeholder="0.0" disabled>
-                    </td>
-                    <td scope="col" class="text-center fw-bold">2.0</td>
-                  </tr> 
-                </tbody>   
-                <tfoot>
-                  <tr>
-                    <td scope="col" class="text-start fw-bold" colspan="2">Promedio</td> 
-                    <td scope="col" class="text-center fw-bold border-end">6.0</td>
-                    <td scope="col" class="text-center fw-bold">5.5</td>
-                  </tr>
-                </tfoot>
-              </table>
+                      <div class="overflow-scroll table-responsive" style="height: calc(50vh - 250px)">
+                        <table class="table caption-top">
+                          <thead>
+                            <tr style="background-color: #FFF0E2;">
+                              <th scope="col"> Nº </th>
+                              <th scope="col"> Alumno </th>
+                              <th scope="col" class="text-center"> Presente </th>
+                              <th scope="col" class="text-center"> Ausente </th>
+                              <th scope="col" class="text-center"> Atrasado </th>
+                              <th scope="col" class="text-center"> Retirado </th>
+                              <th scope="col"> Observaciones </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="align-middle">
+                              <td scope="col">1</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">R</span>
+                              </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr class="align-middle">
+                              <td scope="col">2</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Nicolas Hidalgo C.</span>
+                                  <span>18.211.123-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">R</span>
+                              </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr class="align-middle">
+                              <td scope="col">3</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Francesca</span>
+                                  <span>18.211.123-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">A</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square warning">AT</span>
+                              </td>
+                              <td scope="col" class="text-center">
+                                <span class="badge badge-square default">R</span>
+                              </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr class="align-middle">
+                              <td scope="col">4</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Valentina</span>
+                                  <span>18.211.123-8</span>
+                                </div>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">P</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">A</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">AT</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square primary">R</span>
+                                </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr class="align-middle">
+                              <td scope="col">4</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Valentina</span>
+                                  <span>18.211.123-8</span>
+                                </div>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">P</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">A</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">AT</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square primary">R</span>
+                                </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr class="align-middle">
+                              <td scope="col">4</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Valentina</span>
+                                  <span>18.211.123-8</span>
+                                </div>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">P</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">A</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">AT</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square primary">R</span>
+                                </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr class="align-middle">
+                              <td scope="col">4</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Valentina</span>
+                                  <span>18.211.123-8</span>
+                                </div>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">P</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">A</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">AT</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square primary">R</span>
+                                </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                            <tr class="align-middle">
+                              <td scope="col">4</td>
+                              <td scope="col">
+                                <div class="d-flex flex-column">
+                                  <span>Valentina</span>
+                                  <span>18.211.123-8</span>
+                                </div>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">P</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">A</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square default">AT</span>
+                                </td>
+                                <td scope="col" class="text-center">
+                                  <span class="badge badge-square primary">R</span>
+                                </td>
+                              <td scope="col">
+                                <form action="" class="ingreso">
+                                  <div class="form-floating">
+                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                    <label for="float1">Escribe tu observación aquí</label>
+                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                  </div>
+                                </form>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="row justify-content-end mt-4 mb-3">
+                        <div class="col-6 col-md-3 my-2">
+                          <button
+                            type="button"
+                            aria-label="Close"
+                            data-bs-dismiss="modal"
+                            class="btn btn-primary outline sistema w-100 color-primary"
+                            >
+                            Cancelar
+                          </button>
+                        </div>
+                        <div class="col-6 col-md-3 my-2">
+                          <button type="button" class="btn btn-primary sistema w-100" onclick="wizardStep(event, '0')">Siguiente</button>
+                        </div>
+                      </div>
+                      <div class="container my-3 my-xxl-0 ps-0">
+                        <div class="row d-flex w-100 justify-content-end">
+                          <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                            <span class="badge badge-square success">P</span>
+                            <span class="fs-12"> Presente </span>
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                            <span class="badge badge-square danger">A</span>
+                            <span class="fs-12"> Ausente </span>
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                            <span class="badge badge-square warning">AT</span>
+                            <span class="fs-12"> Atraso </span>
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                            <span class="badge badge-square primary">R</span>
+                            <span class="fs-12"> Retirado </span>
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                            <span class="badge badge-square default"> </span>
+                            <span class="fs-12"> No aplica </span>
+                          </div>
+                          <div class="col-6 col-sm-3 col-md-1 px-0 d-flex justify-content-start align-items-center">
+                            <span class="badge badge-square default">P</span>
+                            <span class="fs-12"> Default </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wizard-step" data-step="1"> 
+                      <h4 class="mb-2 text-start">Firmar asistencia por clase</h4>
+                      <h6 class="mb-3 fw-light">Martes 9/03/2024</h6>
+                      <div class="container d-flex mb-5 align-items-center">
+                        <div class="row">
+                          <div class="col-3 d-flex flex-column align-items-center text-center justify-content-center">
+                            <h6 class="me-auto fw-light">Ausentes</h6> 
+                          </div>
+                          <div class="col d-flex flex-column align-items-center text-center justify-content-center">
+                            <input type="checkbox" checked disabled/>
+                            <label for="" class="d-flex flex-column input-group">
+                              <small class="fw-bold">Tecnología</small>
+                              <small >08:00 - 09:30</small>
+                            </label> 
+                          </div> 
+                          <div class="col d-flex flex-column align-items-center text-center justify-content-center">
+                            <input type="checkbox" checked disabled/>
+                            <label for="" class="d-flex flex-column input-group">
+                              <small class="fw-bold">Educación Física</small>
+                              <small >12:15 - 13:45</small>
+                            </label> 
+                          </div>
+                          <div class="col d-flex flex-column align-items-center text-center justify-content-center">
+                            <input type="checkbox" checked disabled/>
+                            <label for="" class="d-flex flex-column input-group">
+                              <small class="fw-bold">Idioma extranjero</small>
+                              <small >14:00 - 15:45</small>
+                            </label> 
+                          </div>
+                          <div class="col d-flex flex-column align-items-center text-center justify-content-center">
+                            <input type="checkbox" checked disabled/>
+                            <label for="" class="d-flex flex-column input-group">
+                              <small class="fw-bold">Idioma extranjero</small>
+                              <small >16:00 - 17:45</small>
+                            </label> 
+                          </div>
+                          <div class="col d-flex flex-column align-items-center text-center justify-content-center">
+                            <input type="checkbox" checked disabled/>
+                            <label for="" class="d-flex flex-column input-group">
+                              <small class="fw-bold">Lenguaje y comunicación</small>
+                              <small >18:00 - 19:45</small>
+                            </label> 
+                          </div> 
+                        </div>
+                      </div>
+                      <p class="text-start">Ingresa el código para firmar. Revisa tu app de autentificador e ingresa el código</p> 
+                      <div class="alert alert-warning d-flex align-items-center" role="alert">
+                        <img src="../img/icon-warning.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
+                        <div>Recuerda que si firmas fuera de horario, debes dejar una observación para efectos de suspervisión.</div> 
+                        <button type="button" class="btn-close-alert ms-auto mb-auto" aria-label="Close" onclick="hideAlert(event)"></button>
+                      </div> 
+                      <table class="table caption-top">
+                        <thead>
+                          <tr style="background-color: #FFF0E2;">
+                            <th scope="col"> Nombre </th>
+                            <th scope="col" class="text-center"> Cargo </th>
+                            <th scope="col" class="text-center"> Estado </th>
+                            <th scope="col" class="text-center"> Firma </th>
+                            <th scope="col" class="text-center"> Observaciones </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <td scope="col" style="width: 20%">Felipe Sotomayor Leiva</td>
+                            <td scope="col" class="text-center" style="width: 15%">Profesor titular</td>
+                            <td scope="col" class="text-center">Pendiente</td>
+                            <td scope="col" class="d-flex flex-wrap justify-content-center">
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" />
+                            </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
+                                </div>
+                              </form>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table> 
+                      <div class="row justify-content-end mt-4 mb-3">
+                        <div class="col-6 col-md-2 mt-2">
+                          <button
+                            type="button"
+                            
+                            class="btn btn-primary outline sistema w-100 color-primary" 
+                            onclick="wizardStep(event, '1')"
+                            >
+                            Atrás
+                          </button>
+                        </div>
+                        <div class="col-6 col-md-2 mt-2">
+                          <button type="button" class="btn btn-primary sistema w-100" aria-label="Close" onclick="closeModal(event)">Validar código</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </aside>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div> 
-
-  <!-- modal agregar evaluacion -->
-  <div class="modal fade" id="modalAgregarEvaluacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content p-2 p-lg-4">
-        <div class="modal-body">
-          <div class="container px-0">
-            <div class="row modal-edit-data-title mb-lg-5 mb-4">
-              <div class="col-11">
-                <h4 class="text-start">Agregar evaluación</h4>
-              </div>
-              <div class="col-1 d-flex align-items-center justify-content-end">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="top: 20px; right: 12px;"></button>
-              </div>
-            </div> 
-            <form action="" class="row needs-validation" novalidate> 
-              <div class="row mb-lg-4">
-                <div class="col-lg-6 mb-4 ">
-                  <div class="form-floating w-100">
-                    <select class="form-select px-4" id="floatingSelectGrid" aria-label="Floating label select example">
-                      <option value="" selected="" disabled="" hidden="">Evaluaciones sumativas</option>
-                      <option>Evaluaciones formativas</option> 
-                    </select>
-                    <label for="floatingSelectGrid" class="active-label">Tipo de Evaluación *</label> 
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4 ">
-                  <div class="form-floating w-100">
-                    <input id="startDate" class="form-control px-4" type="date" />
-                    <label for="startDate" class="active-label">Fecha de aplicación</label>
-                  </div>
-                </div> 
-                <div class="col-12 mb-2 mb-lg-0">
-                  <div class="form-floating">
-                    <input type="text" class="form-control px-4" id="float1" placeholder="Ingresa el nombre de la evaluación" value="" autocomplete="off">
-                    <label for="float1" class="active-label">Nombre</label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      ¿Esta nota es un grupo de calificaciones?
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control p-4" id="float1" placeholder="Ingresa descripción" rows="4" style="height: auto"></textarea>
-                    <label for="float1" class="active-label">Descripción del instrumento</label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input type="number" class="form-control px-4" id="float1" placeholder="1" value="" autocomplete="off">
-                    <label for="float1" class="active-label">Orden <span class="tooltip"></span></label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-lg-4 mb-1">   
-                <div class="col-6">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" value="" name="support" id="support-yes">
-                    <label class="form-check-label" for="support-yes"> Promedio </label>
-                  </div>
-                  <p class="text-start mb-0 d-none d-lg-block">Será valorada con un peso igual al resto de evaluaciónes</p>
-                  <small class="text-start d-lg-none">Será valorada con un peso igual al resto de evaluaciónes</small>
-                </div>
-                <div class="col-6 mb-lg-4">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" value="" name="support" id="support-no">
-                    <label class="form-check-label" for="support-no"> Ponderación </label>
-                  </div>
-                  <p class="text-start mb-0 d-none d-lg-block">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</p>
-                  <small class="text-start d-lg-none">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</small>
-                </div>
-                <div class="col-12 col-lg-6 mb-4 mt-0">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Nota Coheficiente 2
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="form-floating mb-4 mb-lg-5">
-                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
-                    <label for="float1" class="active-label">Determinar el valor semestral %</label> 
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6 ms-lg-auto">
-                  <div class="form-floating">
-                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
-                    <label for="float1" class="active-label">Determinar el valor  Anual %</label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-6 col-md-4 mt-2">
-                  <button type="button" class="btn btn-primary outline sistema w-100 color-primary"
-                    data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-dismiss="modal">Volver</button>
-                </div>
-                <div class="col-6 col-md-4 mt-2">
-                  <button type="button" class="btn btn-primary sistema w-100" data-bs-toggle="modal" data-bs-dismiss="modal">
-                    <img src="../img/icon-save.svg" alt="Guardar" style="width:20px; height:20px; margin-right: 10px;">
-                    Guardar
-                  </button>
-                </div>
-              </div>
-            </form> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-
-  <!-- modal agregar evaluacion interno-->
-  <div class="modal fade" id="modalAgregarEvaluacionInterno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-lg">
-      <div class="modal-content p-3 py-lg-5 px-lg-4">
-        <div class="modal-body">
-          <div class="container">
-            <div class="row modal-edit-data-title mb-5">
-              <div class="col-11">
-                <h4 class="text-start">Agregar evaluación</h4>
-              </div>
-              <div class="col-1 d-flex align-items-center justify-content-end">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-            </div> 
-            <form action="" class="row needs-validation" novalidate> 
-              <div class="row mb-4">
-                <div class="col-6">
-                  <div class="form-floating w-100">
-                    <select class="form-select px-4" id="floatingSelectGrid" aria-label="Floating label select example">
-                      <option value="" selected="" disabled="" hidden="">Evaluaciones sumativas</option>
-                      <option>Evaluaciones formativas</option> 
-                    </select>
-                    <label for="floatingSelectGrid" class="active-label">Tipo de Evaluación *</label> 
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-floating w-100">
-                    <input id="startDate" class="form-control px-4" type="date" />
-                    <label for="startDate" class="active-label">Fecha de aplicación</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4"> 
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input type="text" class="form-control px-4" id="float1" placeholder="Ingresa el nombre de la evaluación" value="" autocomplete="off">
-                    <label for="float1" class="active-label">Nombre</label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      ¿Esta nota es un grupo de calificaciones?
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control p-4" id="float1" placeholder="Ingresa descripción" rows="4" style="height: auto"></textarea>
-                    <label for="float1" class="active-label">Descripción del instrumento</label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input type="number" class="form-control px-4" id="float1" placeholder="1" value="" autocomplete="off">
-                    <label for="float1" class="active-label">Orden</label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-4">   
-                <div class="col-6">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" value="" name="support" id="support-yes">
-                    <label class="form-check-label" for="support-yes"> Promedio </label>
-                  </div>
-                  <p class="text-start mb-4">Será valorada con un peso igual al resto de evaluaciónes</p>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Nota Coheficiente 2
-                    </label>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" value="" name="support" id="support-no">
-                    <label class="form-check-label" for="support-no"> Ponderación </label>
-                  </div>
-                  <p class="text-start mb-4">Será valorada con un peso mayor o menor a otras evaluaciones, hasta completar el 100% de ellas.</p>
-                  <div class="form-floating mb-4">
-                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
-                    <label for="float1" class="active-label">Determinar el valor semestral %</label> 
-                  </div>
-                  <div class="form-floating">
-                    <input type="number" class="form-control px-4" id="float1" value="0" autocomplete="off">
-                    <label for="float1" class="active-label">Determinar el valor  Anual %</label> 
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-6 col-md-4 mt-2">
-                  <button type="button" class="btn btn-primary outline sistema w-100 color-primary"
-                    data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modalGrupoClasificaciones" data-bs-toggle="modal" data-bs-dismiss="modal">Volver</button>
-                </div>
-                <div class="col-6 col-md-4 mt-2">
-                  <button type="button" class="btn btn-primary sistema w-100" data-bs-target="#modalGrupoClasificaciones" data-bs-toggle="modal" data-bs-dismiss="modal">
-                    <img src="../img/icon-save.svg" alt="Guardar" style="width:20px; height:20px; margin-right: 10px;">
-                    Guardar
-                  </button>
-                </div>
-              </div>
-            </form> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -816,7 +858,38 @@
       }
     } 
 
+    const wizardStep = (e, step) => { 
+      const wizardId = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute('id');
+      const wizard = document.querySelectorAll(`#${wizardId} .wizard-step`);
+      wizard[step].classList.remove('active'); 
+      let intStep = parseInt(step);
+      let nextStep = (intStep === 0) ? '1' : '0';
+      wizard[ nextStep ].classList.add('active'); 
+      wizardList(nextStep, wizardId);
+    }
+
+    const wizardList = (step, wizardId) => {
+      if(step === '0'){ 
+        console.log(document.querySelector(`#${wizardId} .wizard-list`).children);
+        Array.from(document.querySelector(`#${wizardId} .wizard-list`).children).forEach( item => {
+          console.log(item.classList)
+          item.classList.add('disabled')
+          console.log(item.classList)
+        })
+        document.querySelector(`#${wizardId} .wizard-list`).children[0].classList.remove('disabled'); 
+      } else {
+        const disabledItem = document.querySelectorAll(`#${wizardId} .wizard-list .disabled`);
+        disabledItem.forEach( item => item.classList.remove('disabled') )
+        document.querySelector(`#${wizardId} .wizard-list`).children[0].classList.add('disabled'); 
+      }
+    }
+
     const hideAlert = e => e.target.parentElement.classList.add('d-none'); 
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 
   </script>
 
