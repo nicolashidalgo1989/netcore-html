@@ -455,6 +455,11 @@
     .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before{
         border-bottom-color: #343A40
     }
+
+    .badge.bg-success{
+        background: #03BB85;
+    }
+
 @media( max-width: 768px){
 
     .modulos {

@@ -532,13 +532,36 @@
                             </tr>
                           </tbody>
                         </table> 
+                        <table class="table caption-top">
+                          <thead>
+                            <tr style="background-color: #FFF0E2;">
+                              <th scope="col"> Nombre </th>
+                              <th scope="col" class="text-center"> Cargo </th>
+                              <th scope="col" class="text-center"> Estado </th>
+                              <th scope="col" class="text-center"> Fecha </th>  
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="align-middle">
+                              <td scope="col" style="width: 20%">Felipe Sotomayor Leiva</td>
+                              <td scope="col" class="text-center" style="width: 15%">Profesor titular</td>
+                              <td scope="col" class="text-center">
+                                <div class="badge bg-success px-3 fs-14">
+                                  <div class="d-flex align-items-center justify-content-around">
+                                    <span class="material-icons me-1">check</span>
+                                    Firmado
+                                  </div>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center">12/12/2024</td>
+                            </tr>
+                          </tbody>
+                        </table> 
                       </div>
                       <div class="row justify-content-end mt-4 mb-3">
                         <div class="col-6 col-md-3 my-2">
                           <button
                             type="button"
-                            aria-label="Close"
-                            data-bs-dismiss="modal"
                             class="btn btn-primary outline sistema w-100 color-primary"
                             onclick="wizardStep(event, '1')"
                             >
@@ -546,7 +569,7 @@
                           </button>
                         </div>
                         <div class="col-6 col-md-3 my-2">
-                          <button type="button" class="btn btn-primary sistema w-100 d-flex justify-content-center align-items-center" onclick="wizardStep(event, '0')">     
+                          <button type="button" class="btn btn-primary sistema w-100 d-flex justify-content-center align-items-center" onclick="closeModal(event)">   
                             Firmar
                           </button>
                         </div>
