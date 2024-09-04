@@ -1,0 +1,28 @@
+.badge-square{
+    background: #EDEBEE;
+    color: white;
+    font-size: 16px;
+    width: auto;
+    min-width: 24px;
+    height: 24px;
+    margin: 0 4px 0 8px;
+    padding: 2px 4px;
+    line-height: 22px;
+}
+
+.badge-square.success{
+    background: #03BB85;
+}
+.badge-square.danger{
+    background: #CB014A;
+}
+.badge-square.warning{
+    background: var(--color-auxiliar-comp);
+}
+.badge-square.primary{
+    background: var(--color-secondary);
+}
+.badge-square.default{
+    background: #F2F2F2;
+    color: #323232;
+}

@@ -123,59 +123,62 @@
               </nav>
             </div>
           </div>
-          <div class="col-12" id="select-course">
-            <div class="form-floating">
-              <div class="card-shadow shadow-sm p-sm-4 mb-4">
-                <div class="row d-flex align-items-center justify-content-between">
-                  <div class="col-12 col-lg-2 mb-3 mb-lg-0">
-                    <form action="" class="ingreso">
-                      <div class="form-floating w-100">
-                        <select class="form-select px-4" id="Curso" aria-label="Curso">
-                          <option>1° básico A</option>
-                          <option selected="">2° básico A</option>
-                          <option>3° básico A</option>
-                          <option>4° básico A</option>
-                        </select>
-                        <label for="Curso">Curso</label>
-                        <span class="instruccion"></span>
+          <div class="col-12" id="select-course"> 
+            <div class="card-shadow shadow-sm p-sm-4 mb-4">
+              <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-12 col-lg-2 mb-3 mb-lg-0"> 
+                  <div class="form-floating w-100 me-lg-4">
+                    <select class="form-select px-4" id="Curso" aria-label="Curso">
+                      <option>1° básico A</option>
+                      <option selected="">2° básico A</option>
+                      <option>3° básico A</option>
+                      <option>4° básico A</option>
+                    </select>
+                    <label for="Curso">Curso</label>
+                    <span class="instruccion"></span>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-2 mb-3 mb-lg-0"> 
+                  <div class="form-floating w-100">
+                    <input id="startDate" class="form-control px-4" type="date" /> 
+                    <label for="startDate" class="active-label">Fecha</label>
+                    <span class="instruccion"></span>
+                  </div> 
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div class="px-1">
+                    <dl>
+                      <div class="modulo-dl">
+                        <dt>Especialidad:</dt>
+                        <dd>Construcción</dd>
                       </div>
-                    </form>
+                      <div class="modulo-dl">
+                        <dt>Profesor de Módulo:</dt>
+                        <dd>Marcelo Carrasco</dd>
+                      </div>
+                    </dl>
                   </div>
-                  <div class="col-12 col-lg-4">
-                    <div class="px-1">
-                      <dl>
-                        <div class="modulo-dl">
-                          <dt>Especialidad:</dt>
-                          <dd>Construcción</dd>
-                        </div>
-                        <div class="modulo-dl">
-                          <dt>Profesor de Módulo:</dt>
-                          <dd>Marcelo Carrasco</dd>
-                        </div>
-                      </dl>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-4">
-                    <div class="px-1">
-                      <dl>
-                        <div class="modulo-dl">
-                          <dt>Plan de Estudios:</dt>
-                          <dd>Decreto 726/</dd>
-                        </div>
-                        <div class="modulo-dl">
-                          <dt>Matrículas:</dt>
-                          <dd>45</dd>
-                        </div>
-                      </dl>
-                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="px-1">
+                    <dl>
+                      <div class="modulo-dl">
+                        <dt>Plan de Estudios:</dt>
+                        <dd>Decreto 726/</dd>
+                      </div>
+                      <div class="modulo-dl">
+                        <dt>Matrículas:</dt>
+                        <dd>45</dd>
+                      </div>
+                    </dl>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
           <div class="col-12"> 
             <div class="row m-0 justify-content-between">
-              <div class="col-3 d-none d-lg-block pe-lg-5">
+              <div class="col-2 d-none d-lg-block pe-lg-4 ps-0">
                 <ul class="nav nav-pills nav-fill" id="classBook" role="tablist">
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" aria-current="page" id="nominas-tab" data-bs-toggle="tab"
@@ -216,7 +219,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col card-shadow card-modulo p-sm-4">
+              <div class="col card-shadow shadow-sm p-sm-5">
                 <div class="cont-section-admin">
                   <div class="row">
                     <div class="tab-content" id="myTabContent">
@@ -270,7 +273,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="row d-flex align-items-center justify-content-lg-end justify-content-start global-actions mb-3 mb-lg-4">     
+                      <div class="row d-flex align-items-center justify-content-lg-end justify-content-start mb-3 mb-lg-4">     
                         <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
                           <a onclick="openModal('modalAgregarLeccion')" href="#" class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around"> 
                             <img src="../img/icon-add.svg" alt="Agregar">
@@ -288,6 +291,7 @@
                                 </span>
                               </div>
                               <p class="text-dark mb-0">La lección fue agregada exitosamente</p>  
+                              <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
                             </div>
                           </div>
                         </div>
@@ -340,7 +344,7 @@
 
   <!-- modal agregar leccion --> 
   <div class="modal fade" id="modalAgregarLeccion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-xxl">
+    <div class="modal-dialog modal-xxl">
       <div class="modal-content p-4">
         <div class="modal-body p-0 p-lg-3">
           <div class="container">
@@ -358,77 +362,75 @@
                     </div>
                   </div> 
                   <div class="wizard-step-container"> 
-                    <div class="wizard-step active" data-step="0">
-                      <div class="card card-shadow px-lg-5 py-lg-4 p-4 shadow-sm rounded-5">
-                        <h4 class="mb-4 text-start">Agregar lección</h4>
-                        <dl class="container px-0 mb-4">
-                          <div class="row">
-                            <div class="col-12 mb-3">
-                              <dt class="fw-bold d-inline text-dark">Plan de estudio:</dt> 
-                              <dd class="d-inline">Decreto plan de estudio 1264/2016 1°y 2°medio (Vigente 1° medio 2017)</dd> 
-                            </div>
-                            <div class="col-lg-5 mb-3">
-                              <dt class="fw-bold d-inline-blocktext-dark">Clase:</dt> 
-                              <dd class="d-inline ">2° Medio A</dd>
-                            </div>
-                            <div class="col-lg-7 mb-3">
-                              <dt class="fw-bold d-inline text-dark">Asignatura:</dt> 
-                              <dd class="d-inline ">Historia, Geografía y Ciencias Sociales</dd>
-                            </div>
-                            <div class="col-lg-12 mb-3">
-                              <dt class="fw-bold d-inline text-dark">Profesor asignatura: </dt> 
-                              <dd class="d-inline ">Pérez Ahon, Patricio Andrés:</dd> 
-                            </div>
+                    <div class="wizard-step active" data-step="0"> 
+                      <h4 class="mb-4 text-start">Agregar lección</h4>
+                      <dl class="container px-0 mb-4">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <dt class="fw-bold d-inline text-dark">Plan de estudio:</dt> 
+                            <dd class="d-inline">Decreto plan de estudio 1264/2016 1°y 2°medio (Vigente 1° medio 2017)</dd> 
                           </div>
-                        </dl>
-                        <form action="" class="ingreso row d-flex align-items-center justify-content-start"> 
-                          <div class="col-12 col-md-8 col-lg-6 mb-4 mb-lg-3">
-                            <div class="form-floating w-100">
-                              <select class="form-select px-4" id="unidad" aria-label="Unidad">
-                                <option disabled selected value hidden>Seleccionar</option>
-                                <option>Unidad 1</option>
-                                <option>Unidad 2</option>
-                                <option>Unidad 3</option>
-                              </select>
-                              <label for="unidad">Unidad</label> 
+                          <div class="col-lg-5 mb-3">
+                            <dt class="fw-bold d-inline-blocktext-dark">Clase:</dt> 
+                            <dd class="d-inline ">2° Medio A</dd>
+                          </div>
+                          <div class="col-lg-7 mb-3">
+                            <dt class="fw-bold d-inline text-dark">Asignatura:</dt> 
+                            <dd class="d-inline ">Historia, Geografía y Ciencias Sociales</dd>
+                          </div>
+                          <div class="col-lg-12 mb-3">
+                            <dt class="fw-bold d-inline text-dark">Profesor asignatura: </dt> 
+                            <dd class="d-inline ">Pérez Ahon, Patricio Andrés:</dd> 
+                          </div>
+                        </div>
+                      </dl>
+                      <form action="" class="ingreso row d-flex align-items-center justify-content-start"> 
+                        <div class="col-12 col-md-8 col-lg-6 mb-4 mb-lg-3">
+                          <div class="form-floating w-100">
+                            <select class="form-select px-4" id="unidad" aria-label="Unidad">
+                              <option disabled selected value hidden>Seleccionar</option>
+                              <option>Unidad 1</option>
+                              <option>Unidad 2</option>
+                              <option>Unidad 3</option>
+                            </select>
+                            <label for="unidad">Unidad</label> 
+                          </div>
+                        </div> 
+                        <div class="col-12 mb-5">
+                          <div class="row justify-content-end">
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" name="unidad" id="unidad-1">
+                                <label class="form-check-label" for="unidad-1">
+                                  Unidad 1: La Independencia de Chile y la Consolidación de la República (1810-1833)
+                                </label>
+                              </div>
                             </div>
-                          </div> 
-                          <div class="col-12 mb-5">
-                            <div class="row justify-content-end">
-                              <div class="col-12">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" value="" name="unidad" id="unidad-1">
-                                  <label class="form-check-label" for="unidad-1">
-                                    Unidad 1: La Independencia de Chile y la Consolidación de la República (1810-1833)
-                                  </label>
-                                </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" name="unidad" id="unidad-2">
+                                <label class="form-check-label" for="unidad-2">
+                                  Unidad 2: La República Parlamentaria y los Cambios Sociales (1891-1925)
+                                </label>
                               </div>
-                              <div class="col-12">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" value="" name="unidad" id="unidad-2">
-                                  <label class="form-check-label" for="unidad-2">
-                                    Unidad 2: La República Parlamentaria y los Cambios Sociales (1891-1925)
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" value="" name="unidad" id="unidad-3">
-                                  <label class="form-check-label" for="unidad-3">
-                                    Unidad 3: Dictadura Militar y Transición a la Democracia (1973-1990)
-                                  </label>
-                                </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" name="unidad" id="unidad-3">
+                                <label class="form-check-label" for="unidad-3">
+                                  Unidad 3: Dictadura Militar y Transición a la Democracia (1973-1990)
+                                </label>
                               </div>
                             </div>
                           </div>
-                          <div class="col-12">
-                            <div class="form-floating">
-                              <textarea class="form-control p-4" id="float1" placeholder="Ingresa detalle de lección" rows="4" style="height: auto"></textarea>
-                              <label for="float1" class="active-label">Información de lección</label> 
-                            </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <textarea class="form-control p-4" id="float1" placeholder="Ingresa detalle de lección" rows="4" style="height: auto"></textarea>
+                            <label for="float1" class="active-label">Información de lección</label> 
                           </div>
-                        </form>
-                      </div>
+                        </div>
+                      </form> 
                       <div class="row justify-content-end mt-4 mb-3">
                         <div class="col-6 col-md-3 my-2">
                           <button
@@ -442,122 +444,117 @@
                         </div>
                         <div class="col-6 col-md-3 my-2">
                           <button type="button" class="btn btn-primary sistema w-100 d-flex justify-content-center align-items-center" onclick="wizardStep(event, '0')"> 
-                            <span class="material-icons mr-1">
-                              save
-                            </span>
                             Guardar
                           </button>
                         </div>
                       </div> 
                     </div>
-                    <div class="wizard-step" data-step="1">
-                      <div class="card card-shadow shadow-sm rounded-5 px-lg-5 py-lg-4 p-4 ">
-                        <h4 class="mb-4 text-start">Firmar lección</h4>
-                        <dl class="container px-0 mb-4">
-                          <div class="row">
-                            <div class="col-12 mb-3">
-                              <dt class="fw-bold d-inline text-dark">Plan de estudio:</dt> 
-                              <dd class="d-inline">Decreto plan de estudio 1264/2016 1°y 2°medio (Vigente 1° medio 2017)</dd> 
-                            </div>
-                            <div class="col-lg-5 mb-3">
-                              <dt class="fw-bold d-inline-blocktext-dark">Clase:</dt> 
-                              <dd class="d-inline ">2° Medio A</dd>
-                            </div>
-                            <div class="col-lg-7 mb-3">
-                              <dt class="fw-bold d-inline text-dark">Asignatura:</dt> 
-                              <dd class="d-inline ">Historia, Geografía y Ciencias Sociales</dd>
-                            </div>
-                            <div class="col-lg-5 mb-3">
-                              <dt class="fw-bold d-inline-blocktext-dark">Especialidad: </dt> 
-                              <dd class="d-inline "> Historia Social</dd>
-                            </div>
-                            <div class="col-lg-7 mb-3">
-                              <dt class="fw-bold d-inline text-dark">Profesor asignatura: </dt> 
-                              <dd class="d-inline ">Pérez Ahon, Patricio Andrés:</dd> 
-                            </div>
+                    <div class="wizard-step" data-step="1"> 
+                      <h4 class="mb-4 text-start">Firmar lección</h4>
+                      <dl class="container px-0 mb-4">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <dt class="fw-bold d-inline text-dark">Plan de estudio:</dt> 
+                            <dd class="d-inline">Decreto plan de estudio 1264/2016 1°y 2°medio (Vigente 1° medio 2017)</dd> 
                           </div>
-                        </dl>
-                        <p class="text-start">Ingresa el código para firmar. Revisa tu app de autentificador e ingresa el código</p>
-                        <div class="alert alert-warning d-flex align-items-center rounded-5" role="alert">
-                          <img src="../img/icon-warning.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
-                          <div>Al firmar esta clase la asistencia quedará bloqueada y no la podrás editar. <br>
-                            Además, recuerda que si firmas fuera de horario, debes dejar una observación para efectos de supervisión.</div> 
-                          <button type="button" class="btn-close-alert ms-auto mb-auto" aria-label="Close" onclick="hideAlert(event)"></button>
-                        </div>  
-                        <div class="alert alert-danger d-flex align-items-center rounded-5" role="alert">
-                          <img src="../img/icon-danger.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
-                          <div>Lo sentimos, ha ocurrido un error en la conexión. Por favor, inténtalo nuevamente.</div> 
-                          <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
-                        </div>   
-                        <div class="alert alert-success justify-content-start" role="alert"> 
-                          <div class="icon-check me-3">
-                            <span class="material-icons">
-                              done
-                            </span>
+                          <div class="col-lg-5 mb-3">
+                            <dt class="fw-bold d-inline-blocktext-dark">Clase:</dt> 
+                            <dd class="d-inline ">2° Medio A</dd>
                           </div>
-                          <p class="text-dark mb-0">La lección fue agregada exitosamente</p>  
-                          <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
-                        </div>  
-                        <table class="table caption-top">
-                          <thead>
-                            <tr style="background-color: #FFF0E2;">
-                              <th scope="col"> Nombre </th>
-                              <th scope="col" class="text-center"> Cargo </th>
-                              <th scope="col" class="text-center"> Estado </th>
-                              <th scope="col" class="text-center"> Firma </th>
-                              <th scope="col" class="text-center"> Observaciones </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="align-middle">
-                              <td scope="col" style="width: 20%">Felipe Sotomayor Leiva</td>
-                              <td scope="col" class="text-center" style="width: 15%">Profesor titular</td>
-                              <td scope="col" class="text-center">Pendiente</td>
-                              <td scope="col" class="d-flex flex-wrap justify-content-center">
-                                <input type="text" class="form-control firma-input" maxlength="1"/>
-                                <input type="text" class="form-control firma-input" maxlength="1"/>
-                                <input type="text" class="form-control firma-input" maxlength="1"/>
-                                <input type="text" class="form-control firma-input" maxlength="1"/>
-                                <input type="text" class="form-control firma-input" maxlength="1"/>
-                              </td>
-                              <td scope="col">
-                                <form action="" class="ingreso">
-                                  <div class="form-floating">
-                                    <input type="text" class="form-control" id="float1" placeholder="Placeholder">
-                                    <label for="float1">Escribe tu observación aquí</label>
-                                    <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
-                                  </div>
-                                </form>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table> 
-                        <table class="table caption-top">
-                          <thead>
-                            <tr style="background-color: #FFF0E2;">
-                              <th scope="col"> Nombre </th>
-                              <th scope="col" class="text-center"> Cargo </th>
-                              <th scope="col" class="text-center"> Estado </th>
-                              <th scope="col" class="text-center"> Fecha </th>  
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="align-middle">
-                              <td scope="col" style="width: 20%">Felipe Sotomayor Leiva</td>
-                              <td scope="col" class="text-center" style="width: 15%">Profesor titular</td>
-                              <td scope="col" class="text-center">
-                                <div class="badge bg-success px-3 fs-14">
-                                  <div class="d-flex align-items-center justify-content-around">
-                                    <span class="material-icons me-1">check</span>
-                                    Firmado
-                                  </div>
+                          <div class="col-lg-7 mb-3">
+                            <dt class="fw-bold d-inline text-dark">Asignatura:</dt> 
+                            <dd class="d-inline ">Historia, Geografía y Ciencias Sociales</dd>
+                          </div>
+                          <div class="col-lg-5 mb-3">
+                            <dt class="fw-bold d-inline-blocktext-dark">Especialidad: </dt> 
+                            <dd class="d-inline "> Historia Social</dd>
+                          </div>
+                          <div class="col-lg-7 mb-3">
+                            <dt class="fw-bold d-inline text-dark">Profesor asignatura: </dt> 
+                            <dd class="d-inline ">Pérez Ahon, Patricio Andrés:</dd> 
+                          </div>
+                        </div>
+                      </dl>
+                      <p class="text-start">Ingresa el código para firmar. Revisa tu app de autentificador e ingresa el código</p>
+                      <div class="alert alert-warning d-flex align-items-center rounded-5" role="alert">
+                        <img src="../img/icon-warning.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
+                        <div>Al firmar esta clase la asistencia quedará bloqueada y no la podrás editar. <br>
+                          Además, recuerda que si firmas fuera de horario, debes dejar una observación para efectos de supervisión.</div> 
+                        <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
+                      </div>  
+                      <div class="alert alert-danger d-flex align-items-center rounded-5" role="alert">
+                        <img src="../img/icon-danger.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
+                        <div>Lo sentimos, ha ocurrido un error en la conexión. Por favor, inténtalo nuevamente.</div> 
+                        <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
+                      </div>   
+                      <div class="alert alert-success justify-content-start" role="alert"> 
+                        <div class="icon-check me-3">
+                          <span class="material-icons">
+                            done
+                          </span>
+                        </div>
+                        <p class="text-dark mb-0">La lección fue agregada exitosamente</p>  
+                        <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
+                      </div>  
+                      <table class="table caption-top">
+                        <thead>
+                          <tr style="background-color: #FFF0E2;">
+                            <th scope="col"> Nombre </th>
+                            <th scope="col" class="text-center"> Cargo </th>
+                            <th scope="col" class="text-center"> Estado </th>
+                            <th scope="col" class="text-center"> Firma </th>
+                            <th scope="col" class="text-center"> Observaciones </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <td scope="col" style="width: 20%">Felipe Sotomayor Leiva</td>
+                            <td scope="col" class="text-center" style="width: 15%">Profesor titular</td>
+                            <td scope="col" class="text-center">Pendiente</td>
+                            <td scope="col" class="d-flex flex-wrap justify-content-center">
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                            </td>
+                            <td scope="col">
+                              <form action="" class="ingreso">
+                                <div class="form-floating">
+                                  <input type="text" class="form-control" id="float1" placeholder="Placeholder">
+                                  <label for="float1">Escribe tu observación aquí</label>
+                                  <img src="../img/icon-edit.svg" alt="Edit" class="form-control-icon">
                                 </div>
-                              </td>
-                              <td scope="col" class="text-center">12/12/2024</td>
-                            </tr>
-                          </tbody>
-                        </table> 
-                      </div>
+                              </form>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table> 
+                      <table class="table caption-top">
+                        <thead>
+                          <tr style="background-color: #FFF0E2;">
+                            <th scope="col"> Nombre </th>
+                            <th scope="col" class="text-center"> Cargo </th>
+                            <th scope="col" class="text-center"> Estado </th>
+                            <th scope="col" class="text-center"> Fecha </th>  
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <td scope="col" style="width: 20%">Felipe Sotomayor Leiva</td>
+                            <td scope="col" class="text-center" style="width: 15%">Profesor titular</td>
+                            <td scope="col" class="text-center">
+                              <div class="badge bg-success px-3 fs-14">
+                                <div class="d-flex align-items-center justify-content-around">
+                                  <span class="material-icons me-1">check</span>
+                                  Firmado
+                                </div>
+                              </div>
+                            </td>
+                            <td scope="col" class="text-center">12/12/2024</td>
+                          </tr>
+                        </tbody>
+                      </table>  
                       <div class="row justify-content-end mt-4 mb-3">
                         <div class="col-6 col-md-3 my-2">
                           <button

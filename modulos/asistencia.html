@@ -123,59 +123,55 @@
               </nav>
             </div>
           </div>
-          <div class="col-12" id="select-course">
-            <div class="form-floating">
-              <div class="card-shadow shadow-sm p-sm-4 mb-4">
-                <div class="row d-flex align-items-center justify-content-between">
-                  <div class="col-12 col-lg-2 mb-3 mb-lg-0">
-                    <form action="" class="ingreso">
-                      <div class="form-floating w-100">
-                        <select class="form-select px-4" id="Curso" aria-label="Curso">
-                          <option>1° básico A</option>
-                          <option selected="">2° básico A</option>
-                          <option>3° básico A</option>
-                          <option>4° básico A</option>
-                        </select>
-                        <label for="Curso">Curso</label>
-                        <span class="instruccion"></span>
+          <div class="col-12" id="select-course"> 
+            <div class="card-shadow shadow-sm p-sm-4 mb-4">
+              <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-12 col-lg-2 mb-3 mb-lg-0"> 
+                  <div class="form-floating w-100">
+                    <select class="form-select px-4" id="Curso" aria-label="Curso">
+                      <option>1° básico A</option>
+                      <option selected="">2° básico A</option>
+                      <option>3° básico A</option>
+                      <option>4° básico A</option>
+                    </select>
+                    <label for="Curso">Curso</label>
+                    <span class="instruccion"></span>
+                  </div> 
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div class="px-1">
+                    <dl>
+                      <div class="modulo-dl">
+                        <dt>Especialidad:</dt>
+                        <dd>Construcción</dd>
                       </div>
-                    </form>
+                      <div class="modulo-dl">
+                        <dt>Profesor de Módulo:</dt>
+                        <dd>Marcelo Carrasco</dd>
+                      </div>
+                    </dl>
                   </div>
-                  <div class="col-12 col-lg-4">
-                    <div class="px-1">
-                      <dl>
-                        <div class="modulo-dl">
-                          <dt>Especialidad:</dt>
-                          <dd>Construcción</dd>
-                        </div>
-                        <div class="modulo-dl">
-                          <dt>Profesor de Módulo:</dt>
-                          <dd>Marcelo Carrasco</dd>
-                        </div>
-                      </dl>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-4">
-                    <div class="px-1">
-                      <dl>
-                        <div class="modulo-dl">
-                          <dt>Plan de Estudios:</dt>
-                          <dd>Decreto 726/</dd>
-                        </div>
-                        <div class="modulo-dl">
-                          <dt>Matrículas:</dt>
-                          <dd>45</dd>
-                        </div>
-                      </dl>
-                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="px-1">
+                    <dl>
+                      <div class="modulo-dl">
+                        <dt>Plan de Estudios:</dt>
+                        <dd>Decreto 726/</dd>
+                      </div>
+                      <div class="modulo-dl">
+                        <dt>Matrículas:</dt>
+                        <dd>45</dd>
+                      </div>
+                    </dl>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
           <div class="col-12">
             <div class="row m-lg-0 justify-content-between">
-              <div class="col-3 d-none d-lg-block pe-lg-5">
+              <div class="col-2 d-none d-lg-block pe-lg-4 ps-0">
                 <ul class="nav nav-pills nav-fill" id="classBook" role="tablist">
                   <li class="nav-item" role="presentation">
                     <a class="nav-link" aria-current="page" id="nominas-tab" data-bs-toggle="tab"
@@ -216,7 +212,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col card-shadow shadow-sm card-modulo p-sm-4">
+              <div class="col card-shadow shadow-sm px-sm-5 pb-5 py-2">
                 <div class="cont-section-admin">
                   <div class="row">
                     <div class="col-12">
@@ -1231,7 +1227,7 @@
                       <div class="alert alert-warning d-flex align-items-center" role="alert">
                         <img src="../img/icon-warning.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
                         <div>Recuerda que si firmas fuera de horario, debes dejar una observación para efectos de suspervisión.</div> 
-                        <button type="button" class="btn-close-alert ms-auto mb-auto" aria-label="Close" onclick="hideAlert(event)"></button>
+                        <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
                       </div> 
                       <table class="table caption-top">
                         <thead>
@@ -1249,11 +1245,11 @@
                             <td scope="col" class="text-center" style="width: 15%">Profesor titular</td>
                             <td scope="col" class="text-center">Pendiente</td>
                             <td scope="col" class="d-flex flex-wrap justify-content-center">
-                              <input type="text" class="form-control firma-input" />
-                              <input type="text" class="form-control firma-input" />
-                              <input type="text" class="form-control firma-input" />
-                              <input type="text" class="form-control firma-input" />
-                              <input type="text" class="form-control firma-input" />
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
+                              <input type="text" class="form-control firma-input" maxlength="1"/>
                             </td>
                             <td scope="col">
                               <form action="" class="ingreso">
@@ -1296,7 +1292,7 @@
    <!-- modal enviar datos SIGE -->
    <div class="modal fade" id="modalEnviarDatosSIGE" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-xxl">
+    <div class="modal-dialog modal-xxl">
       <div class="modal-content p-4">
         <div class="modal-body">
           <div class="container">
@@ -2213,7 +2209,7 @@
                       <div class="alert alert-warning d-flex align-items-center" role="alert">
                         <img src="../img/icon-warning.svg" alt="" class="me-3" style="width: 29px; height: 29px;">
                         <div>Al enviar datos a SIGE, se verificará su concordancia con los registros previos en el sistema.</div>
-                        <button type="button" class="btn-close-alert ms-auto mb-auto" aria-label="Close" onclick="hideAlert(event)"></button>
+                        <button type="button" class="btn-close-alert ms-auto" aria-label="Close" onclick="hideAlert(event)"></button>
                       </div> 
                       <table class="table caption-top">
                         <thead>

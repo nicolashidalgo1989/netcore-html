@@ -117,64 +117,61 @@
                   <li class="breadcrumb-item"><a href="#">Educación</a></li>
                   <li class="breadcrumb-item"><a href="#">Selección de Módulo</a></li>
                   <li class="breadcrumb-item"><a href="#">Libro de clases</a></li>
+                  <li class="breadcrumb-item"><a href="#">2° básico A</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Nominas</li>
                 </ol>
               </nav>
             </div>
           </div>
-          <div class="col-12" id="select-course">
-            <div class="form-floating">
-              <div class="card-shadow shadow-sm p-sm-4 mb-4">
-                <div class="row d-flex align-items-center justify-content-between">
-                  <div class="col-12 col-lg-2 mb-3 mb-lg-0">
-                    <form action="" class="ingreso">
-                      <div class="form-floating w-100">
-                        <select class="form-select px-4" id="Curso" aria-label="Curso">
-                          <option>1° básico A</option>
-                          <option selected="">2° básico A</option>
-                          <option>3° básico A</option>
-                          <option>4° básico A</option>
-                        </select>
-                        <label for="Curso">Curso</label>
-                        <span class="instruccion"></span>
+          <div class="col-12" id="select-course"> 
+            <div class="card-shadow shadow-sm p-sm-4 mb-4">
+              <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-12 col-lg-2 mb-3 mb-lg-0"> 
+                  <div class="form-floating w-100">
+                    <select class="form-select px-4" id="Curso" aria-label="Curso">
+                      <option>1° básico A</option>
+                      <option selected="">2° básico A</option>
+                      <option>3° básico A</option>
+                      <option>4° básico A</option>
+                    </select>
+                    <label for="Curso">Curso</label>
+                    <span class="instruccion"></span>
+                  </div> 
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div class="px-1">
+                    <dl>
+                      <div class="modulo-dl">
+                        <dt>Especialidad:</dt>
+                        <dd>Construcción</dd>
                       </div>
-                    </form>
+                      <div class="modulo-dl">
+                        <dt>Profesor de Módulo:</dt>
+                        <dd>Marcelo Carrasco</dd>
+                      </div>
+                    </dl>
                   </div>
-                  <div class="col-12 col-lg-4">
-                    <div class="px-1">
-                      <dl>
-                        <div class="modulo-dl">
-                          <dt>Especialidad:</dt>
-                          <dd>Construcción</dd>
-                        </div>
-                        <div class="modulo-dl">
-                          <dt>Profesor de Módulo:</dt>
-                          <dd>Marcelo Carrasco</dd>
-                        </div>
-                      </dl>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-4">
-                    <div class="px-1">
-                      <dl>
-                        <div class="modulo-dl">
-                          <dt>Plan de Estudios:</dt>
-                          <dd>Decreto 726/</dd>
-                        </div>
-                        <div class="modulo-dl">
-                          <dt>Matrículas:</dt>
-                          <dd>45</dd>
-                        </div>
-                      </dl>
-                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="px-1">
+                    <dl>
+                      <div class="modulo-dl">
+                        <dt>Plan de Estudios:</dt>
+                        <dd>Decreto 726/</dd>
+                      </div>
+                      <div class="modulo-dl">
+                        <dt>Matrículas:</dt>
+                        <dd>45</dd>
+                      </div>
+                    </dl>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
           <div class="col-12">
             <div class="row m-lg-0 justify-content-between">
-              <div class="col-3 d-none d-lg-block pe-lg-5">
+              <div class="col-2 d-none d-lg-block pe-lg-4 ps-0">
                 <ul class="nav nav-pills nav-fill" id="classBook" role="tablist">
                   <li class="nav-item" role="presentation">
                     <a class="nav-link active" aria-current="page" id="nominas-tab" data-bs-toggle="tab"
@@ -215,7 +212,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col card-shadow shadow-sm card-nominas p-sm-5">
+              <div class="col card-shadow shadow-sm p-sm-5">
                 <div class="cont-section-admin">
                   <div class="row">
                     <div class="col-12" id="classBookContent">
@@ -427,21 +424,20 @@
   </main>
 
   <!-- modal editar ficha -->
-  <div class="modal fade" id="modalClienteEditar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-xl">
-      <div class="modal-content p-0">
+  <div class="modal fade" id="modalClienteEditar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content p-2 p-lg-4">
         <div class="modal-body">
           <div class="container">
             <div class="modal-edit-data">
-              <div class="row modal-edit-data-title">
+              <div class="row modal-edit-data-title mb-5">
                 <div class="col-11">
                   <h4 class="text-start">Editar ficha</h4>
                 </div>
                 <div class="col-1 d-flex align-items-center justify-content-end">
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
+              </div>  
               <form action="" class="d-lg-none row my-4">
                 <div class="form-floating w-100">
                   <select class="form-select" id="selectEditDataMobile" onchange="changeData(event)" aria-label="Selección de información a editar">
@@ -736,8 +732,7 @@
                           data-bs-dismiss="modal" aria-label="Close">Volver</button>
                       </div>
                       <div class="col-6 col-md-4 mt-2">
-                        <button type="button" class="btn btn-primary sistema w-100">Guardar
-                          ficha</button>
+                        <button type="button" class="btn btn-primary sistema w-100">Guardar ficha</button>
                       </div>
                     </div>
                   </div>
@@ -1171,8 +1166,7 @@
                           data-bs-dismiss="modal" aria-label="Close">Volver</button>
                       </div>
                       <div class="col-6 col-md-4 mt-2">
-                        <button type="button" class="btn btn-primary sistema w-100">Guardar
-                          ficha</button>
+                        <button type="button" class="btn btn-primary sistema w-100">Guardar ficha</button>
                       </div>
                     </div>
                   </div>

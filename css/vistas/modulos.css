@@ -13,11 +13,6 @@
     line-height: normal;
 }
 
-    .modulos.asistencia,
-    .modulos.leccionario {
-        background-image: none;
-    }
-
     .modulos .card-shadow {
         background: hsl(0, 0%, 100%);
         border-radius: 20px;
@@ -151,36 +146,7 @@
         height: 4px;
         background: var(--color-primary);
         border-radius:4px;
-    }
-
-    .badge-square{
-        background: #EDEBEE;
-        color: white;
-        font-size: 16px;
-        width: auto;
-        min-width: 24px;
-        height: 24px;
-        margin: 0 4px 0 8px;
-        padding: 2px 4px;
-        line-height: 22px;
-    }
-
-    .badge-square.success{
-        background: #03BB85;
-    }
-    .badge-square.danger{
-        background: #CB014A;
-    }
-    .badge-square.warning{
-        background: var(--color-auxiliar-comp);
-    }
-    .badge-square.primary{
-        background: var(--color-secondary);
-    }
-    .badge-square.default{
-        background: #F2F2F2;
-        color: #323232;
-    }
+    } 
 
     .modulos .checkbox-column{
         display: flex;
@@ -219,10 +185,7 @@
         background: #FFF9E1;
     } 
 
-    /* calificaciones */
-    .modulos.calificaciones {
-        background: none;
-    }
+    /* calificaciones */ 
     
     .modulos.calificaciones .nav-tabs .nav-item {
         width: 50%;
@@ -491,8 +454,7 @@
 
 }
 
-@media (min-width: 769px){
-    
+@media (min-width: 769px){    
     .modulos.calificaciones .nav-tabs .nav-item {
         width: auto;
     }
@@ -535,10 +497,6 @@
     }
     
     .modulos.calificaciones .table td::before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
       content: attr(data-label);
       float: left;
       font-weight: bold; 

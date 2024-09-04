@@ -3,6 +3,7 @@
 @import "main.css";
 /* Componentes */
 
+@import "componentes/badge.css";
 @import "componentes/breadcrumbs.css";
 @import "componentes/status-icons-and-colors.css";
 @import "componentes/fonts.css";
