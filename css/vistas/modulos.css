@@ -1,9 +1,5 @@
 .modulos {
-    background-image: url(../../img/fondo-seccion-interior.svg);
-    background-position: center 135px;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-attachment: fixed;
+    background: none;
     min-height: 90vh;
     padding-top: 40px;
     color: var(--color-black);
@@ -18,13 +14,7 @@
         border-radius: 20px;
         box-shadow: 0px 0px 16px 4px rgba(28, 0, 47, 0.1);
         padding: 48px 76px;
-    }
-
-    .modulos .card-shadow.card-nominas,
-    .modulos .card-shadow.card-modulo{
-        border-radius: 20px;
-        box-shadow: 0px 0px 16px 4px rgba(28, 0, 47, 0.1);
-    }
+    } 
 
     .button-modulo-container{
         display: grid;
@@ -40,16 +30,21 @@
         line-height: normal;
     }
 
+    /* Defintion Lists */
+
     .modulos dl{
         margin: 0;
     }
-    .modulos .modulo-dl {
-        display: flex;
-    }
 
-    .modulos .modulo-dl dt{
-        margin-right: 8px;
-    }
+        .modulos dl .modulo-dl {
+            display: flex;
+        }
+
+            .modulos dl .modulo-dl dt{
+                margin-right: 8px;
+            }
+    
+    /* Buttons - Global Actions*/
 
     .modulos .global-actions,
     .modal .global-actions{
@@ -60,136 +55,159 @@
         margin-bottom: 32px;
     }
 
-    .modulos .global-actions a,
-    .modal .global-actions a{
-        text-decoration: none;
-        color: #6500E4;
-        margin: 0 8px;
+        .modulos .global-actions a,
+        .modal .global-actions a{
+            text-decoration: none;
+            color: #6500E4;
+            margin: 0 8px;
+        }
+
+    /* Tables */ 
+ 
+    .modulos .table > :not(caption) > * > *{
+        padding: 0.5rem 1rem;
     }
 
     .modulos .table td,
     .modal .table td{
         text-align: left;
         font-size: 14px;
+        vertical-align: middle;
     }
 
-    .modulos .table .text-center,
-    .modal .table .text-center{
-        text-align: center;
-    }
+        .modulos .table td a,
+        .modal .table td a{
+            text-decoration:  none;
+        } 
 
-    .modulos .table .text-right,
-    .modal .table .text-right{
-        text-align: right;
-    }
+        .modulos .table .text-center,
+        .modal .table .text-center{
+            text-align: center;
+        }
 
-    .modulos .table thead,
-    .modal .table thead,
-    .modulos .table tfoot,
-    .modal .table tfoot{
+        .modulos .table .text-right,
+        .modal .table .text-right{
+            text-align: right;
+        }
+
+        .modulos .table thead,
+        .modal .table thead,
+        .modulos .table tfoot,
+        .modal .table tfoot{
+            background: #FFF0E2;
+        }
+
+        .modulos .table th,
+        .modal .table th{
+            font-weight: 800;
+            font-size: .9rem; 
+            vertical-align: middle;
+        } 
+
+            .modulos .table .width-column{
+                width: 104px!important;
+            }
+
+            .modulos .table .width-column-sm{
+                width: 64px!important;
+            }
+
+            .modulos .table .width-column-xs{
+                width: 40px!important;
+            }
+ 
+            .modulos .table .width-column-xxs{
+                width: 15px!important;
+            }
+ 
+            /* Checkbox Table Head Column */
+
+            .modulos .table th .checkbox-column{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: var(--color-primary);
+                font-size: 12px;
+                font-weight: 600;
+            }
+        
+                .modulos .table th .checkbox-column.lock{
+                    color: var(--color-black);
+                }
+    
+                    .modulos .table th .checkbox-column input[type="checkbox"]{
+                        width: 16px;
+                        height: 16px;
+                    }   
+ 
+    .card-shadow-footer-mobile{
         background: #FFF0E2;
+        padding: .5rem!important
     }
 
-    .modulos .table th,
-    .modal .table th{
-        font-weight: 800;
-        font-size: .9rem; 
+    .card-shadow-footer-mobile a{
+        color: var(--color-black);
     }
+ 
+    /* Row actions */
 
-    .modulos .table td a,
-    .modal .table td a{
-        text-decoration:  none;
-    }
-
-    .modulos .table .row-actions,
-    .modal .table .row-actions{
+    .modulos .row-actions,
+    .modal .row-actions{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .modulos .table .row-actions a,
-    .modal .table .row-actions a{
+    .modulos .row-actions a,
+    .modal .row-actions a{
         text-align: center;
         width: 24px;
         height: 24px;
         margin: 0;
     }
 
-    .modulos .table .row-actions a img,
-    .modal .table .row-actions a img{
-        width: 100%;
-    } 
+        .modulos .row-actions a img,
+        .modal .row-actions a img{
+            width: 100%;
+        }  
+
+    /* Nav Tabs */
+
+    .modulos .nav-tabs .nav-item {
+        width: 50%;
+    }
 
     .modulos .nav-tabs.nav-underline .nav-link{
         color: var(--color-black);
         border: none;
-    }
-
-    .modulos .nav-tabs.nav-underline,
-    .modulos .nav-tabs.nav-underline .nav-link.active,
-    .modulos .nav-tabs.nav-underline .nav-link:hover,
-    .modulos .nav-tabs.nav-underline .nav-link:focus,
-    .modulos .nav-tabs.nav-underline .nav-link:focus-visible{
-        border: none;
-        outline: 0;
-        box-shadow: none;
-        color: var(--color-primary);
-        background: none;
-        font-weight: bold;
-    }
-
-    .modulos .nav-tabs.nav-underline .nav-link.active::after{
-        content: '';
-        display: block;
         width: 100%;
-        height: 4px;
-        background: var(--color-primary);
-        border-radius:4px;
-    } 
-
-    .modulos .checkbox-column{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: var(--color-primary);
-        font-size: 12px;
-        font-weight: 600;
     }
 
-    .modulos .checkbox-column.lock{
-        color: var(--color-black);
-    }
+        .modulos .nav-tabs.nav-underline,
+        .modulos .nav-tabs.nav-underline .nav-link.active,
+        .modulos .nav-tabs.nav-underline .nav-link:hover,
+        .modulos .nav-tabs.nav-underline .nav-link:focus,
+        .modulos .nav-tabs.nav-underline .nav-link:focus-visible{
+            border: none;
+            outline: 0;
+            box-shadow: none;
+            color: var(--color-primary);
+            background: none;
+            font-weight: bold;
+        }
 
-    .modulos.asistencia .btn{
-        padding: 6px 24px;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-    }
+            .modulos .nav-tabs.nav-underline .nav-link.active::after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 4px;
+                background: var(--color-primary);
+                border-radius:4px;
+            }  
 
-    .modulos.asistencia .table td, th{
-        vertical-align: middle;
-    }
-
-    .modulos.asistencia .table th input[type="checkbox"]{
-        width: 16px;
-        height: 16px;
-    }
-
-    .modulos.asistencia .alert.alert-warning { 
-        border-radius: 24px;
-        border: 1px solid #FFF0B3;
-        background: #FFF9E1;
-    } 
-
-    /* calificaciones */ 
-    
-    .modulos.calificaciones .nav-tabs .nav-item {
-        width: 50%;
-    }
+    /* calificaciones */  
 
     .modulos.calificaciones .head-column-note, 
     .modal .head-column-note { 
@@ -283,18 +301,18 @@
         -webkit-user-select : text;  
     }
 
+    /* alertas */
+
     .modal .alert,
     .modulos .alert{
+        display: flex;
+        justify-content: center;
         border-radius: 24px;
         align-items: center;
     }
 
     .modal .alert.alert-success,
     .modulos .alert.alert-success{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius:24px;
         border-color:#A2EEAE;
         background-color: #E1FFE6;
     }
@@ -303,7 +321,7 @@
     .modulos .alert.alert-success .icon-check{
         width: 29px; 
         height: 29px;
-        border-radius:  50px;
+        border-radius: 50px;
         background: #03BB85;
         display: flex;
         align-items: center;
@@ -311,54 +329,61 @@
         color: white;   
     }
 
+    .modulos .alert.alert-warning { 
+        border: 1px solid #FFF0B3;
+        background: #FFF9E1;
+    } 
+
     /* input file */
+
     .input-file{
         position: relative;
         margin-bottom: .25rem;
     }
 
-    .input-file input[type=file] {
-        border-radius: 50px;
-        padding: 0.375rem 1.2rem;
-    }
- 
+        .input-file input[type=file] {
+            border-radius: 50px;
+            padding: 0.375rem 1.2rem;
+        }
+  
+        .input-file input[type=file]::-webkit-file-upload-button {
+            display: none;
+        }
 
-    .input-file input[type=file]::-webkit-file-upload-button {
-        display: none;
-    }
-
-    .input-file input[type=file]::file-selector-button {
-        display: none;
-    }  
- 
-    .input-file input[type='file']:invalid { 
-        font-size: 0; 
-    }
+        .input-file input[type=file]::file-selector-button {
+            display: none;
+        }  
     
-    ::file-selector-button { 
-        display: none;
-    } 
+        .input-file input[type='file']:invalid { 
+            font-size: 0; 
+        }
+        
+        ::file-selector-button { 
+            display: none;
+        } 
 
-    .input-file input[type='file']:invalid:before{
-        content: "Subir archivo";
-        padding: 0;
-        border-radius: 50px;
-        color: black;
-        font-size: 16px;
-        line-height: 1.6rem !important;
-    } 
+        .input-file input[type='file']:invalid:before{
+            content: "Subir archivo";
+            padding: 0;
+            border-radius: 50px;
+            color: black;
+            font-size: 16px;
+            line-height: 1.6rem !important;
+        } 
 
-    .input-file .form-control:focus {
-        color: black;
-    }
+        .input-file .form-control:focus {
+            color: black;
+        }
 
-    .input-file .input-file-icon{
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        right: 18px; 
-        top: 10px;
-    }
+        .input-file .input-file-icon{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 18px; 
+            top: 10px;
+        }
+
+    /* btn close*/
 
     .btn-close{
         background-size: 2em;
@@ -367,23 +392,8 @@
         position: absolute;
     }
 
-    small.helper{
-        color: var(--color-primary); 
-        margin: 16px;
-    }
-
-    .modulos.calificaciones .width-column-note{
-        width: 104px;
-    }
-    
-    .modulos.calificaciones .width-column-note-sm{
-        width: 64px;
-    }
-    
-    .modulos.calificaciones .width-column-note-xs{
-        width: 40px;
-    }
-
+    /* helpers */
+ 
     .icon-size-xs{
         width: 16px!important;
         height: 16px!important; 
@@ -398,17 +408,9 @@
         background: black;
         display: flex;
     }
- 
-    ::-webkit-calendar-picker-indicator{
-        /* display: none */
-    }
 
     .shadow-sm{
         box-shadow: 0px 0px 16px 4px rgba(28, 0, 47, 0.10);
-    }
-
-    .modulos.leccionario .table > :not(caption) > * > *{
-        padding: 0.5rem 1rem
     }
 
     .tooltip-inner{
@@ -419,60 +421,56 @@
         border-bottom-color: #343A40
     }
 
-    .badge.bg-success{
+    .modal .badge.bg-success{
         background: #03BB85;
     }
-
-@media( max-width: 768px){
-
-    .modulos {
-        background: none;
-    }
-
-    .modulos .card-shadow {
-        padding: 32px;
-    }
-
-    .modulos .card-shadow.card-nominas,
-    .modulos .card-shadow.card-modulo{
-        padding: 24px;
-    }
-
-    .card-shadow-footer-mobile{
-        background: #FFF0E2;
-        padding: .5rem!important
-    }
-    .card-shadow-footer-mobile a{
-        color: var(--color-black);
-    }
-
-    
+  
     .modal .alert.alert-success .icon-check,
     .modulos .alert.alert-success .icon-check{
         display: none;
     } 
-
-}
+    
+/* desktop */
 
 @media (min-width: 769px){    
-    .modulos.calificaciones .nav-tabs .nav-item {
+
+    .modulos { 
+        background-image: url(../../img/fondo-seccion-interior.svg);
+        background-position: center 135px;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-attachment: fixed;
+    }
+
+    .modulos .nav-tabs .nav-item {
         width: auto;
     }
     .modulos.calificaciones td.note-input, .modal td.note-input{
         padding: 0;
     }
-}
+    
+    .modal .alert.alert-success .icon-check,
+    .modulos .alert.alert-success .icon-check{
+        display: block;
+    } 
+     
+} 
 
-@media screen and (max-width: 600px) {
-    .modulos.calificaciones .table {
-      border: 0;
+/* mobile table */
+
+@media screen and (max-width: 1200px) {
+    .modulos .table,
+    .modal .table {
+        border: 0;
     }
-  
-    .modulos.calificaciones .table caption {
+
+    .modulos .table caption,
+    .modal .table caption {
       font-size: 1.3em;
     }
-    
-    .modulos.calificaciones .table thead {
+
+    .modulos .table thead,
+    .modal .table thead {
       border: none;
       clip: rect(0 0 0 0);
       height: 1px;
@@ -483,27 +481,36 @@
       width: 1px;
     }
     
-    .modulos.calificaciones .table tr {
+    .modulos .table tr,
+    .modal .table tr {
       border-bottom: 3px solid #ddd;
       display: block;
       margin-bottom: .625em;
     }
-    
-    .modulos.calificaciones .table td {
+
+    .modulos .table td,
+    .modal .table td {
       border-bottom: 1px solid #ddd;
       display: block;
       font-size: 1rem;
       text-align: right!important;
     }
     
-    .modulos.calificaciones .table td::before {
+    .modulos .table td::before,
+    .modal .table td::before {
       content: attr(data-label);
       float: left;
       font-weight: bold; 
     }
 
-    .modulos.calificaciones td.note-input .form-control, .modal td.note-input .form-control{
+    .modulos td.note-input .form-control, 
+    .modal td.note-input .form-control{
         margin: 0 0 0 auto;
+    }
+
+    
+    .modulos .table .width-column-xxs{
+        width: auto!important;
     }
      
   }

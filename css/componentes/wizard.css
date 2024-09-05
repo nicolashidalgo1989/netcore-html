@@ -5,10 +5,11 @@
 .wizard-step-container{
     position: relative;
     width: 100%;
-    height: calc(100vh - 230px);
+    /* height: calc(100vh - 230px); */
 }
 .wizard .wizard-step{
-    position: absolute;
+    /* position: absolute; */
+    display: none;
     opacity: 0;  
     z-index: 0;
     width: 100%;
@@ -16,6 +17,7 @@
 }
 
 .wizard .wizard-step.active{
+    display: block;
     opacity: 1;  
     z-index: 1;
 }
