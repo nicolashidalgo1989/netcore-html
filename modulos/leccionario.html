@@ -50,58 +50,67 @@
       </div>
     </div>
     <nav class="menu-interno-productos navbar navbar-expand-lg navbar-light bg-auxiliar">
-      <div class="container-xxl justify-content-end">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-xxl justify-content-end">  
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="nav nav-pills nav-fill flex-column flex-sm-row mt-4 d-lg-none" id="classBook" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" aria-current="page" id="nominas-tab" data-bs-toggle="tab" data-bs-target="#nominas"
-                type="button" role="tab" aria-controls="nominas" aria-selected="true">
-                <img src="../img/icon-nominas.svg" alt="Nóminas">
-                Nóminas
-              </a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" aria-current="page" id="assistance-tab" data-bs-toggle="tab"
-                data-bs-target="#assistance" type="button" role="tab" aria-controls="assistance" aria-selected="true">
-                <img src="../img/icon-assistance.svg" alt="Asistencia">
-                Asistencia
-              </a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" aria-current="page" id="ratings-tab" data-bs-toggle="tab" data-bs-target="#ratings"
-                type="button" role="tab" aria-controls="ratings" aria-selected="true">
-                <img src="../img/icon-ratings.svg" alt="Calificaciones">
-                Calificaciones
-              </a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" aria-current="page" id="cv-tab" data-bs-toggle="tab" data-bs-target="#cv"
-                type="button" role="tab" aria-controls="cv" aria-selected="true">
-                <img src="../img/icon-cv.svg" alt="Hoja de Vida">
-                Hoja de Vida
-              </a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" aria-current="page" id="lectionary-tab" data-bs-toggle="tab"
-                data-bs-target="#lectionary" type="button" role="tab" aria-controls="lectionary" aria-selected="true">
-                <img src="../img/icon-lectionary.svg" alt="Leccionario">
-                Leccionario
-              </a>
-            </li>
-          </ul>
-          <div class="col-12 d-block d-lg-none mt-4">
-            <button type="button" class="btn btn-white outline color-white sistema w-100">Administración</button>
-          </div>
-        </div>
         <button type="button"
-          class="btn btn-white outline color-white sistema d-none d-lg-block">Administración</button>
+          class="btn btn-white outline color-white sistema d-none d-lg-block"> Administración  </button>
       </div>
-    </nav>
+    </nav> 
   </header>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel" class="m-0">Netcore</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body"> 
+      <ul class="nav nav-pills nav-fill flex-column" id="classBook" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" aria-current="page" id="nominas-tab" data-bs-toggle="tab"
+            data-bs-target="#nominas" type="button" role="tab" aria-controls="nominas" aria-selected="true">
+            <img src="../img/icon-nominas.svg" alt="Nóminas">
+            Nóminas
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" aria-current="page" id="assistance-tab" data-bs-toggle="tab"
+            data-bs-target="#assistance" type="button" role="tab" aria-controls="assistance" aria-selected="true">
+            <img src="../img/icon-assistance.svg" alt="Asistencia">
+            Asistencia
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" aria-current="page" id="ratings-tab" data-bs-toggle="tab" data-bs-target="#ratings"
+            type="button" role="tab" aria-controls="ratings" aria-selected="true">
+            <img src="../img/icon-ratings.svg" alt="Calificaciones">
+            Calificaciones
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" aria-current="page" id="cv-tab" data-bs-toggle="tab" data-bs-target="#cv"
+            type="button" role="tab" aria-controls="cv" aria-selected="true">
+            <img src="../img/icon-cv.svg" alt="Hoja de Vida">
+            Hoja de Vida
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" aria-current="page" id="lectionary-tab" data-bs-toggle="tab"
+            data-bs-target="#lectionary" type="button" role="tab" aria-controls="lectionary" aria-selected="true">
+            <img src="../img/icon-lectionary.svg" alt="Leccionario">
+            Leccionario
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" aria-current="page" id="lectionary-tab" data-bs-toggle="tab"
+            data-bs-target="#lectionary" type="button" role="tab" aria-controls="lectionary" aria-selected="true"> 
+            Administracion
+          </a>
+        </li>
+      </ul> 
+    </div>
+  </div>
 
   <main>
     <section class="modulos leccionario">
