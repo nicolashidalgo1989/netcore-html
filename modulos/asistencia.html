@@ -164,8 +164,10 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row">
           <div class="col-12">
-            <div class="row m-lg-0 justify-content-between">
+            <div class="d-flex m-lg-0 justify-content-between">
               <div class="col-2 d-none d-lg-block pe-lg-4 ps-0">
                 <ul class="nav nav-pills nav-fill" id="classBook" role="tablist">
                   <li class="nav-item" role="presentation">
@@ -207,615 +209,615 @@
                   </li>
                 </ul>
               </div>
-              <div class="col card-shadow shadow-sm px-5 pb-5 py-2">
-                <div class="cont-section-admin">
-                  <div class="row">
-                    <div class="col-12">
-                      <ul class="nav nav-underline nav-tabs justify-content-md-end justify-content-center" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link pe-0" id="assistance-day-tab" data-bs-toggle="tab"
-                            data-bs-target="#assistance-day-tab-pane" type="button" role="tab"
-                            aria-controls="assistance-day-tab-pane" aria-selected="true">
-                            Asistencia diaria
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active pe-0" id="assistance-class-tab" data-bs-toggle="tab"
-                            data-bs-target="#assistance-class-tab-pane" type="button" role="tab"
-                            aria-controls="assistance-class-tab-pane" aria-selected="true">
-                            Asistencia por clase
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="tab-content" id="myTabContent">
-                      <!-- Asistencia diaria -->
-                      <div class="tab-pane fade" id="assistance-day-tab-pane" role="tabpanel"
-                        aria-labelledby="assistance-day" tabindex="0">
-                        <div class="container mb-4 px-2">
-                          <div class="row">
-                            <div class="col-xxl-4 px-0">
-                              <h2 class="titulo-modulo mb-0">Asistencia diaria</h2>
-                            </div>
-                            <div class="col-xxl-8 d-flex align-items-center justify-content-end my-3 my-xxl-0">
-                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+              <div class="col card-shadow shadow-sm p-4 px-md-5 py-lg-2"> 
+                <div class="row">
+                  <div class="col-12 mb-lg-0">
+                    <ul class="nav nav-underline nav-tabs justify-content-md-end justify-content-center" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active px-0 pe-lg-0" id="assistance-day-tab" data-bs-toggle="tab"
+                          data-bs-target="#assistance-day-tab-pane" type="button" role="tab"
+                          aria-controls="assistance-day-tab-pane" aria-selected="true">
+                          Asistencia diaria
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link pe-0" id="assistance-class-tab" data-bs-toggle="tab"
+                          data-bs-target="#assistance-class-tab-pane" type="button" role="tab"
+                          aria-controls="assistance-class-tab-pane" aria-selected="true">
+                          Asistencia por clase
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="myTabContent">
+                    <!-- Asistencia diaria -->
+                    <div class="tab-pane fade show active" id="assistance-day-tab-pane" role="tabpanel"
+                      aria-labelledby="assistance-day" tabindex="0">
+                      <div class="container mb-4 px-2">
+                        <div class="row">
+                          <div class="col-xxl-4 px-0">
+                            <h2 class="titulo-modulo mb-3">Asistencia diaria</h2>
+                          </div>
+                          <div class="col-xxl-8">
+                            <div class="row"> 
+                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
                                 <span class="badge badge-square success">P</span>
                                 <span class="fs-12"> Presente </span>
                               </div>
-                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
                                 <span class="badge badge-square danger">A</span>
                                 <span class="fs-12"> Ausente </span>
                               </div>
-                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
+                              <div class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
                                 <span class="badge badge-square default">P</span>
                                 <span class="fs-12"> Default </span>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="container mb-4 px-0">
-                          <div class="row">
-                            <div class="col-lg-6 d-flex align-items-center">
-                              <p class="m-0">Selecciona el día para realizar el registro de asistencia</p>
-                            </div>
-                            <div class="col-lg-6 d-flex justify-content-end">
-                              <a onclick="openModal('modalEnviarDatosSIGE')" href="#"
-                                class="btn btn-primary outline color-primary mx-2 py-1 px-3 fw-bold fs-7">Enviar datos SIGE</a>
-                              <a onclick="openModal('modalRegistrarAsistencia')" href="#"
-                                class="btn btn-primary disabled text-light btn-reg mx-0 py-1 px-3 fw-bold fs-7">Registro de asistencia</a>
-                            </div>
+                      </div>
+                      <div class="container mb-4 px-0">
+                        <div class="row">
+                          <div class="col-lg-6 d-flex align-items-center">
+                            <p class="m-md-0">Selecciona el día para realizar el registro de asistencia</p>
+                          </div>
+                          <div class="col-lg-6 d-flex justify-content-sm-end justify-content-between">
+                            <a onclick="openModal('modalEnviarDatosSIGE')" href="#"
+                              class="btn btn-primary outline color-primary mx-sm-2 py-1 px-3 fw-bold fs-7">Enviar datos SIGE</a>
+                            <a onclick="openModal('modalRegistrarAsistencia')" href="#"
+                              class="btn btn-primary disabled text-light btn-reg mx-0 py-1 px-3 fw-bold fs-7">Registro de asistencia</a>
                           </div>
                         </div>
-                        <div class="table-responsive">
-                          <table class="table caption-top">
-                            <thead>
-                              <tr>
-                                <th scope="col">
-                                  <div class="d-flex">
-                                    Nº
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="d-flex">
-                                    Alumno
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Lun</span>
-                                      <span>1</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Mar</span>
-                                      <span>2</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Mié</span>
-                                      <span>3</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Jue</span>
-                                      <span>4</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Vie</span>
-                                      <span>5</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <div class="mt-4 d-flex flex-column">
-                                      <span>Sab</span>
-                                      <span>6</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <div class="mt-4 d-flex flex-column">
-                                      <span>Dom</span>
-                                      <span>7</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Lun</span>
-                                      <span>8</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Mar</span>
-                                      <span>9</span>
-                                    </label>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Mié</span>
-                                      <span>10</span>
-                                    </div>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column lock">
-                                    <img src="../img/icon-lock.svg" alt="Lock">
-                                    <div class="d-flex flex-column">
-                                      <span>Jue</span>
-                                      <span>11</span>
-                                    </div>
-                                  </div>
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody id="studentTableDesktop">
-                              <tr>
-                                <td scope="col" data-label="Nº">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square disabled"> </span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square disabled"> </span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square disabled"> </span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square disabled"> </span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">A</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" data-label="Lunes 1" class="text-center">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
                       </div>
-                      <!-- Asistencia por clase -->
-                      <div class="tab-pane fade show active" id="assistance-class-tab-pane" role="tabpanel"
-                        aria-labelledby="assistance-class" tabindex="0">
-                        <div class="container mb-4 px-2">
-                          <div class="row">
-                            <div class="col-xxl-4 px-0">
-                              <h2 class="titulo-modulo mb-0">Asistencia por clase</h2>
-                            </div>
-                            <div class="col-xxl-8 d-flex align-items-center justify-content-end my-3 my-xxl-0 ps-0">
-                              <div class="row d-flex w-100 justify-xxl-content-end">
-                                <div
-                                  class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
-                                  <span class="badge badge-square success">P</span>
-                                  <span class="fs-12"> Presente </span>
+                      <div class="table-responsive">
+                        <table class="table caption-top">
+                          <thead>
+                            <tr>
+                              <th scope="col">
+                                <div class="d-flex">
+                                  Nº
                                 </div>
-                                <div
-                                  class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
-                                  <span class="badge badge-square danger">A</span>
-                                  <span class="fs-12"> Ausente </span>
+                              </th>
+                              <th scope="col">
+                                <div class="d-flex">
+                                  Alumno
                                 </div>
-                                <div
-                                  class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
-                                  <span class="badge badge-square warning">AT</span>
-                                  <span class="fs-12"> Atraso </span>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Lun</span>
+                                    <span>1</span>
+                                  </div>
                                 </div>
-                                <div
-                                  class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
-                                  <span class="badge badge-square primary">R</span>
-                                  <span class="fs-12"> Retirado </span>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Mar</span>
+                                    <span>2</span>
+                                  </div>
                                 </div>
-                                <div
-                                  class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
-                                  <span class="badge badge-square default"> </span>
-                                  <span class="fs-12"> No aplica </span>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Mié</span>
+                                    <span>3</span>
+                                  </div>
                                 </div>
-                                <div
-                                  class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center">
-                                  <span class="badge badge-square default">P</span>
-                                  <span class="fs-12"> Default </span>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Jue</span>
+                                    <span>4</span>
+                                  </div>
                                 </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Vie</span>
+                                    <span>5</span>
+                                  </div>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <div class="mt-4 d-flex flex-column">
+                                    <span>Sab</span>
+                                    <span>6</span>
+                                  </div>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <div class="mt-4 d-flex flex-column">
+                                    <span>Dom</span>
+                                    <span>7</span>
+                                  </div>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Lun</span>
+                                    <span>8</span>
+                                  </div>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Mar</span>
+                                    <span>9</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Mié</span>
+                                    <span>10</span>
+                                  </div>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column lock">
+                                  <img src="../img/icon-lock.svg" alt="Lock">
+                                  <div class="d-flex flex-column">
+                                    <span>Jue</span>
+                                    <span>11</span>
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody id="studentTableDesktop">
+                            <tr>
+                              <td scope="col" data-label="Nº">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square disabled"> </span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square disabled"> </span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square disabled"> </span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square disabled"> </span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">A</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" data-label="Lunes 1" class="text-center">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- Asistencia por clase -->
+                    <div class="tab-pane fade" id="assistance-class-tab-pane" role="tabpanel"
+                      aria-labelledby="assistance-class" tabindex="0">
+                      <div class="container mb-4 px-2">
+                        <div class="row">
+                          <div class="col-xxl-4 px-0">
+                            <h2 class="titulo-modulo mb-3">Asistencia por clase</h2>
+                          </div>
+                          <div class="col-xxl-8">
+                            <div class="row">
+                              <div
+                                class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
+                                <span class="badge badge-square success">P</span>
+                                <span class="fs-12"> Presente </span>
+                              </div>
+                              <div
+                                class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
+                                <span class="badge badge-square danger">A</span>
+                                <span class="fs-12"> Ausente </span>
+                              </div>
+                              <div
+                                class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
+                                <span class="badge badge-square warning">AT</span>
+                                <span class="fs-12"> Atraso </span>
+                              </div>
+                              <div
+                                class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
+                                <span class="badge badge-square primary">R</span>
+                                <span class="fs-12"> Retirado </span>
+                              </div>
+                              <div
+                                class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
+                                <span class="badge badge-square default"> </span>
+                                <span class="fs-12"> No aplica </span>
+                              </div>
+                              <div
+                                class="col-6 col-sm-3 col-md-2 px-0 d-flex justify-content-start align-items-center mb-3 mb-lg-0">
+                                <span class="badge badge-square default">P</span>
+                                <span class="fs-12"> Default </span>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="container mb-4 px-0">
-                          <div class="row">
-                            <div class="col-lg-6 d-flex align-items-center">
-                              <p class="m-0">Selecciona la o las clases para realizar el registro de asistencia</p>
-                            </div>
-                            <div class="col-lg-6 d-flex justify-content-end">
-                              <a onclick="openModal('modalRegistrarAsistencia')" href="#"
-                                class="btn btn-primary disabled text-light btn-reg py-1 px-3 fw-bold fs-7">Registro de asistencia</a>
-                            </div>
+                      </div>
+                      <div class="container mb-4 px-0">
+                        <div class="row">
+                          <div class="col-lg-6 d-flex align-items-center">
+                            <p class="m-0">Selecciona la o las clases para realizar el registro de asistencia</p>
+                          </div>
+                          <div class="col-lg-6 d-flex justify-content-end">
+                            <a onclick="openModal('modalRegistrarAsistencia')" href="#"
+                              class="btn btn-primary disabled text-light btn-reg py-1 px-3 fw-bold fs-7">Registro de asistencia</a>
                           </div>
                         </div>
-                        <div class="table-responsive">
-                          <table class="table caption-top">
-                            <thead>
-                              <tr>
-                                <th scope="col">
-                                  <div class="d-flex">
-                                    Nº
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="d-flex">
-                                    Alumno
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Matemática</span>
-                                      <span>08:00 - 09:30</span>
-                                    </label>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Lenguaje y C...</span>
-                                      <span>09:45 - 10:15</span>
-                                    </label>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Tecnología</span>
-                                      <span>10:30 - 12:00</span>
-                                    </label>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Educación F...</span>
-                                      <span>12:15 - 13:45</span>
-                                    </label>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Idioma E...</span>
-                                      <span>14:00 - 15:30</span>
-                                    </label>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Idioma E...</span>
-                                      <span>15:45 - 17:30</span>
-                                    </label>
-                                  </div>
-                                </th>
-                                <th scope="col">
-                                  <div class="checkbox-column input-group">
-                                    <input type="checkbox" />
-                                    <label for="" class="d-flex flex-column">
-                                      <span>Lenguaje y C</span>
-                                      <span>17:45 - 18:15</span>
-                                    </label>
-                                  </div>
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody id="studentTableDesktop">
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td scope="col" data-label="N°">1</td>
-                                <td scope="col" data-label="Alumno">
-                                  <div class="d-flex flex-column">
-                                    <span>Emanuel Pérez Astorga</span>
-                                    <span>15.111.623-8</span>
-                                  </div>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square danger">A</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square success">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                                <td scope="col" class="text-center" data-label="Matematica">
-                                  <span class="badge badge-square default">P</span>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table caption-top">
+                          <thead>
+                            <tr>
+                              <th scope="col">
+                                <div class="d-flex">
+                                  Nº
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="d-flex">
+                                  Alumno
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Matemática</span>
+                                    <span>08:00 - 09:30</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Lenguaje y C...</span>
+                                    <span>09:45 - 10:15</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Tecnología</span>
+                                    <span>10:30 - 12:00</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Educación F...</span>
+                                    <span>12:15 - 13:45</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Idioma E...</span>
+                                    <span>14:00 - 15:30</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Idioma E...</span>
+                                    <span>15:45 - 17:30</span>
+                                  </label>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="checkbox-column input-group">
+                                  <input type="checkbox" />
+                                  <label for="" class="d-flex flex-column">
+                                    <span>Lenguaje y C</span>
+                                    <span>17:45 - 18:15</span>
+                                  </label>
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody id="studentTableDesktop">
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td scope="col" data-label="N°">1</td>
+                              <td scope="col" data-label="Alumno">
+                                <div class="d-flex flex-column">
+                                  <span>Emanuel Pérez Astorga</span>
+                                  <span>15.111.623-8</span>
+                                </div>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square danger">A</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square success">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                              <td scope="col" class="text-center" data-label="Matematica">
+                                <span class="badge badge-square default">P</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>

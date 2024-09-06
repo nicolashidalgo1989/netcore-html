@@ -216,129 +216,112 @@
                   </li>
                 </ul>
               </div>
-              <div class="col card-shadow shadow-sm p-5">
-                <div class="cont-section-admin">
-                  <div class="row">
-                    <div class="tab-content" id="myTabContent">
-                      <!-- Leccionario -->
-                      <div class="container mb-4 px-2">
-                        <div class="row">
-                          <div class="col-xxl-4 px-lg-0">
-                            <h2 class="titulo-modulo mb-3">Leccionario</h2>
-                            <p>Agrega y organiza tus Lecciones</p>
-                          </div>
+              <div class="col card-shadow shadow-sm p-4 p-md-5"> 
+                <div class="row">
+                  <div class="tab-content" id="myTabContent">
+                    <!-- Leccionario -->
+                    <div class="col-xxl-4 px-lg-0 mb-4">
+                      <h2 class="titulo-modulo mb-3">Leccionario</h2>
+                      <p>Agrega y organiza tus Lecciones</p>
+                    </div>
+                    <form action="" class="ingreso row d-flex align-items-center justify-content-start">
+                      <div class="col-12 col-md-8 col-lg-6 mb-4 mb-lg-3">
+                        <div class="form-floating w-100">
+                          <select class="form-select px-4" id="asignatura" aria-label="Asignatura">
+                            <option selected="">Historia, Geografía y Ciencias Sociales</option>
+                            <option>Lenguaje y Comunicación</option>
+                            <option>Matemáticas</option>
+                            <option>Artes Plásticas</option>
+                          </select>
+                          <label for="asignatura">Asignatura</label>
                         </div>
                       </div>
-                      <form action="" class="ingreso row d-flex align-items-center justify-content-start">
-                        <div class="col-12 col-md-8 col-lg-6 mb-4 mb-lg-3">
-                          <div class="form-floating w-100">
-                            <select class="form-select px-4" id="asignatura" aria-label="Asignatura">
-                              <option selected="">Historia, Geografía y Ciencias Sociales</option>
-                              <option>Lenguaje y Comunicación</option>
-                              <option>Matemáticas</option>
-                              <option>Artes Plásticas</option>
-                            </select>
-                            <label for="asignatura">Asignatura</label>
-                          </div>
-                        </div>
-                      </form>
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-12 col-lg-4 px-0">
-                            <dl>
-                              <div class="modulo-dl fs-18 mb-1">
-                                <dt>Tipo de curso:</dt>
-                                <dd>Simple</dd>
-                              </div>
-                              <div class="modulo-dl fs-18 mb-1">
-                                <dt>Capacidad:</dt>
-                                <dd>48</dd>
-                              </div>
-                            </dl>
-                          </div>
-                          <div class="col-12 col-lg-4 px-0">
-                            <dl>
-                              <div class="modulo-dl fs-18 mb-1">
-                                <dt>Jornada:</dt>
-                                <dd>Mañana y tarde</dd>
-                              </div>
-                              <div class="modulo-dl fs-18 mb-1">
-                                <dt>Vacantes</dt>
-                                <dd>3</dd>
-                              </div>
-                            </dl>
-                          </div>
-                        </div>
+                    </form>
+                    <dl class="col-8 row"> 
+                      <div class="col-12 col-lg-6 px-0 modulo-dl fs-18 mb-1">
+                        <dt>Tipo de curso:</dt>
+                        <dd>Simple</dd>
+                      </div>  
+                      <div class="col-12 col-lg-6 px-0 modulo-dl fs-18 mb-1">
+                        <dt>Capacidad:</dt>
+                        <dd>48</dd>
+                      </div>  
+                      <div class="col-12 col-lg-6 px-0 modulo-dl fs-18 mb-1">
+                        <dt>Jornada:</dt>
+                        <dd>Mañana y tarde</dd>
                       </div>
-                      <div
-                        class="row d-flex align-items-center justify-content-lg-end justify-content-start mb-3 mb-lg-4">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
-                          <a onclick="openModal('modalAgregarLeccion')" href="#"
-                            class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around">
-                            <img src="../img/icon-add.svg" alt="Agregar">
-                            Agregar lección
-                          </a>
-                        </div>
+                      <div class="col-12 col-lg-6 px-0 modulo-dl fs-18 mb-1">
+                        <dt>Vacantes</dt>
+                        <dd>3</dd>
                       </div>
-                      <div class="container-fluid px-0">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="alert alert-success justify-content-start" role="alert">
-                              <div class="icon-check me-3">
-                                <span class="material-icons">
-                                  done
-                                </span>
-                              </div>
-                              <p class="text-dark mb-0">La lección fue agregada exitosamente</p>
-                              <button type="button" class="btn-close-alert ms-auto" aria-label="Close"
-                                onclick="hideAlert(event)"></button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">
-                                Profesor jefe
-                              </th>
-                              <th scope="col">
-                                Encargado de Acta
-                              </th>
-                              <th scope="col">
-                                Información de la lección
-                              </th>
-                              <th scope="col">
-                                Acciones
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="col" data-label="Profesor">Soza Muñoz, Carlos Roberto</td>
-                              <td scope="col" data-label="Encargado"> Panza Concha, Pedro Nicolás </td>
-                              <td scope="col" data-label="Información"> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.</td>
-                              <td scope="col" data-label="Acciones">
-                                <div class="row-actions justify-content-end justify-content-md-between"> 
-                                  <span class="material-icons text-primary" data-bs-toggle="tooltip"
-                                  data-bs-placement="bottom" data-bs-title="Ver detalles">
-                                    search
-                                  </span>
-                                  <span class="material-icons text-primary" data-bs-toggle="tooltip"
-                                  data-bs-placement="bottom" data-bs-title="Editar">
-                                  edit
-                                </span>
-                              </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                    </dl> 
+                    <div class="row d-flex align-items-center justify-content-lg-end justify-content-start mb-3 mb-lg-4">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-auto mb-3 mb-lg-0">
+                        <a onclick="openModal('modalAgregarLeccion')" href="#"
+                          class="mx-0 py-1 px-3 fw-bold fs-7 btn btn-primary outline color-primary justify-content-around">
+                          <img src="../img/icon-add.svg" alt="Agregar">
+                          Agregar lección
+                        </a>
                       </div>
                     </div>
+                    <div class="container-fluid px-0">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="alert alert-success justify-content-start" role="alert">
+                            <div class="icon-check me-3">
+                              <span class="material-icons">
+                                done
+                              </span>
+                            </div>
+                            <p class="text-dark mb-0">La lección fue agregada exitosamente</p>
+                            <button type="button" class="btn-close-alert ms-auto" aria-label="Close"
+                              onclick="hideAlert(event)"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              Profesor jefe
+                            </th>
+                            <th scope="col">
+                              Encargado de Acta
+                            </th>
+                            <th scope="col">
+                              Información de la lección
+                            </th>
+                            <th scope="col">
+                              Acciones
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="col" data-label="Profesor">Soza Muñoz, Carlos Roberto</td>
+                            <td scope="col" data-label="Encargado"> Panza Concha, Pedro Nicolás </td>
+                            <td scope="col" data-label="Información"> Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit.</td>
+                            <td scope="col" data-label="Acciones">
+                              <div class="row-actions justify-content-end justify-content-md-between"> 
+                                <span class="material-icons text-primary" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Ver detalles">
+                                  search
+                                </span>
+                                <span class="material-icons text-primary" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Editar">
+                                edit
+                              </span>
+                            </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
-                </div>
+                </div> 
               </div>
             </div>
           </div>
